@@ -2,4 +2,5 @@ Flask
 requests
 Pillow
 arabic-reshaper
-python-bidi 
+python-bidi
+flasgger 

@@ -79,6 +79,12 @@ curl http://localhost:5001/images/example.jpg
 - Text position: Bottom center with 15% padding
 - Logo position: Top-left corner with 3% margin
 
+## Advanced Parameters
+
+The `/process_custom` endpoint accepts the following advanced parameters:
+- container_margin (integer): Additional margin (in pixels) from the edges of the image for the text container. Defaults to 0.
+- container_width_percent (number): Specifies the text container's width as a percentage of the image's width. If provided, it determines the wrapping width for text.
+
 ## Directory Structure
 
 ```

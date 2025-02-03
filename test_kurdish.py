@@ -4,7 +4,8 @@ import io
 
 def test_kurdish_image():
     # The text to add (a Kurdish phrase meaning "Welcome to Kurdistan")
-    text = "بەخێربێن بۆ کوردستان"
+    text = "توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە",
+
     
     # Prepare the request
     url = "http://localhost:5001/process"
