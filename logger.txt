@@ -1,0 +1,1367 @@
+2023-10-18T14:00:00 - Initialized project files: requirements.txt, app.py, README.md 2025-02-03T00:19:24.743351 - Starting Flask server
+2025-02-03T00:25:02.499908 - Starting Flask server
+2025-02-03T00:34:34.577032 - No process using port 5001 found.
+2025-02-03T00:34:34.577417 - Starting Flask server on port 5001
+2025-02-03T00:34:34.816855 - Killed process 49974 using port 5001
+2025-02-03T00:34:57.748141 - No process using port 5001 found.
+2025-02-03T00:34:57.748465 - Starting Flask server on port 5001
+2025-02-03T00:34:58.017885 - Killed process 50089 using port 5001
+2025-02-03T00:35:58.836056 - No process using port 5001 found.
+2025-02-03T00:35:58.836387 - Starting Flask server on port 5001
+2025-02-03T00:35:59.427653 - Killed process 50357 using port 5001
+2024-02-02T20:35:00.000000 - Created test_api.py with comprehensive API tests
+2025-02-03T00:48:29.078189 - No process using port 5001 found.
+2025-02-03T00:48:29.078342 - Starting Flask server on port 5001
+2025-02-03T00:48:29.337747 - Killed process 54068 using port 5001
+2025-02-03T00:48:37.392511 - No process using port 5001 found.
+2025-02-03T00:48:37.392735 - Starting Flask server on port 5001
+2025-02-03T00:48:37.815525 - Killed process 54152 using port 5001
+2025-02-03T00:48:54.878880 - Error processing image: HTTPConnectionPool(host='invalid-url', port=80): Max retries exceeded with url: /image.jpg (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x1068b3380>: Failed to resolve 'invalid-url' ([Errno 8] nodename nor servname provided, or not known)"))
+2025-02-03T00:48:54.904093 - Error processing image: 'ImageDraw' object has no attribute 'textsize'
+2025-02-03T00:49:34.061996 - Error processing image: HTTPConnectionPool(host='invalid-url', port=80): Max retries exceeded with url: /image.jpg (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x10689f390>: Failed to resolve 'invalid-url' ([Errno 8] nodename nor servname provided, or not known)"))
+2025-02-03T00:49:34.112657 - Error processing image: 'ImageDraw' object has no attribute 'textsize'
+2025-02-03T00:49:55.270520 - Error processing image: HTTPConnectionPool(host='invalid-url', port=80): Max retries exceeded with url: /image.jpg (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x10689e990>: Failed to resolve 'invalid-url' ([Errno 8] nodename nor servname provided, or not known)"))
+2025-02-03T00:49:55.290411 - Error processing image: 'ImageDraw' object has no attribute 'textsize'
+2025-02-03T00:50:28.958117 - Processing request with image_url=http://invalid-url/image.jpg, text=Test
+2025-02-03T00:50:28.994968 - Error downloading image from http://invalid-url/image.jpg: HTTPConnectionPool(host='invalid-url', port=80): Max retries exceeded with url: /image.jpg (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x10541ef90>: Failed to resolve 'invalid-url' ([Errno 8] nodename nor servname provided, or not known)"))
+2025-02-03T00:50:28.995258 - Error processing image: HTTPConnectionPool(host='invalid-url', port=80): Max retries exceeded with url: /image.jpg (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x10541ef90>: Failed to resolve 'invalid-url' ([Errno 8] nodename nor servname provided, or not known)"))
+2025-02-03T00:50:28.998544 - Missing parameters: image_url=None, text=Test
+2025-02-03T00:50:29.000531 - Processing request with image_url=http://localhost:5001/images/test.jpg, text=تاقیکردنەوە
+2025-02-03T00:50:29.021770 - Successfully downloaded image from http://localhost:5001/images/test.jpg
+2025-02-03T00:50:29.041147 - Successfully added logo from logo.png
+2025-02-03T00:50:29.041245 - Successfully modified image with text and logo
+2025-02-03T00:50:29.043245 - Successfully processed image from URL: http://localhost:5001/images/test.jpg with text: تاقیکردنەوە
+2025-02-03T00:51:00.000000 - All tests passing after fixing textsize issue and improving error handling
+2025-02-03T00:52:00.000000 - Created test_kurdish.py for testing Kurdish Sorani text overlay on 0x0.jpg
+2025-02-03T01:16:24.693239 - Processing request with image_url=http://localhost:5001/images/0x0.jpg, text=بەخێربێن بۆ کوردستان
+2025-02-03T01:16:24.714699 - Successfully downloaded image from http://localhost:5001/images/0x0.jpg
+2025-02-03T01:16:24.746279 - Successfully added logo from logo.png
+2025-02-03T01:16:24.746431 - Successfully modified image with text and logo
+2025-02-03T01:16:24.884842 - Successfully processed image from URL: http://localhost:5001/images/0x0.jpg with text: بەخێربێن بۆ کوردستان
+2025-02-03T01:20:45.742458 - Processing request with image_url=http://localhost:5001/images/0x0.jpg, text=بەخێربێن بۆ کوردستان
+2025-02-03T01:20:45.761697 - Successfully downloaded image from http://localhost:5001/images/0x0.jpg
+2025-02-03T01:20:45.763541 - Text preparation successful - Original: بەخێربێن بۆ کوردستان, Reshaped: ﺏەﺥێﺭﺏێﻥ ﺑﯚ ﮐﻮﺭﺩﺳﺘﺎﻥ
+2025-02-03T01:20:45.772984 - Successfully loaded font from: /System/Library/Fonts/Supplemental/Arial Unicode.ttf
+2025-02-03T01:20:45.866527 - Text rendered at position (457.5, 818) with size 490x47
+2025-02-03T01:20:45.868336 - Successfully added logo from logo.png
+2025-02-03T01:20:45.868458 - Successfully modified image with text and logo
+2025-02-03T01:20:46.026922 - Successfully processed image from URL: http://localhost:5001/images/0x0.jpg with text: بەخێربێن بۆ کوردستان
+2025-02-03T01:25:30.006748 - Processing request with image_url=http://localhost:5001/images/0x0.jpg, text=بەخێربێن بۆ کوردستان
+2025-02-03T01:25:30.035867 - Successfully downloaded image from http://localhost:5001/images/0x0.jpg
+2025-02-03T01:25:30.036695 - Text preparation successful - Original: بەخێربێن بۆ کوردستان, Bidi: ناتسدروک ۆب نێبرێخەب
+2025-02-03T01:25:30.045225 - Successfully loaded font from: /System/Library/Fonts/Supplemental/Tahoma.ttf
+2025-02-03T01:25:30.112177 - Text rendered at position (426.5, 790) with size 552x56
+2025-02-03T01:25:30.113718 - Successfully added logo from logo.png
+2025-02-03T01:25:30.113823 - Successfully modified image with text and logo
+2025-02-03T01:25:30.261962 - Successfully processed image from URL: http://localhost:5001/images/0x0.jpg with text: بەخێربێن بۆ کوردستان
+2025-02-03T01:30:56.191634 - Processing request with image_url=http://localhost:5001/images/0x0.jpg, text=بەخێربێن بۆ کوردستان
+2025-02-03T01:30:56.211816 - Successfully downloaded image from http://localhost:5001/images/0x0.jpg
+2025-02-03T01:30:56.212013 - Text preparation successful - Using original text: بەخێربێن بۆ کوردستان
+2025-02-03T01:30:56.217527 - Successfully loaded font from: /System/Library/Fonts/Supplemental/Tahoma.ttf
+2025-02-03T01:30:56.397776 - Text rendered at position (404.0, 752) with size 597x65
+2025-02-03T01:30:56.404394 - Successfully added logo from logo.png
+2025-02-03T01:30:56.404588 - Successfully modified image with text and logo
+2025-02-03T01:30:56.569918 - Successfully processed image from URL: http://localhost:5001/images/0x0.jpg with text: بەخێربێن بۆ کوردستان
+2025-02-03T01:35:00.000000 - Created comprehensive README.md and .gitignore files
+2025-02-03T06:30:35Z - Updated add_text_and_logo function with glossy background and curved border (20px padding)
+2025-02-03T10:33:54.763335 - No process using port 5001 found.
+2025-02-03T10:33:54.763756 - Starting Flask server on port 5001
+2025-02-03T10:33:55.054673 - Killed process 8269 using port 5001
+2025-02-03T10:34:47.462738 - No process using port 5001 found.
+2025-02-03T10:34:47.463294 - Starting Flask server on port 5001
+2025-02-03T10:34:56.671706 - Processing request with image_url=http://localhost:5001/images/0x0.jpg, text=بەخێربێن بۆ کوردستان
+2025-02-03T10:34:56.696619 - Successfully downloaded image from http://localhost:5001/images/0x0.jpg
+2025-02-03T10:34:56.697026 - Text preparation successful - Using original text: بەخێربێن بۆ کوردستان
+2025-02-03T10:34:56.702980 - Successfully loaded font from: /System/Library/Fonts/Supplemental/Tahoma.ttf
+2025-02-03T10:34:56.733672 - Glossy text background added at (384, 732, 1021, 837)
+2025-02-03T10:34:56.824363 - Text rendered at position (404.0, 752) with size 597x65
+2025-02-03T10:34:56.826485 - Successfully added logo from logo.png
+2025-02-03T10:34:56.826542 - Successfully modified image with text and logo
+2025-02-03T10:34:56.953564 - Successfully processed image from URL: http://localhost:5001/images/0x0.jpg with text: بەخێربێن بۆ کوردستان
+2025-02-03T10:43:24.620549 - No process using port 5001 found.
+2025-02-03T10:43:24.620877 - Starting Flask server on port 5001
+2025-02-03T10:43:31.065764 - Processing request with image_url=http://localhost:5001/images/0x0.jpg, text=بەخێربێن بۆ کوردستان
+2025-02-03T10:43:31.085378 - Successfully downloaded image from http://localhost:5001/images/0x0.jpg
+2025-02-03T10:43:31.085518 - Text preparation successful - Using original text: بەخێربێن بۆ کوردستان
+2025-02-03T10:43:31.089036 - Successfully loaded font from: fonts/NotoSansArabic_Condensed-Black.ttf
+2025-02-03T10:43:31.139612 - Glossy text background added at (374, 729, 1030, 837)
+2025-02-03T10:43:31.143547 - Text rendered at position (394.5, 749) with size 616x68
+2025-02-03T10:43:31.144950 - Successfully added logo from logo.png
+2025-02-03T10:43:31.145017 - Successfully modified image with text and logo
+2025-02-03T10:43:31.271198 - Successfully processed image from URL: http://localhost:5001/images/0x0.jpg with text: بەخێربێن بۆ کوردستان
+2025-02-03T10:49:47.715542 - Processing request with image_url=http://localhost:5001/images/0x0.jpg, text=['توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە']
+2025-02-03T10:49:47.739069 - Successfully downloaded image from http://localhost:5001/images/0x0.jpg
+2025-02-03T10:49:47.739304 - Text preparation successful - Using original text: ['توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە']
+2025-02-03T10:49:47.744387 - Successfully loaded font from: fonts/NotoSansArabic_Condensed-Black.ttf
+2025-02-03T10:49:47.744658 - Error modifying image: expected string or bytes
+2025-02-03T10:49:47.744693 - Error processing image: expected string or bytes
+2025-02-03T10:55:04.907509 - Processing request with image_url=http://localhost:5001/images/0x0.jpg, text=['توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە']
+2025-02-03T10:55:04.920143 - Successfully downloaded image from http://localhost:5001/images/0x0.jpg
+2025-02-03T10:55:04.920282 - Text preparation successful - Using original text: ['توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە']
+2025-02-03T10:55:04.923996 - Successfully loaded font from: fonts/NotoSansArabic_Condensed-Black.ttf
+2025-02-03T10:55:04.924068 - Error modifying image: expected string or bytes
+2025-02-03T10:55:04.924098 - Error processing image: expected string or bytes
+2025-02-03T10:57:30.432849 - No process using port 5001 found.
+2025-02-03T10:57:30.433208 - Starting Flask server on port 5001
+2025-02-03T10:57:33.053778 - Processing request with image_url=http://localhost:5001/images/0x0.jpg, text=['توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە']
+2025-02-03T10:57:33.075155 - Successfully downloaded image from http://localhost:5001/images/0x0.jpg
+2025-02-03T10:57:33.075431 - Text preparation successful - Using original text: توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە
+2025-02-03T10:57:33.078814 - Successfully loaded font from: fonts/NotoSansArabic_Condensed-Black.ttf
+2025-02-03T10:57:33.203322 - Glossy text background added at (-451, 674, 1856, 817)
+2025-02-03T10:57:33.217564 - Text rendered at position (-431.0, 694) with size 2267x103
+2025-02-03T10:57:33.219124 - Successfully added logo from logo.png
+2025-02-03T10:57:33.219243 - Successfully modified image with text and logo
+2025-02-03T10:57:33.337488 - Successfully processed image from URL: http://localhost:5001/images/0x0.jpg with text: ['توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە']
+2025-02-03T11:06:31.693803 - No process using port 5001 found.
+2025-02-03T11:06:31.694311 - Starting Flask server on port 5001
+2025-02-03T11:06:34.428981 - Processing request with image_url=http://localhost:5001/images/0x0.jpg, text=['توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە']
+2025-02-03T11:06:34.450777 - Successfully downloaded image from http://localhost:5001/images/0x0.jpg
+2025-02-03T11:06:34.451021 - Text preparation successful - Using original text: توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە
+2025-02-03T11:06:34.453350 - Successfully loaded font from: fonts/NotoSansArabic_Condensed-Black.ttf
+2025-02-03T11:06:34.579756 - Glossy text background added at (-451, 674, 1856, 817)
+2025-02-03T11:06:34.593901 - Text rendered at position (-431.0, 694) with size 2267x103
+2025-02-03T11:06:34.595453 - Successfully added logo from logo.png
+2025-02-03T11:06:34.595510 - Successfully modified image with text and logo
+2025-02-03T11:06:34.712612 - Successfully processed image from URL: http://localhost:5001/images/0x0.jpg with text: ['توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە']
+2025-02-03T11:10:51.502501 - Processing request with image_url=http://localhost:5001/images/0x0.jpg, text=['توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە']
+2025-02-03T11:10:51.511636 - Successfully downloaded image from http://localhost:5001/images/0x0.jpg
+2025-02-03T11:10:51.511828 - Text preparation successful - Using original text: توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە
+2025-02-03T11:10:51.517100 - Successfully loaded font from: fonts/NotoSansArabic_Condensed-Black.ttf
+2025-02-03T11:10:51.648449 - Glossy text background added at (-451, 674, 1856, 817)
+2025-02-03T11:10:51.664265 - Text rendered at position (-431.0, 694) with size 2267x103
+2025-02-03T11:10:51.665270 - Successfully added logo from logo.png
+2025-02-03T11:10:51.665340 - Successfully modified image with text and logo
+2025-02-03T11:10:51.780889 - Successfully processed image from URL: http://localhost:5001/images/0x0.jpg with text: ['توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە']
+2025-02-03T11:11:02.210728 - No process using port 5001 found.
+2025-02-03T11:11:02.211097 - Starting Flask server on port 5001
+2025-02-03T11:11:04.897268 - Processing request with image_url=http://localhost:5001/images/0x0.jpg, text=['توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە']
+2025-02-03T11:11:04.913965 - Successfully downloaded image from http://localhost:5001/images/0x0.jpg
+2025-02-03T11:11:04.914104 - Text preparation successful - Using original text: توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە
+2025-02-03T11:11:04.916663 - Successfully loaded font from: fonts/NotoSansArabic_Condensed-Black.ttf
+2025-02-03T11:11:05.025974 - Glossy text background added at (111, 577, 1293, 817)
+2025-02-03T11:11:05.040633 - Text rendered at position (131.5, 597) with size 1142.0x200
+2025-02-03T11:11:05.042021 - Successfully added logo from logo.png
+2025-02-03T11:11:05.042168 - Successfully modified image with text and logo
+2025-02-03T11:11:05.153124 - Successfully processed image from URL: http://localhost:5001/images/0x0.jpg with text: ['توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە']
+2025-02-03T11:12:47.727954 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T11:12:47.973560 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T11:12:51.146370 - Processing request with image_url=http://localhost:5001/images/0x0.jpg, text=['توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە']
+2025-02-03T11:12:51.169552 - Successfully downloaded image from http://localhost:5001/images/0x0.jpg
+2025-02-03T11:12:51.169751 - Text preparation successful - Using original text: توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە
+2025-02-03T11:12:51.171861 - Successfully loaded font from: fonts/NotoSansArabic_Condensed-Black.ttf
+2025-02-03T11:12:51.290969 - Glossy text background added at (111, 577, 1293, 817)
+2025-02-03T11:12:51.306870 - Text rendered at position (131.5, 597) with size 1142.0x200
+2025-02-03T11:12:51.308600 - Successfully added logo from logo.png
+2025-02-03T11:12:51.308695 - Successfully modified image with text and logo
+2025-02-03T11:12:51.424835 - Successfully processed image from URL: http://localhost:5001/images/0x0.jpg with text: ['توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە']
+2025-02-03T11:22:32.810023 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T11:23:33.874335 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T11:25:10.794259 - Error in custom processing: module 'PIL.Image' has no attribute 'ANTIALIAS'
+2025-02-03T11:25:18.627327 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T11:26:17.119954 - Successfully loaded custom font from: fonts/NotoSansArabic_Condensed-Black.ttf
+2025-02-03T11:26:17.132875 - Custom text applied with parameters.
+2025-02-03T11:26:17.202233 - Successfully processed custom image.
+2025-02-03T18:57:54.917399 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T18:58:58.099859 - Successfully loaded custom font from: fonts/NotoSansArabic_Condensed-Black.ttf
+2025-02-03T18:58:58.114113 - Custom text applied with parameters.
+2025-02-03T18:58:58.232412 - Successfully processed custom image.
+2025-02-03T19:01:33.503753 - Error loading custom font NotoSansArabic_Condensed: cannot open resource
+2025-02-03T19:01:33.514126 - Custom text applied with parameters.
+2025-02-03T19:01:33.603116 - Successfully processed custom image.
+2025-02-03T19:01:34.373273 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T19:01:42.900497 - Error loading custom font NotoSansArabic: cannot open resource
+2025-02-03T19:01:42.908514 - Custom text applied with parameters.
+2025-02-03T19:01:42.966791 - Successfully processed custom image.
+2025-02-03T19:02:22.160945 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T19:04:32.352554 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T19:05:05.626894 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T19:06:05.634797 - Successfully loaded custom font from: fonts/NotoSansArabic_Condensed-Black.ttf
+2025-02-03T19:06:05.647296 - Custom text applied with parameters.
+2025-02-03T19:06:05.707946 - Successfully processed custom image.
+2025-02-03T19:07:46.230413 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T19:07:58.083049 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T19:08:05.801499 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T19:08:32.065391 - Successfully loaded custom font from: fonts/NotoSansArabic_Condensed-Black.ttf
+2025-02-03T19:08:32.071570 - Error in custom processing: align must be "left", "center" or "right"
+2025-02-03T19:16:40.963087 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T19:16:41.264364 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T19:19:36.277107 - Error in custom processing: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+2025-02-03T19:20:15.331616 - Error in custom processing: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+2025-02-03T19:20:28.622334 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T19:20:39.983584 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T19:21:09.910223 - Successfully loaded custom font from: fonts/Arial.ttf
+2025-02-03T19:21:39.268923 - Successfully loaded custom font from: fonts/NotoSansArabic_Condensed-Black.ttf
+2025-02-03T19:21:39.274828 - Error in custom processing: 'float' object cannot be interpreted as an integer
+2025-02-03T19:21:57.658112 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T19:21:57.877226 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T19:22:07.568750 - Successfully loaded custom font from: fonts/NotoSansArabic_Condensed-Black.ttf
+2025-02-03T19:22:07.575187 - Error in custom processing: 'float' object cannot be interpreted as an integer
+2025-02-03T19:22:35.633616 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T19:22:44.312028 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T19:22:48.501192 - Successfully loaded custom font from: fonts/NotoSansArabic_Condensed-Black.ttf
+2025-02-03T19:22:48.510737 - Error in custom processing: 'float' object cannot be interpreted as an integer
+2025-02-03T19:23:34.060227 - Successfully loaded custom font from: fonts/NotoSansArabic_Condensed-Black.ttf
+2025-02-03T19:23:34.067058 - Error in custom processing: 'float' object cannot be interpreted as an integer
+2025-02-03T19:24:11.693746 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T19:24:31.840615 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T19:24:39.886801 - Successfully loaded custom font from: fonts/NotoSansArabic_Condensed-Black.ttf
+2025-02-03T19:24:39.901729 - Custom text applied with parameters.
+2025-02-03T19:24:39.961690 - Successfully processed custom image.
+2025-02-03T19:29:08.580199 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T19:29:36.608385 - Successfully loaded custom font from: fonts/NotoSansArabic_Condensed-Black.ttf
+2025-02-03T19:29:36.621725 - Custom text applied with parameters.
+2025-02-03T19:29:36.680615 - Successfully processed custom image.
+2025-02-03T19:29:49.147055 - Successfully loaded custom font from: fonts/NotoSansArabic_Condensed-Black.ttf
+2025-02-03T19:29:49.163250 - Custom text applied with parameters.
+2025-02-03T19:29:49.221428 - Successfully processed custom image.
+2025-02-03T19:29:56.710342 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T19:30:39.491409 - Successfully loaded custom font from: fonts/NotoSansArabic_Condensed-Black.ttf
+2025-02-03T19:30:39.504987 - Custom text applied with parameters.
+2025-02-03T19:30:39.568017 - Successfully processed custom image.
+2025-02-03T19:30:49.786373 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T19:31:01.720527 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T19:32:06.409603 - Error in custom processing: 404 Client Error: Not Found for url: https://example.com/sample-image.png
+2025-02-03T19:32:46.393978 - Successfully loaded custom font from: fonts/Arial.ttf
+2025-02-03T19:32:46.408335 - Custom text applied with parameters.
+2025-02-03T19:32:46.474898 - Successfully processed custom image.
+2025-02-03T19:34:05.628969 - Successfully loaded custom font from: fonts/NotoSansArabic_Condensed-Black.ttf
+2025-02-03T19:34:05.645779 - Custom text applied with parameters.
+2025-02-03T19:34:05.713928 - Successfully processed custom image.
+2025-02-03T19:34:40.079294 - Successfully loaded custom font from: fonts/NotoSansArabic_Condensed-Black.ttf
+2025-02-03T19:34:40.092551 - Custom text applied with parameters.
+2025-02-03T19:34:40.163907 - Successfully processed custom image.
+2025-02-03T19:36:45.915715 - Successfully loaded custom font from: fonts/NotoSansArabic_Condensed-Black.ttf
+2025-02-03T19:36:45.928947 - Custom text applied with parameters.
+2025-02-03T19:36:46.002140 - Successfully processed custom image.
+2025-02-03T19:37:14.755341 - Successfully loaded custom font from: fonts/NotoSansArabic_Condensed-Black.ttf
+2025-02-03T19:37:14.769036 - Custom text applied with parameters.
+2025-02-03T19:37:14.842434 - Successfully processed custom image.
+2025-02-03T19:37:51.348285 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T19:38:32.036851 - Successfully loaded custom font from: fonts/NotoSansArabic_Condensed-Black.ttf
+2025-02-03T19:38:32.042694 - Error in custom processing: 'float' object cannot be interpreted as an integer
+2025-02-03T19:41:03.131436 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T19:41:09.100242 - Successfully loaded custom font from: fonts/NotoSansArabic_Condensed-Black.ttf
+2025-02-03T19:41:09.106692 - Error in custom processing: 'float' object cannot be interpreted as an integer
+2025-02-03T19:42:22.817087 - Successfully loaded custom font from: fonts/NotoSansArabic_Condensed-Black.ttf
+2025-02-03T19:42:22.823642 - Error in custom processing: 'float' object cannot be interpreted as an integer
+2025-02-03T19:43:12.168723 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T19:44:43.503016 - Successfully loaded custom font from: fonts/NotoSansArabic_Condensed-Black.ttf
+2025-02-03T19:44:43.508271 - Error in custom processing: 'float' object cannot be interpreted as an integer
+2025-02-03T19:45:40.826317 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T19:45:59.027410 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T19:46:17.008063 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T19:46:23.272251 - Received /process_custom request with data: {'image_url': 'https://www.digitaltrends.com/wp-content/uploads/2024/07/openaistock.jpg', 'text': 'توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە', 'language': 'ckb', 'font_family': 'NotoSansArabic_Condensed-Black', 'font_size': 36, 'text_color': '#FFFFFF', 'background_color': '#000000', 'text_position': {'x': 1040, 'y': 1330}, 'alignment': 'bottom-right', 'output_dimensions': {'width': 1080, 'height': 1350}, 'preset': 'instagram-vertical', 'padding': {'top': 20, 'bottom': 20, 'left': 20, 'right': 20}, 'container_margin': 30, 'container_width_percent': 50, 'text_opacity': 1.0, 'bg_curve': 12, 'bg_opacity': 0.2}
+2025-02-03T19:46:25.049600 - Successfully loaded custom font from: fonts/NotoSansArabic_Condensed-Black.ttf
+2025-02-03T19:46:25.055561 - Error in custom processing: 'float' object cannot be interpreted as an integer
+2025-02-03T19:46:52.924394 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T19:46:53.141876 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T19:46:56.150676 - Received /process_custom request with data: {'image_url': 'https://www.digitaltrends.com/wp-content/uploads/2024/07/openaistock.jpg', 'text': 'توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە', 'language': 'ckb', 'font_family': 'NotoSansArabic_Condensed-Black', 'font_size': 36, 'text_color': '#FFFFFF', 'background_color': '#000000', 'text_position': {'x': 1040, 'y': 1330}, 'alignment': 'bottom-right', 'output_dimensions': {'width': 1080, 'height': 1350}, 'preset': 'instagram-vertical', 'padding': {'top': 20, 'bottom': 20, 'left': 20, 'right': 20}, 'container_margin': 30, 'container_width_percent': 50, 'text_opacity': 1.0, 'bg_curve': 12, 'bg_opacity': 0.2}
+2025-02-03T19:46:58.406145 - Successfully loaded custom font from: fonts/NotoSansArabic_Condensed-Black.ttf
+2025-02-03T19:46:58.411896 - Error in custom processing: 'float' object cannot be interpreted as an integer
+2025-02-03T19:50:09.329233 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T19:51:28.464755 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T19:51:30.336947 - Received /process_custom request with data: {'image_url': 'https://www.digitaltrends.com/wp-content/uploads/2024/07/openaistock.jpg', 'text': 'توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە', 'language': 'ckb', 'font_family': 'NotoSansArabic_Condensed-Black', 'font_size': 36, 'text_color': '#FFFFFF', 'background_color': '#000000', 'text_position': {'x': 1040, 'y': 1330}, 'alignment': 'bottom-right', 'output_dimensions': {'width': 1080, 'height': 1350}, 'preset': 'instagram-vertical', 'padding': {'top': 20, 'bottom': 20, 'left': 20, 'right': 20}, 'container_margin': 30, 'container_width_percent': 50, 'text_opacity': 1.0, 'bg_curve': 12, 'bg_opacity': 0.2}
+2025-02-03T19:51:32.155235 - Successfully loaded custom font from: fonts/NotoSansArabic_Condensed-Black.ttf
+2025-02-03T19:51:32.170752 - Error in custom processing: Traceback (most recent call last):
+  File "/Users/hooshyar/Desktop/development/dilaHeadlessImageEditor/app.py", line 555, in process_custom
+    custom_img = apply_custom_text(base_img, text, language, font_family, font_size, text_color, background_color, text_position, alignment, padding, bg_curve)
+  File "/Users/hooshyar/Desktop/development/dilaHeadlessImageEditor/app.py", line 424, in apply_custom_text
+    base_img.paste(bg_image, (bg_x, bg_y), mask)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hooshyar/Desktop/development/dilaHeadlessImageEditor/venv/lib/python3.13/site-packages/PIL/Image.py", line 1855, in paste
+    self.im.paste(source, box, mask.im)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'float' object cannot be interpreted as an integer
+
+2025-02-03T19:52:12.445578 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T19:54:49.090035 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T19:54:49.342567 - Received /process_custom request with data: {'image_url': 'https://www.digitaltrends.com/wp-content/uploads/2024/07/openaistock.jpg', 'text': 'توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە', 'language': 'ckb', 'font_family': 'NotoSansArabic_Condensed-Black', 'font_size': 36, 'text_color': '#FFFFFF', 'background_color': '#000000', 'text_position': {'x': 1040, 'y': 1330}, 'alignment': 'bottom-right', 'output_dimensions': {'width': 1080, 'height': 1350}, 'preset': 'instagram-vertical', 'padding': {'top': 20, 'bottom': 20, 'left': 20, 'right': 20}, 'container_margin': 30, 'container_width_percent': 50, 'text_opacity': 1.0, 'bg_curve': 12, 'bg_opacity': 0.2}
+2025-02-03T19:54:51.317793 - Successfully loaded custom font from: fonts/NotoSansArabic_Condensed-Black.ttf
+2025-02-03T19:54:51.332837 - Custom text applied with parameters.
+2025-02-03T19:54:51.403774 - Successfully processed custom image.
+2025-02-03T19:58:17.153423 - Received /process_custom request with data: {'image_url': 'https://www.digitaltrends.com/wp-content/uploads/2024/07/openaistock.jpg', 'text': 'توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە', 'language': 'ckb', 'font_family': 'NotoSansArabic_Condensed-Black', 'font_size': 36, 'text_color': '#FFFFFF', 'background_color': '#000000', 'text_position': {'x': 1040, 'y': 1330}, 'alignment': 'bottom-right', 'output_dimensions': {'width': 1080, 'height': 1350}, 'preset': 'instagram-vertical', 'padding': {'top': 20, 'bottom': 20, 'left': 20, 'right': 20}, 'container_margin': 30, 'container_width_percent': 50, 'text_opacity': 1.0, 'bg_curve': 12, 'bg_opacity': 0.2}
+2025-02-03T19:58:18.752980 - Successfully loaded custom font from: fonts/NotoSansArabic_Condensed-Black.ttf
+2025-02-03T19:58:18.765170 - Custom text applied with parameters.
+2025-02-03T19:58:18.831820 - Successfully processed custom image.
+2025-02-03T20:01:11.469285 - Received /process_custom request with data: {'image_url': 'https://www.digitaltrends.com/wp-content/uploads/2024/07/openaistock.jpg', 'text': 'توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە', 'language': 'ckb', 'font_family': 'NotoSansArabic_Condensed-Black', 'font_size': 36, 'text_color': '#FFFFFF', 'background_color': '#000000', 'text_position': {'x': 1040, 'y': 1330}, 'alignment': 'bottom-right', 'output_dimensions': {'width': 1080, 'height': 1350}, 'preset': 'instagram-vertical', 'padding': {'top': 20, 'bottom': 20, 'left': 20, 'right': 20}, 'container_margin': 30, 'container_width_percent': 50, 'text_opacity': 1.0, 'bg_curve': 12, 'bg_opacity': 0.2}
+2025-02-03T20:01:13.098949 - Successfully loaded custom font from: fonts/NotoSansArabic_Condensed-Black.ttf
+2025-02-03T20:01:13.113691 - Custom text applied with parameters.
+2025-02-03T20:01:13.185220 - Successfully processed custom image.
+2025-02-03T20:04:40.957756 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T20:07:21.250601 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T20:07:27.004885 - Received /process_custom request with data: {'image_url': 'https://www.digitaltrends.com/wp-content/uploads/2024/07/openaistock.jpg', 'text': 'توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە', 'language': 'ckb', 'font_family': 'NotoSansArabic_Condensed-Black', 'font_size': 36, 'text_color': '#FFFFFF', 'background_color': '#000000', 'text_position': {'x': 1040, 'y': 1330}, 'alignment': 'bottom-right', 'output_dimensions': {'width': 1080, 'height': 1350}, 'preset': 'instagram-vertical', 'padding': {'top': 20, 'bottom': 20, 'left': 20, 'right': 20}, 'container_margin': 30, 'container_width_percent': 50, 'text_opacity': 1.0, 'bg_curve': 12, 'bg_opacity': 0.2}
+2025-02-03T20:07:28.385144 - Successfully loaded custom font from: fonts/NotoSansArabic_Condensed-Black.ttf
+2025-02-03T20:07:28.398467 - Custom text applied with parameters.
+2025-02-03T20:07:28.464297 - Successfully processed custom image.
+2025-02-03T20:07:35.230795 - Received /process_custom request with data: {'image_url': 'https://www.digitaltrends.com/wp-content/uploads/2024/07/openaistock.jpg', 'text': 'توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە', 'language': 'ckb', 'font_family': 'NotoSansArabic_Condensed-Black', 'font_size': 36, 'text_color': '#FFFFFF', 'background_color': '#000000', 'text_position': {'x': 1040, 'y': 1330}, 'alignment': 'bottom-right', 'output_dimensions': {'width': 1080, 'height': 1350}, 'preset': 'instagram-vertical', 'padding': {'top': 20, 'bottom': 20, 'left': 20, 'right': 20}, 'container_margin': 30, 'container_width_percent': 50, 'text_opacity': 1.0, 'bg_curve': 12, 'bg_opacity': 0.2}
+2025-02-03T20:07:36.706324 - Successfully loaded custom font from: fonts/NotoSansArabic_Condensed-Black.ttf
+2025-02-03T20:07:36.714759 - Custom text applied with parameters.
+2025-02-03T20:07:36.781847 - Successfully processed custom image.
+2025-02-03T20:09:37.229036 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T20:10:05.544927 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T20:10:22.497136 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T20:10:32.371353 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T20:11:00.343032 - Received /process_custom request with data: {'image_url': 'https://www.digitaltrends.com/wp-content/uploads/2024/07/openaistock.jpg', 'text': 'توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە', 'language': 'ckb', 'font_family': 'NotoSansArabic_Condensed-Black', 'font_size': 36, 'text_color': '#FFFFFF', 'background_color': '#000000', 'text_position': {'x': 1040, 'y': 1330}, 'alignment': 'bottom-right', 'output_dimensions': {'width': 1080, 'height': 1350}, 'preset': 'instagram-vertical', 'padding': {'top': 20, 'bottom': 20, 'left': 20, 'right': 20}, 'container_margin': 30, 'container_width_percent': 50, 'text_opacity': 1.0, 'bg_curve': 12, 'bg_opacity': 0.2}
+2025-02-03T20:11:01.589828 - Successfully loaded custom font from: fonts/NotoSansArabic_Condensed-Black.ttf
+2025-02-03T20:11:01.604802 - Custom text applied with parameters.
+2025-02-03T20:11:01.674439 - Successfully processed custom image.
+2025-02-03T20:13:32.230992 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T20:13:56.382768 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T20:14:18.548581 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T20:14:22.417787 - Received /process_custom request with data: {'image_url': 'https://www.digitaltrends.com/wp-content/uploads/2024/07/openaistock.jpg', 'text': 'توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە', 'language': 'ckb', 'font_family': 'NotoSansArabic_Condensed-Black', 'font_size': 36, 'text_color': '#FFFFFF', 'background_color': '#000000', 'text_position': {'x': 1040, 'y': 1330}, 'alignment': 'bottom-right', 'output_dimensions': {'width': 1080, 'height': 1350}, 'preset': 'instagram-vertical', 'padding': {'top': 20, 'bottom': 20, 'left': 20, 'right': 20}, 'container_margin': 30, 'container_width_percent': 50, 'text_opacity': 1.0, 'bg_curve': 12, 'bg_opacity': 0.2}
+2025-02-03T20:14:23.858961 - Successfully loaded custom font from: fonts/NotoSansArabic_Condensed-Black.ttf
+2025-02-03T20:14:23.874253 - Custom text applied with parameters.
+2025-02-03T20:14:23.945513 - Successfully processed custom image.
+2025-02-03T20:15:27.289989 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T20:16:03.931007 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T20:16:20.770516 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T20:16:44.895649 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T10:12:00 - Updated apply_custom_text function to log container_margin and computed container positions. Addressed issue where container margin was not applied correctly.
+2025-02-03T20:18:10.932660 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T20:18:30.563325 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T20:19:03.990634 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T20:21:13.878849 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T20:21:40.455797 - Received /process_custom request with data: {'image_url': 'https://www.digitaltrends.com/wp-content/uploads/2024/07/openaistock.jpg', 'text': 'توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە', 'language': 'ckb', 'font_family': 'NotoSansArabic_Condensed-Black', 'font_size': 36, 'text_color': '#FFFFFF', 'background_color': '#000000', 'text_position': {'x': 1040, 'y': 1330}, 'alignment': 'bottom-right', 'output_dimensions': {'width': 1080, 'height': 1350}, 'preset': 'instagram-vertical', 'padding': {'top': 20, 'bottom': 20, 'left': 20, 'right': 20}, 'container_margin': 30, 'container_width_percent': 50, 'text_opacity': 1.0, 'bg_curve': 12, 'bg_opacity': 0.2}
+2025-02-03T20:21:42.033887 - Successfully loaded custom font from: fonts/NotoSansArabic_Condensed-Black.ttf
+2025-02-03T20:21:42.046930 - Custom text applied with parameters.
+2025-02-03T20:21:42.111709 - Successfully processed custom image.
+2025-02-03T20:22:34.193237 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T20:23:44.553013 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T20:25:05.253532 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T20:25:23.318439 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T20:25:29.210729 - Received /process_custom request with data: {'image_url': 'https://www.digitaltrends.com/wp-content/uploads/2024/07/openaistock.jpg', 'text': 'توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە', 'language': 'ckb', 'font_family': 'NotoSansArabic_Condensed-Black', 'font_size': 36, 'text_color': '#FFFFFF', 'background_color': '#000000', 'text_position': {'x': 1040, 'y': 1330}, 'alignment': 'bottom-right', 'output_dimensions': {'width': 1080, 'height': 1350}, 'preset': 'instagram-vertical', 'padding': {'top': 20, 'bottom': 20, 'left': 20, 'right': 20}, 'container_margin': 30, 'container_width_percent': 50, 'text_opacity': 1.0, 'bg_curve': 12, 'bg_opacity': 0.2}
+2025-02-03T20:25:31.074992 - Successfully loaded custom font from: fonts/NotoSansArabic_Condensed-Black.ttf
+2025-02-03T20:25:31.089876 - Custom text applied with parameters.
+2025-02-03T20:25:31.168447 - Successfully processed custom image.
+2025-02-03T20:26:36.440407 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T20:27:25.151549 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T20:27:30.272129 - Received /process_custom request with data: {'image_url': 'https://www.digitaltrends.com/wp-content/uploads/2024/07/openaistock.jpg', 'text': 'توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە', 'language': 'ckb', 'font_family': 'NotoSansArabic_Condensed-Black', 'font_size': 36, 'text_color': '#FFFFFF', 'background_color': '#000000', 'text_position': {'x': 1040, 'y': 1330}, 'alignment': 'bottom-right', 'output_dimensions': {'width': 1080, 'height': 1350}, 'preset': 'instagram-vertical', 'padding': {'top': 20, 'bottom': 20, 'left': 20, 'right': 20}, 'container_margin': 30, 'container_width_percent': 50, 'text_opacity': 1.0, 'bg_curve': 12, 'bg_opacity': 0.2}
+2025-02-03T20:27:32.462475 - Successfully loaded custom font from: fonts/NotoSansArabic_Condensed-Black.ttf
+2025-02-03T20:27:32.478189 - Custom text applied with parameters.
+2025-02-03T20:27:32.514547 - Successfully processed custom image.
+2025-02-03T20:30:45.235875 - Received /process_custom request with data: {'image_url': 'https://www.digitaltrends.com/wp-content/uploads/2024/07/openaistock.jpg', 'text': 'توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە', 'language': 'ckb', 'font_family': 'NotoSansArabic_Condensed-Black', 'font_size': 36, 'text_color': '#FFFFFF', 'background_color': '#000000', 'text_position': {'x': 1040, 'y': 1330}, 'alignment': 'bottom-right', 'output_dimensions': {'width': 1080, 'height': 1350}, 'preset': 'instagram-vertical', 'padding': {'top': 20, 'bottom': 20, 'left': 20, 'right': 20}, 'container_margin': 30, 'container_width_percent': 50, 'text_opacity': 1.0, 'bg_curve': 12, 'bg_opacity': 0.2}
+2025-02-03T20:30:46.622708 - Successfully loaded custom font from: fonts/NotoSansArabic_Condensed-Black.ttf
+2025-02-03T20:30:46.636798 - Custom text applied with parameters.
+2025-02-03T20:30:46.679987 - Successfully processed custom image.
+2025-02-03T20:40:08.170101 - Received /process_custom request with data: {'image_url': 'https://www.digitaltrends.com/wp-content/uploads/2024/07/openaistock.jpg', 'text': 'توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە', 'language': 'ckb', 'font_family': 'NotoSansArabic_Condensed-Black', 'font_size': 36, 'text_color': '#FFFFFF', 'background_color': '#000000', 'text_position': {'x': 1040, 'y': 1330}, 'alignment': 'bottom-right', 'output_dimensions': {'width': 1080, 'height': 1350}, 'preset': 'instagram-vertical', 'padding': {'top': 20, 'bottom': 20, 'left': 20, 'right': 20}, 'container_margin': 30, 'container_width_percent': 50, 'text_opacity': 1.0, 'bg_curve': 12, 'bg_opacity': 0.2}
+2025-02-03T20:40:09.538410 - Successfully loaded custom font from: fonts/NotoSansArabic_Condensed-Black.ttf
+2025-02-03T20:40:09.553449 - Custom text applied with parameters.
+2025-02-03T20:40:09.588509 - Successfully processed custom image.
+2025-02-03T20:45:22.913131 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T20:45:32.583016 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-02-03T20:45:43.223785 - Received /process_custom request with data: {'image_url': 'https://www.digitaltrends.com/wp-content/uploads/2024/07/openaistock.jpg', 'text': 'توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە', 'language': 'ckb', 'font_family': 'NotoSansArabic_Condensed-Black', 'font_size': 36, 'text_color': '#FFFFFF', 'background_color': '#000000', 'text_position': {'x': 1040, 'y': 1330}, 'alignment': 'bottom-right', 'output_dimensions': {'width': 1080, 'height': 1350}, 'preset': 'instagram-vertical', 'padding': {'top': 20, 'bottom': 20, 'left': 20, 'right': 20}, 'container_margin': 30, 'container_width_percent': 50, 'text_opacity': 1.0, 'bg_curve': 12, 'bg_opacity': 0.2}
+2025-02-03T20:45:44.712402 - Successfully loaded custom font from: fonts/NotoSansArabic_Condensed-Black.ttf
+2025-02-03T20:45:44.724493 - Custom text applied with parameters.
+2025-02-03T20:45:44.759180 - Successfully processed custom image.
+2025-03-01T20:55:50.300199 - Processing request with image_url=http://invalid-url/image.jpg, text=Test
+2025-03-01T20:55:50.388854 - Error downloading image from http://invalid-url/image.jpg: HTTPConnectionPool(host='invalid-url', port=80): Max retries exceeded with url: /image.jpg (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x103e5e3c0>: Failed to resolve 'invalid-url' ([Errno 8] nodename nor servname provided, or not known)"))
+2025-03-01T20:55:50.389062 - Error processing image: HTTPConnectionPool(host='invalid-url', port=80): Max retries exceeded with url: /image.jpg (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x103e5e3c0>: Failed to resolve 'invalid-url' ([Errno 8] nodename nor servname provided, or not known)"))
+2025-03-01T20:55:50.394106 - Missing parameters: image_url=None, text=Test
+2025-03-01T20:55:50.397793 - Processing request with image_url=http://localhost:5001/images/test.jpg, text=تاقیکردنەوە
+2025-03-01T20:55:50.432146 - Successfully downloaded image from http://localhost:5001/images/test.jpg
+2025-03-01T20:55:50.432317 - Text preparation successful - Using original text: تاقیکردنەوە
+2025-03-01T20:55:50.436813 - Successfully loaded font from: fonts/NotoSansArabic_Condensed-Black.ttf
+2025-03-01T20:55:50.446144 - Glossy text background added at (129, 192, 270, 255)
+2025-03-01T20:55:50.446958 - Text rendered at position (149.5, 212) with size 101.0x23
+2025-03-01T20:55:50.448200 - Successfully added logo from logo.png
+2025-03-01T20:55:50.448315 - Successfully modified image with text and logo
+2025-03-01T20:55:50.450091 - Successfully processed image from URL: http://localhost:5001/images/test.jpg with text: تاقیکردنەوە
+2025-03-01T20:55:53.890784 - Processing request with image_url=http://localhost:5001/images/0x0.jpg, text=['توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە']
+2025-03-01T20:55:53.898533 - Successfully downloaded image from http://localhost:5001/images/0x0.jpg
+2025-03-01T20:55:53.898793 - Text preparation successful - Using original text: توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە
+2025-03-01T20:55:53.899441 - Successfully loaded font from: fonts/NotoSansArabic_Condensed-Black.ttf
+2025-03-01T20:55:54.013673 - Glossy text background added at (111, 577, 1293, 817)
+2025-03-01T20:55:54.028740 - Text rendered at position (131.5, 597) with size 1142.0x200
+2025-03-01T20:55:54.029489 - Successfully added logo from logo.png
+2025-03-01T20:55:54.029607 - Successfully modified image with text and logo
+2025-03-01T20:55:54.143983 - Successfully processed image from URL: http://localhost:5001/images/0x0.jpg with text: ['توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە']
+2025-03-01T20:56:04.315014 - Received /process_custom request with data: {'image_url': 'http://localhost:5001/images/test.jpg', 'text': 'بەخێربێیت بۆ کوردستان', 'font_family': 'NotoSansArabic', 'font_size': 30, 'text_color': '#FFFFFF', 'background_color': '#0077B6AA', 'text_position': {'x': 200, 'y': 150}, 'alignment': 'center-center', 'padding': 10, 'bg_curve': 10}
+2025-03-01T20:56:04.317170 - Error in custom processing: Traceback (most recent call last):
+  File "/Users/hooshyar/Desktop/development/dilaHeadlessImageEditor/app.py", line 567, in process_custom
+    background_color = hex_to_rgba(bg_color_hex, opacity=bg_opacity)
+  File "/Users/hooshyar/Desktop/development/dilaHeadlessImageEditor/app.py", line 301, in hex_to_rgba
+    raise ValueError('Invalid hex color format')
+ValueError: Invalid hex color format
+
+2025-03-01T20:57:14.750164 - Received /process_custom request with data: {'image_url': 'https://www.digitaltrends.com/wp-content/uploads/2024/07/openaistock.jpg', 'text': 'توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە', 'language': 'ckb', 'font_family': 'NotoSansArabic_Condensed-Black', 'font_size': 36, 'text_color': '#FFFFFF', 'background_color': '#000000', 'text_position': {'x': 50, 'y': 100}, 'alignment': 'center', 'output_dimensions': {'width': 1080, 'height': 1080}, 'preset': 'instagram-square', 'padding': 10, 'text_opacity': 1.0}
+2025-03-01T20:57:15.773534 - Successfully loaded custom font from: fonts/NotoSansArabic_Condensed-Black.ttf
+2025-03-01T20:57:15.781120 - Error in custom processing: Traceback (most recent call last):
+  File "/Users/hooshyar/Desktop/development/dilaHeadlessImageEditor/app.py", line 584, in process_custom
+    custom_img = apply_custom_text(base_img, text, language, font_family, font_size, text_color, background_color, text_position, alignment, padding, bg_curve, container_margin, container_width_percent)
+  File "/Users/hooshyar/Desktop/development/dilaHeadlessImageEditor/app.py", line 424, in apply_custom_text
+    mask_draw.rounded_rectangle([(0, 0), (bg_w, bg_h)], radius=int(bg_curve), fill=255)
+                                                               ~~~^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+
+2025-03-01T20:57:50.681868 - Received /process_custom request with data: {'image_url': 'http://localhost:5001/images/test.jpg', 'text': 'بەخێربێیت بۆ کوردستان', 'font_family': 'NotoSansArabic', 'font_size': 30, 'text_color': '#FFFFFF', 'background_color': '#0077B6AA', 'text_position': {'x': 200, 'y': 150}, 'alignment': 'center-center', 'padding': 10, 'bg_curve': 10}
+2025-03-01T20:57:50.685374 - Error in custom processing: Traceback (most recent call last):
+  File "/Users/hooshyar/Desktop/development/dilaHeadlessImageEditor/app.py", line 567, in process_custom
+    background_color = hex_to_rgba(bg_color_hex, opacity=bg_opacity)
+  File "/Users/hooshyar/Desktop/development/dilaHeadlessImageEditor/app.py", line 301, in hex_to_rgba
+    raise ValueError('Invalid hex color format')
+ValueError: Invalid hex color format
+
+2025-03-01T20:58:45.664503 - Received /process_custom request with data: {'image_url': 'http://localhost:5001/images/test.jpg', 'text': 'بەخێربێیت بۆ کوردستان', 'font_family': 'NotoSansArabic', 'font_size': 30, 'text_color': '#FFFFFF', 'background_color': '#0077B6AA', 'text_position': {'x': 200, 'y': 150}, 'alignment': 'center-center', 'padding': 10}
+2025-03-01T20:58:45.665336 - Error in custom processing: Traceback (most recent call last):
+  File "/Users/hooshyar/Desktop/development/dilaHeadlessImageEditor/app.py", line 571, in process_custom
+    background_color = hex_to_rgba(bg_color_hex, opacity=bg_opacity)
+  File "/Users/hooshyar/Desktop/development/dilaHeadlessImageEditor/app.py", line 303, in hex_to_rgba
+    raise ValueError('Invalid hex color format')
+ValueError: Invalid hex color format
+
+2025-03-01T20:59:05.317950 - Received /process_custom request with data: {'image_url': 'https://www.digitaltrends.com/wp-content/uploads/2024/07/openaistock.jpg', 'text': 'توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە', 'language': 'ckb', 'font_family': 'NotoSansArabic_Condensed-Black', 'font_size': 36, 'text_color': '#FFFFFF', 'background_color': '#000000', 'text_position': {'x': 50, 'y': 100}, 'alignment': 'center', 'output_dimensions': {'width': 1080, 'height': 1080}, 'preset': 'instagram-square', 'padding': 10, 'text_opacity': 1.0}
+2025-03-01T20:59:06.205452 - Successfully loaded custom font from: fonts/NotoSansArabic_Condensed-Black.ttf
+2025-03-01T20:59:06.221374 - Custom text applied with parameters.
+2025-03-01T20:59:06.285329 - Successfully processed custom image.
+2025-03-01T21:05:43.523662 - Received /process_custom request with data: {'image_url': 'http://localhost:5001/images/test.jpg', 'text': 'بەخێربێیت بۆ کوردستان', 'language': 'ku', 'font_family': 'NotoSansArabic-Bold', 'font_size': 40, 'text_color': '#FFFFFF', 'background_color': '#22222288', 'text_position': None, 'alignment': 'bottom-center', 'padding': {'top': 25, 'bottom': 25, 'left': 30, 'right': 30}, 'bg_curve': 20, 'bg_opacity': 0.85, 'gradient_start_color': '#FF3CAC', 'gradient_end_color': '#784BA0', 'gradient_direction': 'horizontal'}
+2025-03-01T21:05:43.524967 - Error in custom processing: Traceback (most recent call last):
+  File "/Users/hooshyar/Desktop/development/dilaHeadlessImageEditor/app.py", line 476, in process_custom
+    background_color = hex_to_rgba(bg_color_hex, opacity=bg_opacity)
+  File "/Users/hooshyar/Desktop/development/dilaHeadlessImageEditor/app.py", line 303, in hex_to_rgba
+    raise ValueError('Invalid hex color format')
+ValueError: Invalid hex color format
+
+2025-03-01T21:06:06.868708 - Received /process_custom request with data: {'image_url': 'http://localhost:5001/images/test.jpg', 'text': 'بەخێربێیت بۆ کوردستان', 'language': 'ku', 'font_family': 'NotoSansArabic-Bold', 'font_size': 40, 'text_color': '#FFFFFF', 'background_color': '#22222288', 'text_position': None, 'alignment': 'bottom-center', 'padding': {'top': 25, 'bottom': 25, 'left': 30, 'right': 30}, 'bg_curve': 20, 'bg_opacity': 0.85, 'gradient_start_color': '#FF3CAC', 'gradient_end_color': '#784BA0', 'gradient_direction': 'horizontal'}
+2025-03-01T21:06:06.869796 - Error in custom processing: Traceback (most recent call last):
+  File "/Users/hooshyar/Desktop/development/dilaHeadlessImageEditor/app.py", line 480, in process_custom
+    background_color = hex_to_rgba(bg_color_hex, opacity=bg_opacity)
+  File "/Users/hooshyar/Desktop/development/dilaHeadlessImageEditor/app.py", line 307, in hex_to_rgba
+    raise ValueError(f'Invalid hex color format: {hex_str}')
+ValueError: Invalid hex color format: 22222288
+
+2025-03-01T21:06:45.761875 - Received /process_custom request with data: {'image_url': 'http://localhost:5001/images/test.jpg', 'text': 'بەخێربێیت بۆ کوردستان', 'language': 'ku', 'font_family': 'NotoSansArabic-Bold', 'font_size': 40, 'text_color': '#FFFFFF', 'background_color': '#222222', 'text_position': None, 'alignment': 'bottom-center', 'padding': {'top': 25, 'bottom': 25, 'left': 30, 'right': 30}, 'bg_curve': 20, 'bg_opacity': 0.85, 'gradient_start_color': '#FF3CAC', 'gradient_end_color': '#784BA0', 'gradient_direction': 'horizontal'}
+2025-03-01T21:06:45.762201 - Using gradient from #FF3CAC to #784BA0 in horizontal direction
+2025-03-01T21:06:45.780234 - apply_custom_text: container_margin=0, container_width_percent=None
+2025-03-01T21:06:45.785224 - Successfully loaded custom font from: fonts/NotoSansArabic-Bold.ttf
+2025-03-01T21:06:45.821527 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T21:06:45.826236 - Successfully processed custom image.
+2025-03-01T21:49:58.847195 - Received /process_custom request with data: {'image_url': 'https://www.digitaltrends.com/wp-content/uploads/2024/07/openaistock.jpg', 'text': 'توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە', 'language': 'ckb', 'font_family': 'NotoSansArabic_Condensed-Black', 'font_size': 36, 'text_color': '#FFFFFF', 'background_color': '#000000', 'text_position': None, 'alignment': 'bottom-center', 'output_dimensions': {'width': 1080, 'height': 1080}, 'preset': 'instagram-square', 'padding': {'top': 20, 'bottom': 20, 'left': 25, 'right': 25}, 'text_opacity': 1.0, 'bg_curve': 15, 'bg_opacity': 0.85, 'gradient_start_color': '#FF3CAC', 'gradient_end_color': '#784BA0', 'gradient_direction': 'horizontal', 'container_width_percent': 90, 'container_margin': 20}
+2025-03-01T21:49:58.849205 - Using gradient from #FF3CAC to #784BA0 in horizontal direction
+2025-03-01T21:49:59.948936 - apply_custom_text: container_margin=20, container_width_percent=90
+2025-03-01T21:49:59.952785 - Successfully loaded custom font from: fonts/NotoSansArabic_Condensed-Black.ttf
+2025-03-01T21:50:00.163931 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T21:50:00.234005 - Successfully processed custom image.
+2025-03-01T21:52:54.623652 - Updated font mapping with 36 fonts
+2025-03-01T21:54:06.080047 - Received /process_custom request with data: {'image_url': 'http://localhost:5001/images/test.jpg', 'text': 'Testing Google Fonts بەخێربێیت بۆ کوردستان', 'language': 'ku', 'font_family': 'Roboto:700', 'font_size': 40, 'text_color': '#FFFFFF', 'background_color': '#222222', 'text_position': None, 'alignment': 'bottom-center', 'padding': {'top': 25, 'bottom': 25, 'left': 30, 'right': 30}, 'bg_curve': 20, 'bg_opacity': 0.85, 'gradient_start_color': '#FF3CAC', 'gradient_end_color': '#784BA0', 'gradient_direction': 'horizontal'}
+2025-03-01T21:54:06.080320 - Using gradient from #FF3CAC to #784BA0 in horizontal direction
+2025-03-01T21:54:06.093992 - apply_custom_text: container_margin=0, container_width_percent=None
+2025-03-01T21:54:06.649330 - Successfully downloaded Google Font: Roboto
+2025-03-01T21:54:06.650306 - Updated font mapping with 37 fonts
+2025-03-01T21:54:06.656390 - Successfully loaded font: Roboto (weight:700, style:normal)
+2025-03-01T21:54:06.697412 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T21:54:06.700916 - Successfully processed custom image.
+2025-03-01T21:54:07.711669 - Received /process_custom request with data: {'image_url': 'http://localhost:5001/images/test.jpg', 'text': 'Testing Google Fonts بەخێربێیت بۆ کوردستان', 'language': 'ku', 'font_family': 'Open Sans', 'font_size': 40, 'text_color': '#FFFFFF', 'background_color': '#222222', 'text_position': None, 'alignment': 'bottom-center', 'padding': {'top': 25, 'bottom': 25, 'left': 30, 'right': 30}, 'bg_curve': 20, 'bg_opacity': 0.85, 'gradient_start_color': '#FF3CAC', 'gradient_end_color': '#784BA0', 'gradient_direction': 'horizontal'}
+2025-03-01T21:54:07.711919 - Using gradient from #FF3CAC to #784BA0 in horizontal direction
+2025-03-01T21:54:07.713081 - apply_custom_text: container_margin=0, container_width_percent=None
+2025-03-01T21:54:08.281732 - Successfully downloaded Google Font: Open Sans
+2025-03-01T21:54:08.282448 - Updated font mapping with 38 fonts
+2025-03-01T21:54:08.283864 - Successfully loaded font: Open Sans (weight:400, style:normal)
+2025-03-01T21:54:08.343727 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T21:54:08.345602 - Successfully processed custom image.
+2025-03-01T21:54:09.350428 - Received /process_custom request with data: {'image_url': 'http://localhost:5001/images/test.jpg', 'text': 'Testing Google Fonts بەخێربێیت بۆ کوردستان', 'language': 'ku', 'font_family': 'Merriweather:italic', 'font_size': 40, 'text_color': '#FFFFFF', 'background_color': '#222222', 'text_position': None, 'alignment': 'bottom-center', 'padding': {'top': 25, 'bottom': 25, 'left': 30, 'right': 30}, 'bg_curve': 20, 'bg_opacity': 0.85, 'gradient_start_color': '#FF3CAC', 'gradient_end_color': '#784BA0', 'gradient_direction': 'horizontal'}
+2025-03-01T21:54:09.350675 - Using gradient from #FF3CAC to #784BA0 in horizontal direction
+2025-03-01T21:54:09.351389 - apply_custom_text: container_margin=0, container_width_percent=None
+2025-03-01T21:54:09.600720 - Failed to fetch Google Font CSS: 400
+2025-03-01T21:54:09.601134 - Font 'Merriweather' not found locally and could not be downloaded. Using fallback.
+2025-03-01T21:54:09.601337 - Font Merriweather not found, using default font
+2025-03-01T21:54:09.613769 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T21:54:09.616018 - Successfully processed custom image.
+2025-03-01T21:54:10.625414 - Received /process_custom request with data: {'image_url': 'http://localhost:5001/images/test.jpg', 'text': 'Testing Google Fonts بەخێربێیت بۆ کوردستان', 'language': 'ku', 'font_family': 'Montserrat:900', 'font_size': 40, 'text_color': '#FFFFFF', 'background_color': '#222222', 'text_position': None, 'alignment': 'bottom-center', 'padding': {'top': 25, 'bottom': 25, 'left': 30, 'right': 30}, 'bg_curve': 20, 'bg_opacity': 0.85, 'gradient_start_color': '#FF3CAC', 'gradient_end_color': '#784BA0', 'gradient_direction': 'horizontal'}
+2025-03-01T21:54:10.625580 - Using gradient from #FF3CAC to #784BA0 in horizontal direction
+2025-03-01T21:54:10.627755 - apply_custom_text: container_margin=0, container_width_percent=None
+2025-03-01T21:54:11.095689 - Successfully downloaded Google Font: Montserrat
+2025-03-01T21:54:11.096754 - Updated font mapping with 39 fonts
+2025-03-01T21:54:11.098089 - Successfully loaded font: Montserrat (weight:900, style:normal)
+2025-03-01T21:54:11.140629 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T21:54:11.142820 - Successfully processed custom image.
+2025-03-01T21:54:12.147074 - Received /process_custom request with data: {'image_url': 'http://localhost:5001/images/test.jpg', 'text': 'Testing Google Fonts بەخێربێیت بۆ کوردستان', 'language': 'ku', 'font_family': 'Cairo', 'font_size': 40, 'text_color': '#FFFFFF', 'background_color': '#222222', 'text_position': None, 'alignment': 'bottom-center', 'padding': {'top': 25, 'bottom': 25, 'left': 30, 'right': 30}, 'bg_curve': 20, 'bg_opacity': 0.85, 'gradient_start_color': '#FF3CAC', 'gradient_end_color': '#784BA0', 'gradient_direction': 'horizontal'}
+2025-03-01T21:54:12.147331 - Using gradient from #FF3CAC to #784BA0 in horizontal direction
+2025-03-01T21:54:12.148151 - apply_custom_text: container_margin=0, container_width_percent=None
+2025-03-01T21:54:12.606649 - Successfully downloaded Google Font: Cairo
+2025-03-01T21:54:12.607272 - Updated font mapping with 40 fonts
+2025-03-01T21:54:12.608156 - Successfully loaded font: Cairo (weight:400, style:normal)
+2025-03-01T21:54:12.644820 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T21:54:12.647189 - Successfully processed custom image.
+2025-03-01T22:01:02.541380 - Received /process_custom request with data: {'image_url': 'https://www.digitaltrends.com/wp-content/uploads/2024/07/openaistock.jpg', 'text': 'داهاتووی تۆ گۆڕاوە', 'language': 'ckb', 'font_family': 'cairo_400_normal', 'font_size': 36, 'text_color': '#FFFFFF', 'background_color': '#a32e2e', 'text_position': None, 'alignment': 'bottom-center', 'output_dimensions': {'width': 1080, 'height': 1080}, 'preset': '', 'padding': {'top': 20, 'right': 20, 'bottom': 20, 'left': 20}, 'text_opacity': 1, 'bg_opacity': 0.9, 'bg_curve': 10, 'container_margin': 20, 'container_width_percent': 83, 'gradient_start_color': '#f953c6', 'gradient_end_color': '#b91d73', 'gradient_direction': 'horizontal'}
+2025-03-01T22:01:02.543204 - Using gradient from #f953c6 to #b91d73 in horizontal direction
+2025-03-01T22:01:03.793539 - apply_custom_text: container_margin=20, container_width_percent=83
+2025-03-01T22:01:03.821212 - Successfully loaded font: cairo_400_normal (weight:400, style:normal)
+2025-03-01T22:01:03.878439 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T22:01:03.969225 - Successfully processed custom image.
+2025-03-01T22:01:22.251644 - Received /process_custom request with data: {'image_url': 'https://www.digitaltrends.com/wp-content/uploads/2024/07/openaistock.jpg', 'text': 'داهاتووی تۆ گۆڕاوە', 'language': 'ckb', 'font_family': 'NotoSansArabic_Condensed-ExtraBold', 'font_size': 36, 'text_color': '#FFFFFF', 'background_color': '#a32e2e', 'text_position': None, 'alignment': 'bottom-center', 'output_dimensions': {'width': 1080, 'height': 1080}, 'preset': '', 'padding': {'top': 20, 'right': 20, 'bottom': 20, 'left': 20}, 'text_opacity': 1, 'bg_opacity': 0.9, 'bg_curve': 10, 'container_margin': 20, 'container_width_percent': 83, 'gradient_start_color': '#f953c6', 'gradient_end_color': '#b91d73', 'gradient_direction': 'horizontal'}
+2025-03-01T22:01:22.252475 - Using gradient from #f953c6 to #b91d73 in horizontal direction
+2025-03-01T22:01:23.251556 - apply_custom_text: container_margin=20, container_width_percent=83
+2025-03-01T22:01:23.259783 - Successfully loaded font: NotoSansArabic_Condensed-ExtraBold (weight:400, style:normal)
+2025-03-01T22:01:23.310365 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T22:01:23.368945 - Successfully processed custom image.
+2025-03-01T22:01:32.513936 - Received /process_custom request with data: {'image_url': 'https://www.digitaltrends.com/wp-content/uploads/2024/07/openaistock.jpg', 'text': 'داهاتووی تۆ گۆڕاوە', 'language': 'ckb', 'font_family': 'NotoSansArabic-Regular', 'font_size': 36, 'text_color': '#FFFFFF', 'background_color': '#a32e2e', 'text_position': None, 'alignment': 'bottom-center', 'output_dimensions': {'width': 1080, 'height': 1080}, 'preset': '', 'padding': {'top': 20, 'right': 20, 'bottom': 20, 'left': 20}, 'text_opacity': 1, 'bg_opacity': 0.9, 'bg_curve': 10, 'container_margin': 20, 'container_width_percent': 83, 'gradient_start_color': '#f953c6', 'gradient_end_color': '#b91d73', 'gradient_direction': 'horizontal'}
+2025-03-01T22:01:32.515418 - Using gradient from #f953c6 to #b91d73 in horizontal direction
+2025-03-01T22:01:33.455185 - apply_custom_text: container_margin=20, container_width_percent=83
+2025-03-01T22:01:33.460235 - Successfully loaded font: NotoSansArabic-Regular (weight:400, style:normal)
+2025-03-01T22:01:33.510119 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T22:01:33.568098 - Successfully processed custom image.
+2025-03-01T22:01:49.445804 - Received /process_custom request with data: {'image_url': 'https://www.digitaltrends.com/wp-content/uploads/2024/07/openaistock.jpg', 'text': 'داهاتووی تۆ گۆڕاوە', 'language': 'ckb', 'font_family': 'Amiri', 'font_size': 36, 'text_color': '#FFFFFF', 'background_color': '#a32e2e', 'text_position': None, 'alignment': 'bottom-center', 'output_dimensions': {'width': 1080, 'height': 1080}, 'preset': '', 'padding': {'top': 20, 'right': 20, 'bottom': 20, 'left': 20}, 'text_opacity': 1, 'bg_opacity': 0.9, 'bg_curve': 10, 'container_margin': 20, 'container_width_percent': 83, 'gradient_start_color': '#f953c6', 'gradient_end_color': '#b91d73', 'gradient_direction': 'horizontal'}
+2025-03-01T22:01:49.446771 - Using gradient from #f953c6 to #b91d73 in horizontal direction
+2025-03-01T22:01:50.329351 - apply_custom_text: container_margin=20, container_width_percent=83
+2025-03-01T22:01:50.988030 - Successfully downloaded Google Font: Amiri
+2025-03-01T22:01:50.992577 - Updated font mapping with 41 fonts
+2025-03-01T22:01:51.002084 - Successfully loaded font: Amiri (weight:400, style:normal)
+2025-03-01T22:01:51.057785 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T22:01:51.116163 - Successfully processed custom image.
+2025-03-01T22:02:24.849017 - Received /process_custom request with data: {'image_url': 'https://www.digitaltrends.com/wp-content/uploads/2024/07/openaistock.jpg', 'text': 'داهاتووی تۆ گۆڕاوە دلنیا بە', 'language': 'ckb', 'font_family': 'Amiri', 'font_size': 36, 'text_color': '#FFFFFF', 'background_color': '#a32e2e', 'text_position': None, 'alignment': 'bottom-center', 'output_dimensions': {'width': 1080, 'height': 1080}, 'preset': '', 'padding': {'top': 20, 'right': 20, 'bottom': 20, 'left': 20}, 'text_opacity': 1, 'bg_opacity': 0.9, 'bg_curve': 10, 'container_margin': 20, 'container_width_percent': 83, 'gradient_start_color': '#f953c6', 'gradient_end_color': '#b91d73', 'gradient_direction': 'horizontal'}
+2025-03-01T22:02:24.851195 - Using gradient from #f953c6 to #b91d73 in horizontal direction
+2025-03-01T22:02:25.674103 - apply_custom_text: container_margin=20, container_width_percent=83
+2025-03-01T22:02:25.675302 - Using cached Google Font: Amiri (400, normal)
+2025-03-01T22:02:25.685430 - Successfully loaded font: Amiri (weight:400, style:normal)
+2025-03-01T22:02:25.732667 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T22:02:25.785012 - Successfully processed custom image.
+2025-03-01T22:02:34.671595 - Received /process_custom request with data: {'image_url': 'https://www.digitaltrends.com/wp-content/uploads/2024/07/openaistock.jpg', 'text': 'داهاتووی تۆ گۆڕاوە دلنیا بە', 'language': 'ckb', 'font_family': 'Noto Sans Arabic', 'font_size': 36, 'text_color': '#FFFFFF', 'background_color': '#a32e2e', 'text_position': None, 'alignment': 'bottom-center', 'output_dimensions': {'width': 1080, 'height': 1080}, 'preset': '', 'padding': {'top': 20, 'right': 20, 'bottom': 20, 'left': 20}, 'text_opacity': 1, 'bg_opacity': 0.9, 'bg_curve': 10, 'container_margin': 20, 'container_width_percent': 83, 'gradient_start_color': '#f953c6', 'gradient_end_color': '#b91d73', 'gradient_direction': 'horizontal'}
+2025-03-01T22:02:34.672342 - Using gradient from #f953c6 to #b91d73 in horizontal direction
+2025-03-01T22:02:35.681878 - apply_custom_text: container_margin=20, container_width_percent=83
+2025-03-01T22:02:36.291820 - Successfully downloaded Google Font: Noto Sans Arabic
+2025-03-01T22:02:36.295649 - Updated font mapping with 42 fonts
+2025-03-01T22:02:36.303722 - Successfully loaded font: Noto Sans Arabic (weight:400, style:normal)
+2025-03-01T22:02:36.363268 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T22:02:36.417399 - Successfully processed custom image.
+2025-03-01T22:02:48.727454 - Received /process_custom request with data: {'image_url': 'https://www.digitaltrends.com/wp-content/uploads/2024/07/openaistock.jpg', 'text': 'داهاتووی تۆ گۆڕاوە دلنیا بە', 'language': 'ckb', 'font_family': 'Noto Sans Arabic', 'font_size': 36, 'text_color': '#FFFFFF', 'background_color': '#a32e2e', 'text_position': None, 'alignment': 'bottom-center', 'output_dimensions': {'width': 1080, 'height': 1920}, 'preset': 'instagram-stories', 'padding': {'top': 20, 'right': 20, 'bottom': 20, 'left': 20}, 'text_opacity': 1, 'bg_opacity': 0.9, 'bg_curve': 10, 'container_margin': 20, 'container_width_percent': 83, 'gradient_start_color': '#f953c6', 'gradient_end_color': '#b91d73', 'gradient_direction': 'horizontal'}
+2025-03-01T22:02:48.728047 - Using gradient from #f953c6 to #b91d73 in horizontal direction
+2025-03-01T22:02:50.219081 - apply_custom_text: container_margin=20, container_width_percent=83
+2025-03-01T22:02:50.220537 - Using cached Google Font: Noto Sans Arabic (400, normal)
+2025-03-01T22:02:50.224738 - Successfully loaded font: Noto Sans Arabic (weight:400, style:normal)
+2025-03-01T22:02:50.262605 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T22:02:50.354590 - Successfully processed custom image.
+2025-03-01T22:03:02.024724 - Received /process_custom request with data: {'image_url': 'https://www.digitaltrends.com/wp-content/uploads/2024/07/openaistock.jpg', 'text': 'داهاتووی تۆ گۆڕاوە دلنیا بە', 'language': 'ckb', 'font_family': 'Noto Sans Arabic', 'font_size': 36, 'text_color': '#FFFFFF', 'background_color': '#a32e2e', 'text_position': None, 'alignment': 'bottom-center', 'output_dimensions': {'width': 1080, 'height': 1350}, 'preset': 'instagram-feed', 'padding': {'top': 20, 'right': 20, 'bottom': 20, 'left': 20}, 'text_opacity': 1, 'bg_opacity': 0.9, 'bg_curve': 10, 'container_margin': 20, 'container_width_percent': 83, 'gradient_start_color': '#f953c6', 'gradient_end_color': '#b91d73', 'gradient_direction': 'horizontal'}
+2025-03-01T22:03:02.026707 - Using gradient from #f953c6 to #b91d73 in horizontal direction
+2025-03-01T22:03:03.026820 - apply_custom_text: container_margin=20, container_width_percent=83
+2025-03-01T22:03:03.027238 - Using cached Google Font: Noto Sans Arabic (400, normal)
+2025-03-01T22:03:03.030268 - Successfully loaded font: Noto Sans Arabic (weight:400, style:normal)
+2025-03-01T22:03:03.069775 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T22:03:03.138533 - Successfully processed custom image.
+2025-03-01T22:03:14.509244 - Received /process_custom request with data: {'image_url': 'https://www.digitaltrends.com/wp-content/uploads/2024/07/openaistock.jpg', 'text': 'داهاتووی تۆ گۆڕاوە دلنیا بە', 'language': 'ckb', 'font_family': 'Noto Sans Arabic:700', 'font_size': 57, 'text_color': '#FFFFFF', 'background_color': '#a32e2e', 'text_position': None, 'alignment': 'bottom-center', 'output_dimensions': {'width': 1080, 'height': 1350}, 'preset': 'instagram-feed', 'padding': {'top': 20, 'right': 20, 'bottom': 20, 'left': 20}, 'text_opacity': 1, 'bg_opacity': 0.9, 'bg_curve': 10, 'container_margin': 20, 'container_width_percent': 83, 'gradient_start_color': '#f953c6', 'gradient_end_color': '#b91d73', 'gradient_direction': 'horizontal'}
+2025-03-01T22:03:14.509948 - Using gradient from #f953c6 to #b91d73 in horizontal direction
+2025-03-01T22:03:15.365731 - apply_custom_text: container_margin=20, container_width_percent=83
+2025-03-01T22:03:15.976045 - Successfully downloaded Google Font: Noto Sans Arabic
+2025-03-01T22:03:15.978295 - Updated font mapping with 43 fonts
+2025-03-01T22:03:15.985759 - Successfully loaded font: Noto Sans Arabic (weight:700, style:normal)
+2025-03-01T22:03:16.060981 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T22:03:16.121777 - Successfully processed custom image.
+2025-03-01T22:03:40.321578 - Received /process_custom request with data: {'image_url': 'https://www.digitaltrends.com/wp-content/uploads/2024/07/openaistock.jpg', 'text': 'داهاتووی تۆ گۆڕاوە دلنیا بە', 'language': 'ckb', 'font_family': 'Noto Sans Arabic:700', 'font_size': 57, 'text_color': '#FFFFFF', 'background_color': '#a32e2e', 'text_position': None, 'alignment': 'center-center', 'output_dimensions': {'width': 1080, 'height': 1350}, 'preset': 'instagram-feed', 'padding': {'top': 20, 'right': 20, 'bottom': 20, 'left': 20}, 'text_opacity': 1, 'bg_opacity': 0.9, 'bg_curve': 10, 'container_margin': 20, 'container_width_percent': 83, 'gradient_start_color': '#f953c6', 'gradient_end_color': '#b91d73', 'gradient_direction': 'horizontal'}
+2025-03-01T22:03:40.322025 - Using gradient from #f953c6 to #b91d73 in horizontal direction
+2025-03-01T22:03:41.333761 - apply_custom_text: container_margin=20, container_width_percent=83
+2025-03-01T22:03:41.334364 - Using cached Google Font: Noto Sans Arabic (700, normal)
+2025-03-01T22:03:41.337648 - Successfully loaded font: Noto Sans Arabic (weight:700, style:normal)
+2025-03-01T22:03:41.387093 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T22:03:41.448416 - Successfully processed custom image.
+2025-03-01T22:03:52.489762 - Received /process_custom request with data: {'image_url': 'https://www.digitaltrends.com/wp-content/uploads/2024/07/openaistock.jpg', 'text': 'داهاتووی تۆ گۆڕاوە دلنیا بە', 'language': 'ckb', 'font_family': 'Noto Sans Arabic:700', 'font_size': 57, 'text_color': '#FFFFFF', 'background_color': '#a32e2e', 'text_position': None, 'alignment': 'center-center', 'output_dimensions': {'width': 1080, 'height': 1350}, 'preset': 'instagram-feed', 'padding': {'top': 20, 'right': 20, 'bottom': 20, 'left': 20}, 'text_opacity': 1, 'bg_opacity': 0.9, 'bg_curve': 10, 'container_margin': 20, 'container_width_percent': 83, 'gradient_start_color': '#4776E6', 'gradient_end_color': '#8E54E9', 'gradient_direction': 'horizontal'}
+2025-03-01T22:03:52.491195 - Using gradient from #4776E6 to #8E54E9 in horizontal direction
+2025-03-01T22:03:53.487680 - apply_custom_text: container_margin=20, container_width_percent=83
+2025-03-01T22:03:53.488918 - Using cached Google Font: Noto Sans Arabic (700, normal)
+2025-03-01T22:03:53.492208 - Successfully loaded font: Noto Sans Arabic (weight:700, style:normal)
+2025-03-01T22:03:53.541458 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T22:03:53.601055 - Successfully processed custom image.
+2025-03-01T22:04:08.732041 - Received /process_custom request with data: {'image_url': 'https://www.digitaltrends.com/wp-content/uploads/2024/07/openaistock.jpg', 'text': 'داهاتووی تۆ گۆڕاوە دلنیا بە', 'language': 'ckb', 'font_family': 'Noto Sans Arabic:700', 'font_size': 57, 'text_color': '#FFFFFF', 'background_color': '#a32e2e', 'text_position': None, 'alignment': 'center-center', 'output_dimensions': {'width': 1080, 'height': 1350}, 'preset': 'instagram-feed', 'padding': {'top': 20, 'right': 20, 'bottom': 20, 'left': 20}, 'text_opacity': 1, 'bg_opacity': 0.4, 'bg_curve': 10, 'container_margin': 20, 'container_width_percent': 83, 'gradient_start_color': '#4776E6', 'gradient_end_color': '#8E54E9', 'gradient_direction': 'horizontal'}
+2025-03-01T22:04:08.732607 - Using gradient from #4776E6 to #8E54E9 in horizontal direction
+2025-03-01T22:04:09.591365 - apply_custom_text: container_margin=20, container_width_percent=83
+2025-03-01T22:04:09.592086 - Using cached Google Font: Noto Sans Arabic (700, normal)
+2025-03-01T22:04:09.595515 - Successfully loaded font: Noto Sans Arabic (weight:700, style:normal)
+2025-03-01T22:04:09.644673 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T22:04:09.705105 - Successfully processed custom image.
+2025-03-01T22:04:40.861549 - Received /process_custom request with data: {'image_url': 'https://www.digitaltrends.com/wp-content/uploads/2024/07/openaistock.jpg', 'text': 'داهاتووی تۆ گۆڕاوە دلنیا بە', 'language': 'ckb', 'font_family': 'Noto Sans Arabic:700', 'font_size': 57, 'text_color': '#FFFFFF', 'background_color': '#a32e2e', 'text_position': None, 'alignment': 'center-center', 'output_dimensions': {'width': 1080, 'height': 1350}, 'preset': 'instagram-feed', 'padding': {'top': 20, 'right': 20, 'bottom': None, 'left': None}, 'text_opacity': 1, 'bg_opacity': 0.4, 'bg_curve': 10, 'container_margin': 20, 'container_width_percent': 83, 'gradient_start_color': '#4776E6', 'gradient_end_color': '#8E54E9', 'gradient_direction': 'horizontal'}
+2025-03-01T22:04:40.862920 - Using gradient from #4776E6 to #8E54E9 in horizontal direction
+2025-03-01T22:04:41.705188 - apply_custom_text: container_margin=20, container_width_percent=83
+2025-03-01T22:04:41.713484 - Error in custom processing: Traceback (most recent call last):
+  File "/Users/hooshyar/Desktop/development/dilaHeadlessImageEditor/app.py", line 541, in process_custom
+    custom_img = apply_custom_text(
+        base_img,
+    ...<13 lines>...
+        gradient_direction
+    )
+  File "/Users/hooshyar/Desktop/development/dilaHeadlessImageEditor/app.py", line 355, in apply_custom_text
+    return image_processing_apply_custom_text(
+        base_img, text, language, font_family, font_size, text_color,
+        background_color, text_position, alignment, padding, bg_curve,
+        container_margin, container_width_percent, gradient_colors, gradient_direction
+    )
+  File "/Users/hooshyar/Desktop/development/dilaHeadlessImageEditor/image_processing.py", line 50, in apply_custom_text
+    pad_bottom = int(padding.get('bottom', 0))
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+
+2025-03-01T22:04:54.680623 - Received /process_custom request with data: {'image_url': 'https://www.digitaltrends.com/wp-content/uploads/2024/07/openaistock.jpg', 'text': 'داهاتووی تۆ گۆڕاوە دلنیا بە', 'language': 'ckb', 'font_family': 'Noto Sans Arabic:700', 'font_size': 57, 'text_color': '#FFFFFF', 'background_color': '#a32e2e', 'text_position': None, 'alignment': 'center-center', 'output_dimensions': {'width': 1080, 'height': 1350}, 'preset': 'instagram-feed', 'padding': {'top': 20, 'right': 20, 'bottom': 0, 'left': 0}, 'text_opacity': 1, 'bg_opacity': 0.4, 'bg_curve': 10, 'container_margin': 20, 'container_width_percent': 83, 'gradient_start_color': '#4776E6', 'gradient_end_color': '#8E54E9', 'gradient_direction': 'horizontal'}
+2025-03-01T22:04:54.681461 - Using gradient from #4776E6 to #8E54E9 in horizontal direction
+2025-03-01T22:04:55.530031 - apply_custom_text: container_margin=20, container_width_percent=83
+2025-03-01T22:04:55.531685 - Using cached Google Font: Noto Sans Arabic (700, normal)
+2025-03-01T22:04:55.539387 - Successfully loaded font: Noto Sans Arabic (weight:700, style:normal)
+2025-03-01T22:04:55.592057 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T22:04:55.666856 - Successfully processed custom image.
+2025-03-01T22:08:41.273156 - Received /process_custom request with data: {'image_url': 'https://www.digitaltrends.com/wp-content/uploads/2024/07/openaistock.jpg', 'text': 'asdfdsfsadfdfsd', 'language': 'en', 'font_family': 'amiri_400_normal', 'font_size': 36, 'text_color': '#FFFFFF', 'background_color': '#222222', 'text_position': None, 'alignment': 'bottom-center', 'output_dimensions': {'width': 1080, 'height': 1080}, 'preset': '', 'padding': {'top': 20, 'right': 20, 'bottom': 20, 'left': 20}, 'text_opacity': 1, 'bg_opacity': 0.9, 'bg_curve': 10, 'container_margin': 20, 'container_width_percent': 90, 'gradient_start_color': '#FF3CAC', 'gradient_end_color': '#784BA0', 'gradient_direction': 'horizontal'}
+2025-03-01T22:08:41.274323 - Using gradient from #FF3CAC to #784BA0 in horizontal direction
+2025-03-01T22:08:42.233206 - apply_custom_text: container_margin=20, container_width_percent=90
+2025-03-01T22:08:42.241060 - Successfully loaded font: amiri_400_normal (weight:400, style:normal)
+2025-03-01T22:08:42.277758 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T22:08:42.328375 - Successfully processed custom image.
+2025-03-01T22:08:58.103907 - Received /process_custom request with data: {'image_url': 'https://www.digitaltrends.com/wp-content/uploads/2024/07/openaistock.jpg', 'text': 'asdfdsfsadfdfsd', 'language': 'en', 'font_family': 'Montserrat', 'font_size': 36, 'text_color': '#FFFFFF', 'background_color': '#222222', 'text_position': None, 'alignment': 'bottom-center', 'output_dimensions': {'width': 1080, 'height': 1080}, 'preset': '', 'padding': {'top': 20, 'right': 20, 'bottom': 20, 'left': 20}, 'text_opacity': 1, 'bg_opacity': 0.9, 'bg_curve': 10, 'container_margin': 20, 'container_width_percent': 90, 'gradient_start_color': '#FF3CAC', 'gradient_end_color': '#784BA0', 'gradient_direction': 'horizontal'}
+2025-03-01T22:08:58.104670 - Using gradient from #FF3CAC to #784BA0 in horizontal direction
+2025-03-01T22:08:59.562824 - apply_custom_text: container_margin=20, container_width_percent=90
+2025-03-01T22:09:00.074391 - Successfully downloaded Google Font: Montserrat
+2025-03-01T22:09:00.079189 - Updated font mapping with 44 fonts
+2025-03-01T22:09:00.082381 - Successfully loaded font: Montserrat (weight:400, style:normal)
+2025-03-01T22:09:00.124890 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T22:09:00.196324 - Successfully processed custom image.
+2025-03-01T22:09:15.310407 - Received /process_custom request with data: {'image_url': 'https://www.digitaltrends.com/wp-content/uploads/2024/07/openaistock.jpg', 'text': 'سڵاو', 'language': 'en', 'font_family': 'Montserrat', 'font_size': 36, 'text_color': '#FFFFFF', 'background_color': '#222222', 'text_position': None, 'alignment': 'bottom-center', 'output_dimensions': {'width': 1080, 'height': 1080}, 'preset': '', 'padding': {'top': 20, 'right': 20, 'bottom': 20, 'left': 20}, 'text_opacity': 1, 'bg_opacity': 0.9, 'bg_curve': 10, 'container_margin': 20, 'container_width_percent': 90, 'gradient_start_color': '#FF3CAC', 'gradient_end_color': '#784BA0', 'gradient_direction': 'horizontal'}
+2025-03-01T22:09:15.311621 - Using gradient from #FF3CAC to #784BA0 in horizontal direction
+2025-03-01T22:09:16.676229 - apply_custom_text: container_margin=20, container_width_percent=90
+2025-03-01T22:09:16.677115 - Using cached Google Font: Montserrat (400, normal)
+2025-03-01T22:09:16.682121 - Successfully loaded font: Montserrat (weight:400, style:normal)
+2025-03-01T22:09:16.718915 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T22:09:16.768993 - Successfully processed custom image.
+2025-03-01T22:09:20.688460 - Received /process_custom request with data: {'image_url': 'https://www.digitaltrends.com/wp-content/uploads/2024/07/openaistock.jpg', 'text': 'سڵاو', 'language': 'ar', 'font_family': 'Montserrat', 'font_size': 36, 'text_color': '#FFFFFF', 'background_color': '#222222', 'text_position': None, 'alignment': 'bottom-center', 'output_dimensions': {'width': 1080, 'height': 1080}, 'preset': '', 'padding': {'top': 20, 'right': 20, 'bottom': 20, 'left': 20}, 'text_opacity': 1, 'bg_opacity': 0.9, 'bg_curve': 10, 'container_margin': 20, 'container_width_percent': 90, 'gradient_start_color': '#FF3CAC', 'gradient_end_color': '#784BA0', 'gradient_direction': 'horizontal'}
+2025-03-01T22:09:20.690044 - Using gradient from #FF3CAC to #784BA0 in horizontal direction
+2025-03-01T22:09:22.064829 - apply_custom_text: container_margin=20, container_width_percent=90
+2025-03-01T22:09:22.065397 - Using cached Google Font: Montserrat (400, normal)
+2025-03-01T22:09:22.066072 - Successfully loaded font: Montserrat (weight:400, style:normal)
+2025-03-01T22:09:22.096448 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T22:09:22.147289 - Successfully processed custom image.
+2025-03-01T22:09:26.935501 - Received /process_custom request with data: {'image_url': 'https://www.digitaltrends.com/wp-content/uploads/2024/07/openaistock.jpg', 'text': 'سڵاو', 'language': 'ckb', 'font_family': 'Montserrat', 'font_size': 36, 'text_color': '#FFFFFF', 'background_color': '#222222', 'text_position': None, 'alignment': 'bottom-center', 'output_dimensions': {'width': 1080, 'height': 1080}, 'preset': '', 'padding': {'top': 20, 'right': 20, 'bottom': 20, 'left': 20}, 'text_opacity': 1, 'bg_opacity': 0.9, 'bg_curve': 10, 'container_margin': 20, 'container_width_percent': 90, 'gradient_start_color': '#FF3CAC', 'gradient_end_color': '#784BA0', 'gradient_direction': 'horizontal'}
+2025-03-01T22:09:26.936361 - Using gradient from #FF3CAC to #784BA0 in horizontal direction
+2025-03-01T22:09:27.944393 - apply_custom_text: container_margin=20, container_width_percent=90
+2025-03-01T22:09:27.944874 - Using cached Google Font: Montserrat (400, normal)
+2025-03-01T22:09:27.945482 - Successfully loaded font: Montserrat (weight:400, style:normal)
+2025-03-01T22:09:27.977348 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T22:09:28.034807 - Successfully processed custom image.
+2025-03-01T22:10:17.754808 - Received /process_custom request with data: {'image_url': 'https://www.digitaltrends.com/wp-content/uploads/2024/07/openaistock.jpg', 'text': 'https://www.digitaltrends.com/wp-content/uploads/2024/07/openaistock.jpg', 'language': 'ckb', 'font_family': 'amiri_400_normal', 'font_size': 36, 'text_color': '#FFFFFF', 'background_color': '#222222', 'text_position': None, 'alignment': 'bottom-center', 'output_dimensions': {'width': 1080, 'height': 1080}, 'preset': '', 'padding': {'top': 20, 'right': 20, 'bottom': 20, 'left': 20}, 'text_opacity': 1, 'bg_opacity': 0.9, 'bg_curve': 10, 'container_margin': 20, 'container_width_percent': 90, 'gradient_start_color': '#FF3CAC', 'gradient_end_color': '#784BA0', 'gradient_direction': 'horizontal'}
+2025-03-01T22:10:17.755619 - Using gradient from #FF3CAC to #784BA0 in horizontal direction
+2025-03-01T22:10:18.828285 - apply_custom_text: container_margin=20, container_width_percent=90
+2025-03-01T22:10:18.836068 - Successfully loaded font: amiri_400_normal (weight:400, style:normal)
+2025-03-01T22:10:18.871952 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T22:10:18.925254 - Successfully processed custom image.
+2025-03-01T22:10:42.601398 - Received /process_custom request with data: {'image_url': 'https://www.digitaltrends.com/wp-content/uploads/2024/07/openaistock.jpg', 'text': 'ewqewreqr qefrwer', 'language': 'en', 'font_family': 'amiri_400_normal', 'font_size': 36, 'text_color': '#FFFFFF', 'background_color': '#222222', 'text_position': None, 'alignment': 'bottom-center', 'output_dimensions': {'width': 1080, 'height': 1080}, 'preset': '', 'padding': {'top': 20, 'right': 20, 'bottom': 20, 'left': 20}, 'text_opacity': 1, 'bg_opacity': 0.9, 'bg_curve': 10, 'container_margin': 20, 'container_width_percent': 90, 'gradient_start_color': '#FF3CAC', 'gradient_end_color': '#784BA0', 'gradient_direction': 'horizontal'}
+2025-03-01T22:10:42.602019 - Using gradient from #FF3CAC to #784BA0 in horizontal direction
+2025-03-01T22:10:43.539608 - apply_custom_text: container_margin=20, container_width_percent=90
+2025-03-01T22:10:43.553962 - Successfully loaded font: amiri_400_normal (weight:400, style:normal)
+2025-03-01T22:10:43.588789 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T22:10:43.639788 - Successfully processed custom image.
+2025-03-01T22:11:34.992609 - Received /process_custom request with data: {'image_url': 'https://www.digitaltrends.com/wp-content/uploads/2024/07/openaistock.jpg', 'text': 'ewqewreqr qefrwer', 'language': 'en', 'font_family': 'amiri_400_normal', 'font_size': 36, 'text_color': '#FFFFFF', 'background_color': '#222222', 'text_position': None, 'alignment': 'bottom-center', 'output_dimensions': {'width': 1080, 'height': 1080}, 'preset': '', 'padding': {'top': 20, 'right': 20, 'bottom': 20, 'left': 20}, 'text_opacity': 1, 'bg_opacity': 0.9, 'bg_curve': 10, 'container_margin': 20, 'container_width_percent': 90, 'gradient_start_color': '#2193b0', 'gradient_end_color': '#6dd5ed', 'gradient_direction': 'horizontal'}
+2025-03-01T22:11:34.994247 - Using gradient from #2193b0 to #6dd5ed in horizontal direction
+2025-03-01T22:11:35.949292 - apply_custom_text: container_margin=20, container_width_percent=90
+2025-03-01T22:11:35.958768 - Successfully loaded font: amiri_400_normal (weight:400, style:normal)
+2025-03-01T22:11:35.996763 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T22:11:36.052078 - Successfully processed custom image.
+2025-03-01T22:13:20.484685 - Received /process_custom request with data: {'image_url': 'https://www.digitaltrends.com/wp-content/uploads/2024/07/openaistock.jpg', 'text': 'sfvdsffdsdf', 'language': 'en', 'font_family': 'amiri_400_normal', 'font_size': 36, 'text_color': '#FFFFFF', 'background_color': '#222222', 'text_position': None, 'alignment': 'bottom-center', 'output_dimensions': {'width': 1080, 'height': 1080}, 'preset': '', 'padding': {'top': 20, 'right': 20, 'bottom': 20, 'left': 20}, 'text_opacity': 1, 'bg_opacity': 0.9, 'bg_curve': 10, 'container_margin': 20, 'container_width_percent': 90, 'gradient_start_color': '#FF3CAC', 'gradient_end_color': '#784BA0', 'gradient_direction': 'horizontal'}
+2025-03-01T22:13:20.485909 - Using gradient from #FF3CAC to #784BA0 in horizontal direction
+2025-03-01T22:13:21.446160 - apply_custom_text: container_margin=20, container_width_percent=90
+2025-03-01T22:13:21.455009 - Successfully loaded font: amiri_400_normal (weight:400, style:normal)
+2025-03-01T22:13:21.489138 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T22:13:21.539847 - Successfully processed custom image.
+2025-03-01T22:16:18.917411 - Received /process_custom request with data: {'image_url': 'https://www.digitaltrends.com/wp-content/uploads/2024/07/openaistock.jpg', 'text': 'sfvdsffdsdf', 'language': 'en', 'font_family': 'Noto Kufi Arabic', 'font_size': 36, 'text_color': '#FFFFFF', 'background_color': '#222222', 'text_position': None, 'alignment': 'bottom-center', 'output_dimensions': {'width': 1080, 'height': 1080}, 'preset': '', 'padding': {'top': 20, 'right': 20, 'bottom': 20, 'left': 20}, 'text_opacity': 1, 'bg_opacity': 0.9, 'bg_curve': 10, 'container_margin': 20, 'container_width_percent': 90, 'gradient_start_color': '#FF3CAC', 'gradient_end_color': '#784BA0', 'gradient_direction': 'horizontal'}
+2025-03-01T22:16:18.919985 - Using gradient from #FF3CAC to #784BA0 in horizontal direction
+2025-03-01T22:16:19.854056 - apply_custom_text: container_margin=20, container_width_percent=90
+2025-03-01T22:16:20.460175 - Successfully downloaded Google Font: Noto Kufi Arabic
+2025-03-01T22:16:20.462339 - Updated font mapping with 45 fonts
+2025-03-01T22:16:20.474007 - Successfully loaded font: Noto Kufi Arabic (weight:400, style:normal)
+2025-03-01T22:16:20.519827 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T22:16:20.577399 - Successfully processed custom image.
+2025-03-01T22:17:45.056911 - Received /process_custom request with data: {'image_url': 'https://www.digitaltrends.com/wp-content/uploads/2024/07/openaistock.jpg', 'text': 'sfvdsffdsdf', 'language': 'en', 'font_family': 'Noto Kufi Arabic', 'font_size': 36, 'text_color': '#FFFFFF', 'background_color': '#222222', 'text_position': None, 'alignment': 'bottom-center', 'output_dimensions': {'width': 1080, 'height': 1080}, 'preset': '', 'padding': {'top': 20, 'right': 20, 'bottom': 20, 'left': 20}, 'text_opacity': 1, 'bg_opacity': 0.9, 'bg_curve': 10, 'container_margin': 20, 'container_width_percent': 90, 'gradient_start_color': '#FF3CAC', 'gradient_end_color': '#784BA0', 'gradient_direction': 'horizontal'}
+2025-03-01T22:17:45.070924 - Using gradient from #FF3CAC to #784BA0 in horizontal direction
+2025-03-01T22:17:46.072145 - apply_custom_text: container_margin=20, container_width_percent=90
+2025-03-01T22:17:46.073123 - Using cached Google Font: Noto Kufi Arabic (400, normal)
+2025-03-01T22:17:46.082602 - Successfully loaded font: Noto Kufi Arabic (weight:400, style:normal)
+2025-03-01T22:17:46.121065 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T22:17:46.173797 - Successfully processed custom image.
+2025-03-01T22:28:58.352498 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-03-01T22:28:58.688355 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-03-01T22:30:18.095044 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-03-01T22:30:18.354916 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-03-01T22:30:33.431023 - Received /process_custom request with data: {'image_url': 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1074&auto=format&fit=crop', 'text': "Find peace in the beauty of nature's embrace", 'language': 'en', 'font_family': 'Roboto:300', 'font_size': 42, 'text_color': '#FFFFFF', 'background_color': '#000000', 'text_position': None, 'alignment': 'bottom-center', 'output_dimensions': {'width': 1080, 'height': 1080}, 'preset': '', 'padding': {'top': 20, 'right': 20, 'bottom': 20, 'left': 20}, 'text_opacity': 1, 'bg_opacity': 0.7, 'bg_curve': 8, 'container_margin': 20, 'container_width_percent': 90, 'gradient_start_color': '#4776E6', 'gradient_end_color': '#8E54E9', 'gradient_direction': 'horizontal'}
+2025-03-01T22:30:33.431982 - Using gradient from #4776E6 to #8E54E9 in horizontal direction
+2025-03-01T22:30:35.281643 - apply_custom_text: container_margin=20, container_width_percent=90
+2025-03-01T22:30:35.855972 - Successfully downloaded Google Font: Roboto
+2025-03-01T22:30:35.858553 - Updated font mapping with 46 fonts
+2025-03-01T22:30:35.870419 - Successfully loaded font: Roboto (weight:300, style:normal)
+2025-03-01T22:30:35.927958 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T22:30:36.038477 - Successfully processed custom image.
+2025-03-01T22:30:50.494609 - Received /process_custom request with data: {'image_url': 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1074&auto=format&fit=crop', 'text': "Find peace in the beauty of nature's embrace", 'language': 'en', 'font_family': 'Roboto:900', 'font_size': 50, 'text_color': '#FFFFFF', 'background_color': '#000000', 'text_position': None, 'alignment': 'bottom-center', 'output_dimensions': {'width': 1080, 'height': 1080}, 'preset': '', 'padding': {'top': 20, 'right': 20, 'bottom': 20, 'left': 20}, 'text_opacity': 1, 'bg_opacity': 0.7, 'bg_curve': 8, 'container_margin': 20, 'container_width_percent': 90, 'gradient_start_color': '#4776E6', 'gradient_end_color': '#8E54E9', 'gradient_direction': 'horizontal'}
+2025-03-01T22:30:50.495964 - Using gradient from #4776E6 to #8E54E9 in horizontal direction
+2025-03-01T22:30:51.027629 - apply_custom_text: container_margin=20, container_width_percent=90
+2025-03-01T22:30:51.591567 - Successfully downloaded Google Font: Roboto
+2025-03-01T22:30:51.596308 - Updated font mapping with 47 fonts
+2025-03-01T22:30:51.601085 - Successfully loaded font: Roboto (weight:900, style:normal)
+2025-03-01T22:30:51.693929 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T22:30:51.799327 - Successfully processed custom image.
+2025-03-01T22:30:59.962092 - Received /process_custom request with data: {'image_url': 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1074&auto=format&fit=crop', 'text': "Find peace in the beauty of nature's embrace", 'language': 'en', 'font_family': 'Roboto:900', 'font_size': 50, 'text_color': '#FFFFFF', 'background_color': '#000000', 'text_position': None, 'alignment': 'bottom-center', 'output_dimensions': {'width': 1080, 'height': 1920}, 'preset': 'instagram-stories', 'padding': {'top': 20, 'right': 20, 'bottom': 20, 'left': 20}, 'text_opacity': 1, 'bg_opacity': 0.7, 'bg_curve': 8, 'container_margin': 20, 'container_width_percent': 90, 'gradient_start_color': '#4776E6', 'gradient_end_color': '#8E54E9', 'gradient_direction': 'horizontal'}
+2025-03-01T22:30:59.962924 - Using gradient from #4776E6 to #8E54E9 in horizontal direction
+2025-03-01T22:31:00.475111 - apply_custom_text: container_margin=20, container_width_percent=90
+2025-03-01T22:31:00.476521 - Using cached Google Font: Roboto (900, normal)
+2025-03-01T22:31:00.478410 - Successfully loaded font: Roboto (weight:900, style:normal)
+2025-03-01T22:31:00.537540 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T22:31:00.734430 - Successfully processed custom image.
+2025-03-01T22:31:15.112991 - Received /process_custom request with data: {'image_url': 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1074&auto=format&fit=crop', 'text': "Find peace in the beauty of nature's embrace", 'language': 'en', 'font_family': 'Noto Kufi Arabic', 'font_size': 50, 'text_color': '#FFFFFF', 'background_color': '#000000', 'text_position': None, 'alignment': 'bottom-center', 'output_dimensions': {'width': 1080, 'height': 1920}, 'preset': 'instagram-stories', 'padding': {'top': 20, 'right': 20, 'bottom': 20, 'left': 20}, 'text_opacity': 1, 'bg_opacity': 0.7, 'bg_curve': 8, 'container_margin': 20, 'container_width_percent': 90, 'gradient_start_color': '#4776E6', 'gradient_end_color': '#8E54E9', 'gradient_direction': 'horizontal'}
+2025-03-01T22:31:15.113804 - Using gradient from #4776E6 to #8E54E9 in horizontal direction
+2025-03-01T22:31:15.629829 - apply_custom_text: container_margin=20, container_width_percent=90
+2025-03-01T22:31:15.631705 - Using cached Google Font: Noto Kufi Arabic (400, normal)
+2025-03-01T22:31:15.637665 - Successfully loaded font: Noto Kufi Arabic (weight:400, style:normal)
+2025-03-01T22:31:15.713157 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T22:31:15.897385 - Successfully processed custom image.
+2025-03-01T22:31:25.056760 - Received /process_custom request with data: {'image_url': 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1074&auto=format&fit=crop', 'text': "Find peace in the beauty of nature's embrace", 'language': 'en', 'font_family': 'amiri_400_normal', 'font_size': 50, 'text_color': '#FFFFFF', 'background_color': '#000000', 'text_position': None, 'alignment': 'bottom-center', 'output_dimensions': {'width': 1080, 'height': 1920}, 'preset': 'instagram-stories', 'padding': {'top': 20, 'right': 20, 'bottom': 20, 'left': 20}, 'text_opacity': 1, 'bg_opacity': 0.7, 'bg_curve': 8, 'container_margin': 20, 'container_width_percent': 90, 'gradient_start_color': '#4776E6', 'gradient_end_color': '#8E54E9', 'gradient_direction': 'horizontal'}
+2025-03-01T22:31:25.057749 - Using gradient from #4776E6 to #8E54E9 in horizontal direction
+2025-03-01T22:31:25.587538 - apply_custom_text: container_margin=20, container_width_percent=90
+2025-03-01T22:31:25.594343 - Successfully loaded font: amiri_400_normal (weight:400, style:normal)
+2025-03-01T22:31:25.633375 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T22:31:25.829371 - Successfully processed custom image.
+2025-03-01T22:31:40.246356 - Received /process_custom request with data: {'image_url': 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1074&auto=format&fit=crop', 'text': "Find peace in the beauty of nature's embrace", 'language': 'en', 'font_family': 'NotoSansArabic_SemiCondensed-ExtraLight', 'font_size': 50, 'text_color': '#FFFFFF', 'background_color': '#000000', 'text_position': None, 'alignment': 'bottom-center', 'output_dimensions': {'width': 1080, 'height': 1920}, 'preset': 'instagram-stories', 'padding': {'top': 20, 'right': 20, 'bottom': 20, 'left': 20}, 'text_opacity': 1, 'bg_opacity': 0.7, 'bg_curve': 8, 'container_margin': 20, 'container_width_percent': 90, 'gradient_start_color': '#4776E6', 'gradient_end_color': '#8E54E9', 'gradient_direction': 'horizontal'}
+2025-03-01T22:31:40.247172 - Using gradient from #4776E6 to #8E54E9 in horizontal direction
+2025-03-01T22:31:40.785430 - apply_custom_text: container_margin=20, container_width_percent=90
+2025-03-01T22:31:40.788638 - Successfully loaded font: NotoSansArabic_SemiCondensed-ExtraLight (weight:400, style:normal)
+2025-03-01T22:31:40.865371 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T22:31:41.053308 - Successfully processed custom image.
+2025-03-01T22:31:45.963798 - Received /process_custom request with data: {'image_url': 'https://www.digitaltrends.com/wp-content/uploads/2024/07/openaistock.jpg', 'text': 'توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە', 'language': 'ckb', 'font_family': 'NotoSansArabic_Condensed-Black', 'font_size': 36, 'text_color': '#FFFFFF', 'background_color': '#000000', 'text_position': None, 'alignment': 'bottom-center', 'output_dimensions': {'width': 1080, 'height': 1080}, 'preset': 'instagram-square', 'padding': {'top': 20, 'bottom': 40, 'left': 25, 'right': 25}, 'text_opacity': 1.0, 'bg_curve': 4, 'bg_opacity': 0.45, 'gradient_start_color': '#FF3CAC', 'gradient_end_color': '#784BA0', 'gradient_direction': 'horizontal', 'container_width_percent': 100, 'container_margin': 20}
+2025-03-01T22:31:45.964420 - Using gradient from #FF3CAC to #784BA0 in horizontal direction
+2025-03-01T22:31:47.774917 - apply_custom_text: container_margin=20, container_width_percent=100
+2025-03-01T22:31:47.776228 - Successfully loaded font: NotoSansArabic_Condensed-Black (weight:400, style:normal)
+2025-03-01T22:31:47.865050 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T22:31:47.908577 - Successfully processed custom image.
+2025-03-01T22:32:11.021606 - Received /process_custom request with data: {'image_url': 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1074&auto=format&fit=crop', 'text': "Find peace in the beauty of nature's embrace", 'language': 'en', 'font_family': 'NotoSansArabic_SemiCondensed-Light', 'font_size': 50, 'text_color': '#FFFFFF', 'background_color': '#000000', 'text_position': None, 'alignment': 'bottom-center', 'output_dimensions': {'width': 1080, 'height': 1920}, 'preset': 'instagram-stories', 'padding': {'top': 20, 'right': 20, 'bottom': 20, 'left': 20}, 'text_opacity': 1, 'bg_opacity': 0.7, 'bg_curve': 8, 'container_margin': 20, 'container_width_percent': 90, 'gradient_start_color': '#4776E6', 'gradient_end_color': '#8E54E9', 'gradient_direction': 'horizontal'}
+2025-03-01T22:32:11.023047 - Using gradient from #4776E6 to #8E54E9 in horizontal direction
+2025-03-01T22:32:11.566318 - apply_custom_text: container_margin=20, container_width_percent=90
+2025-03-01T22:32:11.570544 - Successfully loaded font: NotoSansArabic_SemiCondensed-Light (weight:400, style:normal)
+2025-03-01T22:32:11.650100 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T22:32:11.836804 - Successfully processed custom image.
+2025-03-01T22:32:42.847277 - Received /process_custom request with data: {'image_url': 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1074&auto=format&fit=crop', 'text': '  توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە",\n', 'language': 'en', 'font_family': 'NotoSansArabic_SemiCondensed-Light', 'font_size': 50, 'text_color': '#FFFFFF', 'background_color': '#000000', 'text_position': None, 'alignment': 'bottom-center', 'output_dimensions': {'width': 1080, 'height': 1920}, 'preset': 'instagram-stories', 'padding': {'top': 20, 'right': 20, 'bottom': 20, 'left': 20}, 'text_opacity': 1, 'bg_opacity': 0.7, 'bg_curve': 8, 'container_margin': 20, 'container_width_percent': 90, 'gradient_start_color': '#4776E6', 'gradient_end_color': '#8E54E9', 'gradient_direction': 'horizontal'}
+2025-03-01T22:32:42.848714 - Using gradient from #4776E6 to #8E54E9 in horizontal direction
+2025-03-01T22:32:43.377570 - apply_custom_text: container_margin=20, container_width_percent=90
+2025-03-01T22:32:43.381338 - Successfully loaded font: NotoSansArabic_SemiCondensed-Light (weight:400, style:normal)
+2025-03-01T22:32:43.482631 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T22:32:43.667355 - Successfully processed custom image.
+2025-03-01T22:32:50.221327 - Received /process_custom request with data: {'image_url': 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1074&auto=format&fit=crop', 'text': '  توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە",\n', 'language': 'en', 'font_family': 'Almarai', 'font_size': 50, 'text_color': '#FFFFFF', 'background_color': '#000000', 'text_position': None, 'alignment': 'bottom-center', 'output_dimensions': {'width': 1080, 'height': 1920}, 'preset': 'instagram-stories', 'padding': {'top': 20, 'right': 20, 'bottom': 20, 'left': 20}, 'text_opacity': 1, 'bg_opacity': 0.7, 'bg_curve': 8, 'container_margin': 20, 'container_width_percent': 90, 'gradient_start_color': '#4776E6', 'gradient_end_color': '#8E54E9', 'gradient_direction': 'horizontal'}
+2025-03-01T22:32:50.222009 - Using gradient from #4776E6 to #8E54E9 in horizontal direction
+2025-03-01T22:32:50.821998 - apply_custom_text: container_margin=20, container_width_percent=90
+2025-03-01T22:32:51.399755 - Successfully downloaded Google Font: Almarai
+2025-03-01T22:32:51.403146 - Updated font mapping with 48 fonts
+2025-03-01T22:32:51.408912 - Successfully loaded font: Almarai (weight:400, style:normal)
+2025-03-01T22:32:51.513525 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T22:32:51.701267 - Successfully processed custom image.
+2025-03-01T22:32:56.549883 - Received /process_custom request with data: {'image_url': 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1074&auto=format&fit=crop', 'text': '  توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە",\n', 'language': 'en', 'font_family': 'Montserrat', 'font_size': 50, 'text_color': '#FFFFFF', 'background_color': '#000000', 'text_position': None, 'alignment': 'bottom-center', 'output_dimensions': {'width': 1080, 'height': 1920}, 'preset': 'instagram-stories', 'padding': {'top': 20, 'right': 20, 'bottom': 20, 'left': 20}, 'text_opacity': 1, 'bg_opacity': 0.7, 'bg_curve': 8, 'container_margin': 20, 'container_width_percent': 90, 'gradient_start_color': '#4776E6', 'gradient_end_color': '#8E54E9', 'gradient_direction': 'horizontal'}
+2025-03-01T22:32:56.551344 - Using gradient from #4776E6 to #8E54E9 in horizontal direction
+2025-03-01T22:32:57.075136 - apply_custom_text: container_margin=20, container_width_percent=90
+2025-03-01T22:32:57.076822 - Using cached Google Font: Montserrat (400, normal)
+2025-03-01T22:32:57.080537 - Successfully loaded font: Montserrat (weight:400, style:normal)
+2025-03-01T22:32:57.175449 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T22:32:57.368833 - Successfully processed custom image.
+2025-03-01T22:33:11.602165 - Received /process_custom request with data: {'image_url': 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1074&auto=format&fit=crop', 'text': '  توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە",\n', 'language': 'en', 'font_family': 'notokufiarabic_400_normal', 'font_size': 50, 'text_color': '#FFFFFF', 'background_color': '#000000', 'text_position': None, 'alignment': 'bottom-center', 'output_dimensions': {'width': 1080, 'height': 1920}, 'preset': 'instagram-stories', 'padding': {'top': 20, 'right': 20, 'bottom': 20, 'left': 20}, 'text_opacity': 1, 'bg_opacity': 0.7, 'bg_curve': 8, 'container_margin': 20, 'container_width_percent': 90, 'gradient_start_color': '#4776E6', 'gradient_end_color': '#8E54E9', 'gradient_direction': 'horizontal'}
+2025-03-01T22:33:11.602677 - Using gradient from #4776E6 to #8E54E9 in horizontal direction
+2025-03-01T22:33:12.160416 - apply_custom_text: container_margin=20, container_width_percent=90
+2025-03-01T22:33:12.165533 - Successfully loaded font: notokufiarabic_400_normal (weight:400, style:normal)
+2025-03-01T22:33:12.290876 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T22:33:12.469487 - Successfully processed custom image.
+2025-03-01T22:37:52.025288 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-03-01T22:38:02.899166 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-03-01T22:38:46.297243 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-03-01T22:38:46.557387 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-03-01T22:40:54.590892 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-03-01T22:41:06.023350 - Received /process_custom request with data: {'image_url': 'https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?q=80&w=1074&auto=format&fit=crop', 'text': 'توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە', 'language': 'ckb', 'font_family': 'Noto Sans Arabic:700', 'font_size': 64, 'text_color': '#FFFFFF', 'background_color': '#1a1a1a', 'text_position': None, 'alignment': 'center-center', 'output_dimensions': {'width': 1080, 'height': 1080}, 'preset': '', 'padding': {'top': 20, 'right': 20, 'bottom': 20, 'left': 20}, 'text_opacity': 1, 'bg_opacity': 0.7, 'bg_curve': 0, 'container_margin': 0, 'container_width_percent': 100, 'gradient_start_color': '#FF9500', 'gradient_end_color': '#FF4C00', 'gradient_direction': 'horizontal'}
+2025-03-01T22:41:06.024109 - Using gradient from #FF9500 to #FF4C00 in horizontal direction
+2025-03-01T22:41:07.109968 - apply_custom_text: container_margin=0, container_width_percent=100
+2025-03-01T22:41:07.110036 - Processing RTL text for language: ckb
+2025-03-01T22:41:07.111630 - Successfully processed RTL text with arabic_reshaper and bidi
+2025-03-01T22:41:07.112243 - Using cached Google Font: Noto Sans Arabic (700, normal)
+2025-03-01T22:41:07.120723 - Successfully loaded font: Noto Sans Arabic (weight:700, style:normal)
+2025-03-01T22:41:07.279300 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T22:41:07.339976 - Successfully processed custom image.
+2025-03-01T22:41:15.088442 - Received /process_custom request with data: {'image_url': 'https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?q=80&w=1074&auto=format&fit=crop', 'text': 'توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە', 'language': 'ckb', 'font_family': 'Noto Sans Arabic:700', 'font_size': 64, 'text_color': '#FFFFFF', 'background_color': '#1a1a1a', 'text_position': None, 'alignment': 'center-center', 'output_dimensions': {'width': 1080, 'height': 1080}, 'preset': '', 'padding': {'top': 20, 'right': 20, 'bottom': 20, 'left': 20}, 'text_opacity': 1, 'bg_opacity': 0.7, 'bg_curve': 0, 'container_margin': 0, 'container_width_percent': 100, 'gradient_start_color': '#FF9500', 'gradient_end_color': '#FF4C00', 'gradient_direction': 'horizontal'}
+2025-03-01T22:41:15.088776 - Using gradient from #FF9500 to #FF4C00 in horizontal direction
+2025-03-01T22:41:15.549707 - apply_custom_text: container_margin=0, container_width_percent=100
+2025-03-01T22:41:15.549938 - Processing RTL text for language: ckb
+2025-03-01T22:41:15.551804 - Successfully processed RTL text with arabic_reshaper and bidi
+2025-03-01T22:41:15.552487 - Using cached Google Font: Noto Sans Arabic (700, normal)
+2025-03-01T22:41:15.556502 - Successfully loaded font: Noto Sans Arabic (weight:700, style:normal)
+2025-03-01T22:41:15.719248 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T22:41:15.782431 - Successfully processed custom image.
+2025-03-01T22:42:35.790146 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-03-01T22:43:17.632918 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-03-01T22:43:24.968866 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-03-01T22:43:25.312173 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-03-01T22:44:38.996202 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-03-01T22:44:48.587757 - Detected Kurdish text with 'OpenAI'. Using Noto Sans Arabic font for best rendering.
+2025-03-01T22:44:48.588212 - Unexpected error in process_custom: int() argument must be a string, a bytes-like object or a real number, not 'dict'
+2025-03-01T22:44:51.806993 - Detected Kurdish text with 'OpenAI'. Using Noto Sans Arabic font for best rendering.
+2025-03-01T22:44:51.807445 - Unexpected error in process_custom: int() argument must be a string, a bytes-like object or a real number, not 'dict'
+2025-03-01T22:45:00.410110 - Detected Kurdish text with 'OpenAI'. Using Noto Sans Arabic font for best rendering.
+2025-03-01T22:45:00.410739 - Unexpected error in process_custom: int() argument must be a string, a bytes-like object or a real number, not 'dict'
+2025-03-01T22:45:02.729402 - Unexpected error in process_custom: int() argument must be a string, a bytes-like object or a real number, not 'dict'
+2025-03-01T22:45:08.165504 - Unexpected error in process_custom: int() argument must be a string, a bytes-like object or a real number, not 'dict'
+2025-03-01T22:45:16.985420 - Detected Kurdish text with 'OpenAI'. Using Noto Sans Arabic font for best rendering.
+2025-03-01T22:45:16.986305 - Unexpected error in process_custom: int() argument must be a string, a bytes-like object or a real number, not 'dict'
+2025-03-01T22:46:34.283132 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-03-01T22:46:42.971292 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-03-01T22:46:55.453999 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-03-01T22:47:47.787570 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-03-01T22:48:12.921860 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-03-01T22:48:23.716985 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-03-01T22:48:28.217823 - Detected Kurdish text with 'OpenAI'. Using Noto Sans Arabic font for best rendering.
+2025-03-01T22:48:28.218024 - Processing custom image with: image_url=http://127.0.0.1:5001/static/sample.jpg, text=سڵاو OpenAI - تێستی پەڕاوێزی ژمارەیی, font=Noto Sans Arabic, size=48
+2025-03-01T22:48:28.218080 - Target dimensions: 1200x630
+2025-03-01T22:48:28.265904 - Using gradient with colors: #6600CC to #003366
+2025-03-01T22:48:28.270042 - apply_custom_text: container_margin=None, container_width_percent=None
+2025-03-01T22:48:28.270138 - Processing RTL text for language: ckb
+2025-03-01T22:48:28.270173 - Using original text for RTL rendering: سڵاو OpenAI - تێستی پەڕاوێزی ژمارەیی
+2025-03-01T22:48:28.270637 - Using cached Google Font: Noto Sans Arabic (400, normal)
+2025-03-01T22:48:28.291526 - Successfully loaded font: Noto Sans Arabic (weight:400, style:normal)
+2025-03-01T22:48:28.377421 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T22:48:28.377586 - Successfully applied custom text with styling
+2025-03-01T22:48:28.388341 - Successfully processed custom image with text: سڵاو OpenAI - تێستی پەڕاوێزی ژمارەیی
+2025-03-01T22:48:28.391833 - Detected Kurdish text with 'OpenAI'. Using Noto Sans Arabic font for best rendering.
+2025-03-01T22:48:28.391931 - Processing custom image with: image_url=http://127.0.0.1:5001/static/sample.jpg, text=سڵاو OpenAI - تێستی پەڕاوێزی فەرهەنگی, font=Noto Sans Arabic, size=48
+2025-03-01T22:48:28.391972 - Target dimensions: 1200x630
+2025-03-01T22:48:28.395819 - Using gradient with colors: #CC0000 to #660000
+2025-03-01T22:48:28.395992 - apply_custom_text: container_margin=None, container_width_percent=None
+2025-03-01T22:48:28.396035 - Processing RTL text for language: ckb
+2025-03-01T22:48:28.396068 - Using original text for RTL rendering: سڵاو OpenAI - تێستی پەڕاوێزی فەرهەنگی
+2025-03-01T22:48:28.396239 - Using cached Google Font: Noto Sans Arabic (400, normal)
+2025-03-01T22:48:28.399176 - Successfully loaded font: Noto Sans Arabic (weight:400, style:normal)
+2025-03-01T22:48:28.454097 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T22:48:28.454272 - Successfully applied custom text with styling
+2025-03-01T22:48:28.464972 - Successfully processed custom image with text: سڵاو OpenAI - تێستی پەڕاوێزی فەرهەنگی
+2025-03-01T23:19:50.029187 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-03-01T23:20:22.506757 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-03-01T23:20:22.777911 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-03-01T23:20:35.049783 - Processing custom image with: image_url=https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1074&auto=format&fit=crop, text=Find peace in the beauty of nature's embrace, font=Roboto:300, size=42
+2025-03-01T23:20:35.050325 - Target dimensions: 1200x630
+2025-03-01T23:20:35.591191 - apply_custom_text: container_margin=20, container_width_percent=90
+2025-03-01T23:20:35.592219 - Using cached Google Font: Roboto (300, normal)
+2025-03-01T23:20:35.599411 - Successfully loaded font: Roboto (weight:300, style:normal)
+2025-03-01T23:20:35.691918 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T23:20:35.692092 - Successfully applied custom text with styling
+2025-03-01T23:20:35.760335 - Successfully processed custom image with text: Find peace in the beauty of nature's embrace
+2025-03-01T23:20:40.417706 - Processing custom image with: image_url=https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1074&auto=format&fit=crop, text=Find peace in the beauty of nature's embrace, font=Roboto:300, size=42
+2025-03-01T23:20:40.418051 - Target dimensions: 1200x630
+2025-03-01T23:20:40.872161 - apply_custom_text: container_margin=20, container_width_percent=90
+2025-03-01T23:20:40.873514 - Using cached Google Font: Roboto (300, normal)
+2025-03-01T23:20:40.874719 - Successfully loaded font: Roboto (weight:300, style:normal)
+2025-03-01T23:20:40.910617 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T23:20:40.910782 - Successfully applied custom text with styling
+2025-03-01T23:20:40.975186 - Successfully processed custom image with text: Find peace in the beauty of nature's embrace
+2025-03-01T23:21:48.126663 - Processing custom image with: image_url=https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1074&auto=format&fit=crop, text=Find peace in the beauty of nature's embrace, font=Roboto:300, size=42
+2025-03-01T23:21:48.127131 - Target dimensions: 1200x630
+2025-03-01T23:21:48.602943 - apply_custom_text: container_margin=20, container_width_percent=90
+2025-03-01T23:21:48.606624 - Using cached Google Font: Roboto (300, normal)
+2025-03-01T23:21:48.613298 - Successfully loaded font: Roboto (weight:300, style:normal)
+2025-03-01T23:21:48.656066 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T23:21:48.656199 - Successfully applied custom text with styling
+2025-03-01T23:21:48.722160 - Successfully processed custom image with text: Find peace in the beauty of nature's embrace
+2025-03-01T23:32:59.260404 - Processing custom image with: image_url=https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1074&auto=format&fit=crop, text=Find peace in the beauty of nature's embrace, font=Roboto:300, size=42
+2025-03-01T23:32:59.261353 - Target dimensions: 1200x630
+2025-03-01T23:32:59.787321 - apply_custom_text: container_margin=20, container_width_percent=90
+2025-03-01T23:32:59.789403 - Using cached Google Font: Roboto (300, normal)
+2025-03-01T23:32:59.798776 - Successfully loaded font: Roboto (weight:300, style:normal)
+2025-03-01T23:32:59.841228 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T23:32:59.841375 - Successfully applied custom text with styling
+2025-03-01T23:32:59.913872 - Successfully processed custom image with text: Find peace in the beauty of nature's embrace
+2025-03-01T23:33:08.814703 - Processing custom image with: image_url=https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?q=80&w=1074&auto=format&fit=crop, text=Success is not final, failure is not fatal: It is the courage to continue that counts., font=Montserrat:700, size=48
+2025-03-01T23:33:08.816741 - Target dimensions: 1200x630
+2025-03-01T23:33:10.394749 - apply_custom_text: container_margin=20, container_width_percent=90
+2025-03-01T23:33:10.865194 - Successfully downloaded Google Font: Montserrat
+2025-03-01T23:33:10.870354 - Updated font mapping with 49 fonts
+2025-03-01T23:33:10.874914 - Successfully loaded font: Montserrat (weight:700, style:normal)
+2025-03-01T23:33:10.963989 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T23:33:10.964480 - Successfully applied custom text with styling
+2025-03-01T23:33:11.039287 - Successfully processed custom image with text: Success is not final, failure is not fatal: It is the courage to continue that counts.
+2025-03-01T23:33:22.129552 - Processing custom image with: image_url=https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?q=80&w=1074&auto=format&fit=crop, text=Success is not final, failure is not fatal: It is the courage to continue that counts., font=Noto Sans:700, size=48
+2025-03-01T23:33:22.131592 - Target dimensions: 1200x630
+2025-03-01T23:33:22.594912 - apply_custom_text: container_margin=20, container_width_percent=90
+2025-03-01T23:33:23.162057 - Successfully downloaded Google Font: Noto Sans
+2025-03-01T23:33:23.167594 - Updated font mapping with 50 fonts
+2025-03-01T23:33:23.177900 - Successfully loaded font: Noto Sans (weight:700, style:normal)
+2025-03-01T23:33:23.296830 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T23:33:23.297373 - Successfully applied custom text with styling
+2025-03-01T23:33:23.365562 - Successfully processed custom image with text: Success is not final, failure is not fatal: It is the courage to continue that counts.
+2025-03-01T23:33:31.868903 - Processing custom image with: image_url=https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?q=80&w=1074&auto=format&fit=crop, text=Success is not final, failure is not fatal: It is the courage to continue that counts., font=NotoSansArabic_Condensed-ExtraBold:700, size=48
+2025-03-01T23:33:31.869414 - Target dimensions: 1200x630
+2025-03-01T23:33:32.301978 - apply_custom_text: container_margin=20, container_width_percent=90
+2025-03-01T23:33:32.303342 - Successfully loaded font: NotoSansArabic_Condensed-ExtraBold (weight:700, style:normal)
+2025-03-01T23:33:32.405850 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T23:33:32.406346 - Successfully applied custom text with styling
+2025-03-01T23:33:32.475184 - Successfully processed custom image with text: Success is not final, failure is not fatal: It is the courage to continue that counts.
+2025-03-01T23:33:39.254778 - Processing custom image with: image_url=https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?q=80&w=1074&auto=format&fit=crop, text=Success is not final, failure is not fatal: It is the courage to continue that counts., font=Almarai:700, size=48
+2025-03-01T23:33:39.255110 - Target dimensions: 1200x630
+2025-03-01T23:33:39.685607 - apply_custom_text: container_margin=20, container_width_percent=90
+2025-03-01T23:33:40.266099 - Successfully downloaded Google Font: Almarai
+2025-03-01T23:33:40.269703 - Updated font mapping with 51 fonts
+2025-03-01T23:33:40.273689 - Successfully loaded font: Almarai (weight:700, style:normal)
+2025-03-01T23:33:40.312406 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T23:33:40.313388 - Successfully applied custom text with styling
+2025-03-01T23:33:40.385288 - Successfully processed custom image with text: Success is not final, failure is not fatal: It is the courage to continue that counts.
+2025-03-01T23:34:26.631742 - Processing custom image with: image_url=https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?q=80&w=1074&auto=format&fit=crop, text=  "text": "توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە",
+, font=NotoSansArabic_SemiCondensed-Light:700, size=48
+2025-03-01T23:34:26.638619 - Target dimensions: 1200x630
+2025-03-01T23:34:27.322007 - apply_custom_text: container_margin=20, container_width_percent=90
+2025-03-01T23:34:27.332511 - Successfully loaded font: NotoSansArabic_SemiCondensed-Light (weight:700, style:normal)
+2025-03-01T23:34:27.452109 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T23:34:27.452361 - Successfully applied custom text with styling
+2025-03-01T23:34:27.537335 - Successfully processed custom image with text:   "text": "توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە",
+
+2025-03-01T23:35:02.255119 - Processing custom image with: image_url=https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1074&auto=format&fit=crop, text=Find peace in the beauty of nature's embrace, font=Roboto:300, size=42
+2025-03-01T23:35:02.255837 - Target dimensions: 1200x630
+2025-03-01T23:35:02.717185 - apply_custom_text: container_margin=20, container_width_percent=90
+2025-03-01T23:35:02.718192 - Using cached Google Font: Roboto (300, normal)
+2025-03-01T23:35:02.723322 - Successfully loaded font: Roboto (weight:300, style:normal)
+2025-03-01T23:35:02.772717 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T23:35:02.773524 - Successfully applied custom text with styling
+2025-03-01T23:35:02.836804 - Successfully processed custom image with text: Find peace in the beauty of nature's embrace
+2025-03-01T23:47:14.123517 - Processing custom image with: image_url=https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?q=80&w=1074&auto=format&fit=crop, text=  "text": "توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە",
+, font=NotoSansArabic_SemiCondensed-Light:700, size=72
+2025-03-01T23:47:14.124537 - Target dimensions: 1200x630
+2025-03-01T23:47:14.642684 - apply_custom_text: container_margin=20, container_width_percent=90
+2025-03-01T23:47:14.647492 - Successfully loaded font: NotoSansArabic_SemiCondensed-Light (weight:700, style:normal)
+2025-03-01T23:47:14.830949 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T23:47:14.832039 - Successfully applied custom text with styling
+2025-03-01T23:47:14.898294 - Successfully processed custom image with text:   "text": "توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە",
+
+2025-03-01T23:47:26.713497 - Processing custom image with: image_url=https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?q=80&w=1074&auto=format&fit=crop, text=  "text": "توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە",
+, font=NotoSansArabic_SemiCondensed-Light:700, size=72
+2025-03-01T23:47:26.714157 - Target dimensions: 1200x630
+2025-03-01T23:47:27.148188 - apply_custom_text: container_margin=20, container_width_percent=90
+2025-03-01T23:47:27.149893 - Successfully loaded font: NotoSansArabic_SemiCondensed-Light (weight:700, style:normal)
+2025-03-01T23:47:27.317794 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T23:47:27.318046 - Successfully applied custom text with styling
+2025-03-01T23:47:27.385803 - Successfully processed custom image with text:   "text": "توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە",
+
+2025-03-01T23:47:41.369248 - Processing custom image with: image_url=https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?q=80&w=1074&auto=format&fit=crop, text=  "text": "توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە",
+, font=NotoSansArabic_SemiCondensed-Light:700, size=72
+2025-03-01T23:47:41.369740 - Target dimensions: 1200x630
+2025-03-01T23:47:41.822692 - apply_custom_text: container_margin=0, container_width_percent=90
+2025-03-01T23:47:41.824116 - Successfully loaded font: NotoSansArabic_SemiCondensed-Light (weight:700, style:normal)
+2025-03-01T23:47:42.001263 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T23:47:42.002538 - Successfully applied custom text with styling
+2025-03-01T23:47:42.068299 - Successfully processed custom image with text:   "text": "توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە",
+
+2025-03-01T23:48:00.950268 - Processing custom image with: image_url=https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?q=80&w=1074&auto=format&fit=crop, text=  "text": "توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە",
+, font=NotoSansArabic_SemiCondensed-Light:700, size=72
+2025-03-01T23:48:00.950742 - Target dimensions: 1200x630
+2025-03-01T23:48:01.385151 - apply_custom_text: container_margin=0, container_width_percent=90
+2025-03-01T23:48:01.386727 - Successfully loaded font: NotoSansArabic_SemiCondensed-Light (weight:700, style:normal)
+2025-03-01T23:48:01.562437 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T23:48:01.562952 - Successfully applied custom text with styling
+2025-03-01T23:48:01.665731 - Successfully processed custom image with text:   "text": "توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە",
+
+2025-03-01T23:49:30.283670 - Processing custom image with: image_url=https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?q=80&w=1074&auto=format&fit=crop, text=  "text": "توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە",
+, font=NotoSansArabic_SemiCondensed-Light:700, size=72
+2025-03-01T23:49:30.288479 - Target dimensions: 1200x630
+2025-03-01T23:49:30.838408 - apply_custom_text: container_margin=0, container_width_percent=90
+2025-03-01T23:49:30.848965 - Successfully loaded font: NotoSansArabic_SemiCondensed-Light (weight:700, style:normal)
+2025-03-01T23:49:31.029135 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T23:49:31.030866 - Successfully applied custom text with styling
+2025-03-01T23:49:31.102277 - Successfully processed custom image with text:   "text": "توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە",
+
+2025-03-01T23:49:35.670835 - Processing custom image with: image_url=https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?q=80&w=1074&auto=format&fit=crop, text=  "text": "توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە",
+, font=NotoSansArabic_SemiCondensed-Light:700, size=72
+2025-03-01T23:49:35.670985 - Target dimensions: 1200x630
+2025-03-01T23:49:36.096806 - apply_custom_text: container_margin=0, container_width_percent=90
+2025-03-01T23:49:36.097545 - Successfully loaded font: NotoSansArabic_SemiCondensed-Light (weight:700, style:normal)
+2025-03-01T23:49:36.258036 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T23:49:36.258244 - Successfully applied custom text with styling
+2025-03-01T23:49:36.328681 - Successfully processed custom image with text:   "text": "توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە",
+
+2025-03-01T23:49:43.823091 - Processing custom image with: image_url=https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?q=80&w=1074&auto=format&fit=crop, text=  "text": "توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە",
+, font=NotoSansArabic_SemiCondensed-Light:700, size=72
+2025-03-01T23:49:43.824375 - Target dimensions: 1200x630
+2025-03-01T23:49:44.288341 - apply_custom_text: container_margin=0, container_width_percent=90
+2025-03-01T23:49:44.290335 - Successfully loaded font: NotoSansArabic_SemiCondensed-Light (weight:700, style:normal)
+2025-03-01T23:49:44.457568 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T23:49:44.458152 - Successfully applied custom text with styling
+2025-03-01T23:49:44.526871 - Successfully processed custom image with text:   "text": "توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە",
+
+2025-03-01T23:49:59.442030 - Processing custom image with: image_url=https://images.unsplash.com/photo-1519677584237-752f8853252e?q=80&w=1074&auto=format&fit=crop, text=ئەو کەسەی لە هەڵەکانی نەترسێت، سەرکەوتوو دەبێت, font=Tajawal:700, size=46
+2025-03-01T23:49:59.442682 - Target dimensions: 1200x630
+2025-03-01T23:50:00.270165 - apply_custom_text: container_margin=0, container_width_percent=90
+2025-03-01T23:50:00.270368 - Processing RTL text for language: ckb
+2025-03-01T23:50:00.270429 - Using original text for RTL rendering: ئەو کەسەی لە هەڵەکانی نەترسێت، سەرکەوتوو دەبێت
+2025-03-01T23:50:00.761230 - Successfully downloaded Google Font: Tajawal
+2025-03-01T23:50:00.765681 - Updated font mapping with 52 fonts
+2025-03-01T23:50:00.772122 - Successfully loaded font: Tajawal (weight:700, style:normal)
+2025-03-01T23:50:00.820227 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T23:50:00.820807 - Successfully applied custom text with styling
+2025-03-01T23:50:00.875353 - Successfully processed custom image with text: ئەو کەسەی لە هەڵەکانی نەترسێت، سەرکەوتوو دەبێت
+2025-03-01T23:50:02.719590 - Processing custom image with: image_url=https://images.unsplash.com/photo-1519677584237-752f8853252e?q=80&w=1074&auto=format&fit=crop, text=ئەو کەسەی لە هەڵەکانی نەترسێت، سەرکەوتوو دەبێت, font=Tajawal:700, size=46
+2025-03-01T23:50:02.720129 - Target dimensions: 1200x630
+2025-03-01T23:50:03.128248 - apply_custom_text: container_margin=0, container_width_percent=90
+2025-03-01T23:50:03.128849 - Processing RTL text for language: ckb
+2025-03-01T23:50:03.128928 - Using original text for RTL rendering: ئەو کەسەی لە هەڵەکانی نەترسێت، سەرکەوتوو دەبێت
+2025-03-01T23:50:03.130856 - Using cached Google Font: Tajawal (700, normal)
+2025-03-01T23:50:03.133795 - Successfully loaded font: Tajawal (weight:700, style:normal)
+2025-03-01T23:50:03.169433 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T23:50:03.170022 - Successfully applied custom text with styling
+2025-03-01T23:50:03.221312 - Successfully processed custom image with text: ئەو کەسەی لە هەڵەکانی نەترسێت، سەرکەوتوو دەبێت
+2025-03-01T23:50:06.641692 - Processing custom image with: image_url=https://images.unsplash.com/photo-1519677584237-752f8853252e?q=80&w=1074&auto=format&fit=crop, text=ئەو کەسەی لە هەڵەکانی نەترسێت، سەرکەوتوو دەبێت, font=Tajawal:700, size=46
+2025-03-01T23:50:06.641851 - Target dimensions: 1200x630
+2025-03-01T23:50:07.026352 - apply_custom_text: container_margin=0, container_width_percent=90
+2025-03-01T23:50:07.026531 - Processing RTL text for language: ckb
+2025-03-01T23:50:07.026584 - Using original text for RTL rendering: ئەو کەسەی لە هەڵەکانی نەترسێت، سەرکەوتوو دەبێت
+2025-03-01T23:50:07.026816 - Using cached Google Font: Tajawal (700, normal)
+2025-03-01T23:50:07.027718 - Successfully loaded font: Tajawal (weight:700, style:normal)
+2025-03-01T23:50:07.055589 - Custom text applied with gradient background and positioned at bottom center.
+2025-03-01T23:50:07.055723 - Successfully applied custom text with styling
+2025-03-01T23:50:07.105147 - Successfully processed custom image with text: ئەو کەسەی لە هەڵەکانی نەترسێت، سەرکەوتوو دەبێت
+2025-03-01T23:50:48.684618 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-03-01T23:51:13.441393 - Detected Kurdish text with 'OpenAI'. Using Noto Sans Arabic font for best rendering.
+2025-03-01T23:51:13.442285 - Processing custom image with: image_url=https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1000&auto=format&fit=crop, text=توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە, font=Noto Sans Arabic, size=42
+2025-03-01T23:51:13.442334 - Target dimensions: 1200x630
+2025-03-01T23:51:13.957761 - apply_custom_text: container_margin=0, container_width_percent=100
+2025-03-01T23:51:13.957862 - Processing RTL text for language: ckb
+2025-03-01T23:51:13.957915 - Using original text for RTL rendering: توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە
+2025-03-01T23:51:13.958349 - Using cached Google Font: Noto Sans Arabic (400, normal)
+2025-03-01T23:51:13.970176 - Successfully loaded font: Noto Sans Arabic (weight:400, style:normal)
+2025-03-01T23:51:14.058138 - Custom text applied with background at (0,490) size 1000x157, bottom margin: 20px
+2025-03-01T23:51:14.058314 - Successfully applied custom text with styling
+2025-03-01T23:51:14.097683 - Successfully processed custom image with text: توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە
+2025-03-01T23:51:23.040961 - Detected Kurdish text with 'OpenAI'. Using Noto Sans Arabic font for best rendering.
+2025-03-01T23:51:23.041304 - Processing custom image with: image_url=https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1000&auto=format&fit=crop, text=توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە, font=Noto Sans Arabic, size=42
+2025-03-01T23:51:23.041355 - Target dimensions: 1200x630
+2025-03-01T23:51:23.476917 - apply_custom_text: container_margin=30, container_width_percent=90
+2025-03-01T23:51:23.477211 - Processing RTL text for language: ckb
+2025-03-01T23:51:23.477600 - Using original text for RTL rendering: توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە
+2025-03-01T23:51:23.478478 - Using cached Google Font: Noto Sans Arabic (400, normal)
+2025-03-01T23:51:23.485516 - Successfully loaded font: Noto Sans Arabic (weight:400, style:normal)
+2025-03-01T23:51:23.577655 - Custom text applied with background at (77,470) size 846x167, bottom margin: 30px
+2025-03-01T23:51:23.577865 - Successfully applied custom text with styling
+2025-03-01T23:51:23.618457 - Successfully processed custom image with text: توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە
+2025-03-01T23:51:43.031675 - Detected Kurdish text with 'OpenAI'. Using Noto Sans Arabic font for best rendering.
+2025-03-01T23:51:43.032076 - Processing custom image with: image_url=https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1000&auto=format&fit=crop, text=توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە, font=Noto Sans Arabic, size=42
+2025-03-01T23:51:43.032119 - Target dimensions: 1200x630
+2025-03-01T23:51:43.450634 - apply_custom_text: container_margin=50, container_width_percent=70
+2025-03-01T23:51:43.451867 - Processing RTL text for language: ckb
+2025-03-01T23:51:43.451964 - Using original text for RTL rendering: توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە
+2025-03-01T23:51:43.452758 - Using cached Google Font: Noto Sans Arabic (400, normal)
+2025-03-01T23:51:43.459289 - Successfully loaded font: Noto Sans Arabic (weight:400, style:normal)
+2025-03-01T23:51:43.548261 - Custom text applied with background at (185,398) size 630x219, bottom margin: 50px
+2025-03-01T23:51:43.548463 - Successfully applied custom text with styling
+2025-03-01T23:51:43.589217 - Successfully processed custom image with text: توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە
+2025-03-01T23:57:24.781096 - Processing custom image with: image_url=https://images.unsplash.com/photo-1519677584237-752f8853252e?q=80&w=1074&auto=format&fit=crop, text=ئەو کەسەی لە هەڵەکانی نەترسێت، سەرکەوتوو دەبێت, font=Tajawal:700, size=46
+2025-03-01T23:57:24.781923 - Target dimensions: 1200x630
+2025-03-01T23:57:25.215897 - apply_custom_text: container_margin=0, container_width_percent=90
+2025-03-01T23:57:25.216170 - Processing RTL text for language: ckb
+2025-03-01T23:57:25.216242 - Using original text for RTL rendering: ئەو کەسەی لە هەڵەکانی نەترسێت، سەرکەوتوو دەبێت
+2025-03-01T23:57:25.217250 - Using cached Google Font: Tajawal (700, normal)
+2025-03-01T23:57:25.223294 - Successfully loaded font: Tajawal (weight:700, style:normal)
+2025-03-01T23:57:25.266611 - Custom text applied with background at (53,650) size 966x46, bottom margin: 20px
+2025-03-01T23:57:25.266773 - Successfully applied custom text with styling
+2025-03-01T23:57:25.319827 - Successfully processed custom image with text: ئەو کەسەی لە هەڵەکانی نەترسێت، سەرکەوتوو دەبێت
+2025-03-01T23:57:39.160024 - Processing custom image with: image_url=https://images.unsplash.com/photo-1519677584237-752f8853252e?q=80&w=1074&auto=format&fit=crop, text=ئەو کەسەی لە هەڵەکانی نەترسێت، سەرکەوتوو دەبێت, font=Noto Naskh Arabic:700, size=46
+2025-03-01T23:57:39.161031 - Target dimensions: 1200x630
+2025-03-01T23:57:39.632070 - apply_custom_text: container_margin=0, container_width_percent=90
+2025-03-01T23:57:39.632268 - Processing RTL text for language: ckb
+2025-03-01T23:57:39.632330 - Using original text for RTL rendering: ئەو کەسەی لە هەڵەکانی نەترسێت، سەرکەوتوو دەبێت
+2025-03-01T23:57:40.232071 - Successfully downloaded Google Font: Noto Naskh Arabic
+2025-03-01T23:57:40.233571 - Updated font mapping with 53 fonts
+2025-03-01T23:57:40.241543 - Successfully loaded font: Noto Naskh Arabic (weight:700, style:normal)
+2025-03-01T23:57:40.278084 - Custom text applied with background at (53,642) size 966x54, bottom margin: 20px
+2025-03-01T23:57:40.278206 - Successfully applied custom text with styling
+2025-03-01T23:57:40.329503 - Successfully processed custom image with text: ئەو کەسەی لە هەڵەکانی نەترسێت، سەرکەوتوو دەبێت
+2025-03-01T23:58:22.690902 - Processing custom image with: image_url=https://images.unsplash.com/photo-1519677584237-752f8853252e?q=80&w=1074&auto=format&fit=crop, text=ئەو کەسەی لە هەڵەکانی نەترسێت، سەرکەوتوو دەبێت, font=Noto Naskh Arabic:700, size=46
+2025-03-01T23:58:22.691939 - Target dimensions: 1200x630
+2025-03-01T23:58:23.133269 - apply_custom_text: container_margin=0, container_width_percent=90
+2025-03-01T23:58:23.133455 - Processing RTL text for language: ckb
+2025-03-01T23:58:23.133512 - Using original text for RTL rendering: ئەو کەسەی لە هەڵەکانی نەترسێت، سەرکەوتوو دەبێت
+2025-03-01T23:58:23.134624 - Using cached Google Font: Noto Naskh Arabic (700, normal)
+2025-03-01T23:58:23.143276 - Successfully loaded font: Noto Naskh Arabic (weight:700, style:normal)
+2025-03-01T23:58:23.192047 - Custom text applied with background at (53,642) size 966x54, bottom margin: 20px
+2025-03-01T23:58:23.192242 - Successfully applied custom text with styling
+2025-03-01T23:58:23.243867 - Successfully processed custom image with text: ئەو کەسەی لە هەڵەکانی نەترسێت، سەرکەوتوو دەبێت
+2025-03-01T23:58:27.868953 - Processing custom image with: image_url=https://images.unsplash.com/photo-1519677584237-752f8853252e?q=80&w=1074&auto=format&fit=crop, text=ئەو کەسەی لە هەڵەکانی نەترسێت، سەرکەوتوو دەبێت, font=Noto Naskh Arabic:700, size=46
+2025-03-01T23:58:27.869387 - Target dimensions: 1200x630
+2025-03-01T23:58:28.260529 - apply_custom_text: container_margin=0, container_width_percent=90
+2025-03-01T23:58:28.260834 - Processing RTL text for language: ckb
+2025-03-01T23:58:28.260908 - Using original text for RTL rendering: ئەو کەسەی لە هەڵەکانی نەترسێت، سەرکەوتوو دەبێت
+2025-03-01T23:58:28.264657 - Using cached Google Font: Noto Naskh Arabic (700, normal)
+2025-03-01T23:58:28.269527 - Successfully loaded font: Noto Naskh Arabic (weight:700, style:normal)
+2025-03-01T23:58:28.308357 - Custom text applied with background at (53,642) size 966x54, bottom margin: 20px
+2025-03-01T23:58:28.308417 - Successfully applied custom text with styling
+2025-03-01T23:58:28.357380 - Successfully processed custom image with text: ئەو کەسەی لە هەڵەکانی نەترسێت، سەرکەوتوو دەبێت
+2025-03-01T23:58:34.734600 - Processing custom image with: image_url=https://images.unsplash.com/photo-1519677584237-752f8853252e?q=80&w=1074&auto=format&fit=crop, text=ئەو کەسەی لە هەڵەکانی نەترسێت، سەرکەوتوو دەبێت, font=Noto Naskh Arabic:700, size=46
+2025-03-01T23:58:34.735070 - Target dimensions: 1200x630
+2025-03-01T23:58:35.120427 - apply_custom_text: container_margin=0, container_width_percent=90
+2025-03-01T23:58:35.120672 - Processing RTL text for language: ckb
+2025-03-01T23:58:35.120994 - Using original text for RTL rendering: ئەو کەسەی لە هەڵەکانی نەترسێت، سەرکەوتوو دەبێت
+2025-03-01T23:58:35.121648 - Using cached Google Font: Noto Naskh Arabic (700, normal)
+2025-03-01T23:58:35.126671 - Successfully loaded font: Noto Naskh Arabic (weight:700, style:normal)
+2025-03-01T23:58:35.167415 - Custom text applied with background at (53,642) size 966x54, bottom margin: 20px
+2025-03-01T23:58:35.167487 - Successfully applied custom text with styling
+2025-03-01T23:58:35.216930 - Successfully processed custom image with text: ئەو کەسەی لە هەڵەکانی نەترسێت، سەرکەوتوو دەبێت
+2025-03-02T00:00:02.911237 - Processing custom image with: image_url=https://images.unsplash.com/photo-1519677584237-752f8853252e?q=80&w=1074&auto=format&fit=crop, text=ئەو کەسەی لە هەڵەکانی نەترسێت، سەرکەوتوو دەبێت, font=Noto Kufi Arabic:700, size=46
+2025-03-02T00:00:02.926598 - Target dimensions: 1200x630
+2025-03-02T00:00:03.717643 - apply_custom_text: container_margin=0, container_width_percent=90
+2025-03-02T00:00:03.717844 - Processing RTL text for language: ckb
+2025-03-02T00:00:03.717882 - Using original text for RTL rendering: ئەو کەسەی لە هەڵەکانی نەترسێت، سەرکەوتوو دەبێت
+2025-03-02T00:00:04.367168 - Successfully downloaded Google Font: Noto Kufi Arabic
+2025-03-02T00:00:04.413786 - Updated font mapping with 54 fonts
+2025-03-02T00:00:04.475228 - Successfully loaded font: Noto Kufi Arabic (weight:700, style:normal)
+2025-03-02T00:00:04.605864 - Custom text applied with background at (53,563) size 966x133, bottom margin: 20px
+2025-03-02T00:00:04.606118 - Successfully applied custom text with styling
+2025-03-02T00:00:04.744251 - Successfully processed custom image with text: ئەو کەسەی لە هەڵەکانی نەترسێت، سەرکەوتوو دەبێت
+2025-03-02T00:00:16.883671 - Processing custom image with: image_url=https://images.unsplash.com/photo-1506617420156-8e4536971650?q=80&w=1074&auto=format&fit=crop, text=بەرەو خۆر هەنگاو بنێ، سێبەرەکان دەکەونە پشتت, font=Tajawal:700, size=40
+2025-03-02T00:00:16.884325 - Target dimensions: 1200x630
+2025-03-02T00:00:18.281011 - apply_custom_text: container_margin=0, container_width_percent=90
+2025-03-02T00:00:18.281487 - Processing RTL text for language: ckb
+2025-03-02T00:00:18.281541 - Using original text for RTL rendering: بەرەو خۆر هەنگاو بنێ، سێبەرەکان دەکەونە پشتت
+2025-03-02T00:00:18.282373 - Using cached Google Font: Tajawal (700, normal)
+2025-03-02T00:00:18.289483 - Successfully loaded font: Tajawal (weight:700, style:normal)
+2025-03-02T00:00:18.325777 - Custom text applied with background at (53,488) size 966x47, bottom margin: 20px
+2025-03-02T00:00:18.326014 - Successfully applied custom text with styling
+2025-03-02T00:00:18.375465 - Successfully processed custom image with text: بەرەو خۆر هەنگاو بنێ، سێبەرەکان دەکەونە پشتت
+2025-03-02T00:00:23.087907 - Processing custom image with: image_url=https://images.unsplash.com/photo-1506617420156-8e4536971650?q=80&w=1074&auto=format&fit=crop, text=بەرەو خۆر هەنگاو بنێ، سێبەرەکان دەکەونە پشتت, font=Tajawal:700, size=40
+2025-03-02T00:00:23.088245 - Target dimensions: 1200x630
+2025-03-02T00:00:23.586834 - apply_custom_text: container_margin=0, container_width_percent=90
+2025-03-02T00:00:23.587156 - Processing RTL text for language: ckb
+2025-03-02T00:00:23.587507 - Using original text for RTL rendering: بەرەو خۆر هەنگاو بنێ، سێبەرەکان دەکەونە پشتت
+2025-03-02T00:00:23.588223 - Using cached Google Font: Tajawal (700, normal)
+2025-03-02T00:00:23.589643 - Successfully loaded font: Tajawal (weight:700, style:normal)
+2025-03-02T00:00:23.635349 - Custom text applied with background at (53,488) size 966x47, bottom margin: 20px
+2025-03-02T00:00:23.635589 - Successfully applied custom text with styling
+2025-03-02T00:00:23.691286 - Successfully processed custom image with text: بەرەو خۆر هەنگاو بنێ، سێبەرەکان دەکەونە پشتت
+2025-03-02T00:00:34.897382 - Processing custom image with: image_url=https://images.unsplash.com/photo-1506617420156-8e4536971650?q=80&w=1074&auto=format&fit=crop, text=بەرەو خۆر هەنگاو بنێ، سێبەرەکان دەکەونە پشتت, font=Noto Kufi Arabic:700, size=40
+2025-03-02T00:00:34.897711 - Target dimensions: 1200x630
+2025-03-02T00:00:35.416484 - apply_custom_text: container_margin=0, container_width_percent=90
+2025-03-02T00:00:35.416805 - Processing RTL text for language: ckb
+2025-03-02T00:00:35.417150 - Using original text for RTL rendering: بەرەو خۆر هەنگاو بنێ، سێبەرەکان دەکەونە پشتت
+2025-03-02T00:00:35.419611 - Using cached Google Font: Noto Kufi Arabic (700, normal)
+2025-03-02T00:00:35.425995 - Successfully loaded font: Noto Kufi Arabic (weight:700, style:normal)
+2025-03-02T00:00:35.500999 - Custom text applied with background at (53,414) size 966x121, bottom margin: 20px
+2025-03-02T00:00:35.501230 - Successfully applied custom text with styling
+2025-03-02T00:00:35.570899 - Successfully processed custom image with text: بەرەو خۆر هەنگاو بنێ، سێبەرەکان دەکەونە پشتت
+2025-03-02T00:00:56.796132 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-03-02T00:01:23.892045 - Processing custom image with: image_url=https://images.unsplash.com/photo-1683009427513-28e163402d16?q=80&w=1170&auto=format&fit=crop, text=ئەو کەسەی لە هەڵەکانی نەترسێت، سەرکەوتوو دەبێت, font=Noto Sans Arabic, size=48
+2025-03-02T00:01:23.892581 - Target dimensions: 1200x630
+2025-03-02T00:01:26.162286 - apply_custom_text: container_margin=20, container_width_percent=100
+2025-03-02T00:01:26.162510 - Processing RTL text for language: ckb
+2025-03-02T00:01:26.162545 - Using original text for RTL rendering: ئەو کەسەی لە هەڵەکانی نەترسێت، سەرکەوتوو دەبێت
+2025-03-02T00:01:26.163639 - Using cached Google Font: Noto Sans Arabic (400, normal)
+2025-03-02T00:01:26.172552 - Successfully loaded font: Noto Sans Arabic (weight:400, style:normal)
+2025-03-02T00:01:26.176380 - Text too wide (995px), reducing font size from 48 to 40
+2025-03-02T00:01:26.232434 - Custom text applied with background at (20,668) size 1130x92, bottom margin: 20px
+2025-03-02T00:01:26.232560 - Text dimensions: 829.0x52, wrapped into 1 lines
+2025-03-02T00:01:26.232610 - Successfully applied custom text with styling
+2025-03-02T00:01:26.281687 - Successfully processed custom image with text: ئەو کەسەی لە هەڵەکانی نەترسێت، سەرکەوتوو دەبێت
+2025-03-02T00:01:36.954601 - Processing custom image with: image_url=https://images.unsplash.com/photo-1683009427513-28e163402d16?q=80&w=1170&auto=format&fit=crop, text=ئەو کەسەی لە هەڵەکانی نەترسێت، سەرکەوتوو دەبێت. گرنگ ئەوەیە کە بەردەوام بین لە فێربوون و گەشەکردن. سەرکەوتن پرۆسەیەکە، نەک مەنزڵێک., font=Noto Sans Arabic, size=48
+2025-03-02T00:01:36.954965 - Target dimensions: 1200x630
+2025-03-02T00:01:37.335338 - apply_custom_text: container_margin=20, container_width_percent=95
+2025-03-02T00:01:37.335962 - Processing RTL text for language: ckb
+2025-03-02T00:01:37.336090 - Using original text for RTL rendering: ئەو کەسەی لە هەڵەکانی نەترسێت، سەرکەوتوو دەبێت. گرنگ ئەوەیە کە بەردەوام بین لە فێربوون و گەشەکردن. سەرکەوتن پرۆسەیەکە، نەک مەنزڵێک.
+2025-03-02T00:01:37.337026 - Using cached Google Font: Noto Sans Arabic (400, normal)
+2025-03-02T00:01:37.343799 - Successfully loaded font: Noto Sans Arabic (weight:400, style:normal)
+2025-03-02T00:01:37.344974 - Text too wide (2706px), reducing font size from 48 to 16
+2025-03-02T00:01:37.409752 - Custom text applied with background at (48,695) size 1073x65, bottom margin: 20px
+2025-03-02T00:01:37.409887 - Text dimensions: 902.0x25, wrapped into 1 lines
+2025-03-02T00:01:37.409940 - Successfully applied custom text with styling
+2025-03-02T00:01:37.459208 - Successfully processed custom image with text: ئەو کەسەی لە هەڵەکانی نەترسێت، سەرکەوتوو دەبێت. گرنگ ئەوەیە کە بەردەوام بین لە فێربوون و گەشەکردن. سەرکەوتن پرۆسەیەکە، نەک مەنزڵێک.
+2025-03-02T00:02:04.884621 - Processing custom image with: image_url=https://images.unsplash.com/photo-1683009427513-28e163402d16?q=80&w=1170&auto=format&fit=crop, text=ئەو کەسەی لە هەڵەکانی نەترسێت، سەرکەوتوو دەبێت. گرنگ ئەوەیە کە بەردەوام بین لە فێربوون و گەشەکردن. سەرکەوتن پرۆسەیەکە، نەک مەنزڵێک., font=Noto Sans Arabic, size=32
+2025-03-02T00:02:04.885264 - Target dimensions: 1200x630
+2025-03-02T00:02:05.290950 - apply_custom_text: container_margin=20, container_width_percent=85
+2025-03-02T00:02:05.291178 - Processing RTL text for language: ckb
+2025-03-02T00:02:05.291241 - Using original text for RTL rendering: ئەو کەسەی لە هەڵەکانی نەترسێت، سەرکەوتوو دەبێت. گرنگ ئەوەیە کە بەردەوام بین لە فێربوون و گەشەکردن. سەرکەوتن پرۆسەیەکە، نەک مەنزڵێک.
+2025-03-02T00:02:05.291867 - Using cached Google Font: Noto Sans Arabic (400, normal)
+2025-03-02T00:02:05.298481 - Successfully loaded font: Noto Sans Arabic (weight:400, style:normal)
+2025-03-02T00:02:05.299874 - Text too wide (1804px), reducing font size from 32 to 16
+2025-03-02T00:02:05.350423 - Custom text applied with background at (104,695) size 960x65, bottom margin: 20px
+2025-03-02T00:02:05.350585 - Text dimensions: 902.0x25, wrapped into 1 lines
+2025-03-02T00:02:05.350701 - Successfully applied custom text with styling
+2025-03-02T00:02:05.399715 - Successfully processed custom image with text: ئەو کەسەی لە هەڵەکانی نەترسێت، سەرکەوتوو دەبێت. گرنگ ئەوەیە کە بەردەوام بین لە فێربوون و گەشەکردن. سەرکەوتن پرۆسەیەکە، نەک مەنزڵێک.
+2025-03-02T00:02:21.812415 - Detected Kurdish text with 'OpenAI'. Using Noto Sans Arabic font for best rendering.
+2025-03-02T00:02:21.813066 - Processing custom image with: image_url=https://images.unsplash.com/photo-1683009427513-28e163402d16?q=80&w=1170&auto=format&fit=crop, text=توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە. ئەمە نموونەیەکە لە دەقێکی درێژ کە چەندین دێڕی تێدایە و دەبێت بە شێوەیەکی ڕێکوپێک ڕیزبەندی بکرێت. Claude 3.5 Sonnet is the latest model in Anthropic AI research., font=Noto Sans Arabic, size=32
+2025-03-02T00:02:21.813125 - Target dimensions: 1200x630
+2025-03-02T00:02:22.217196 - apply_custom_text: container_margin=20, container_width_percent=90
+2025-03-02T00:02:22.217486 - Processing RTL text for language: ckb
+2025-03-02T00:02:22.217565 - Using original text for RTL rendering: توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە. ئەمە نموونەیەکە لە دەقێکی درێژ کە چەندین دێڕی تێدایە و دەبێت بە شێوەیەکی ڕێکوپێک ڕیزبەندی بکرێت. Claude 3.5 Sonnet is the latest model in Anthropic AI research.
+2025-03-02T00:02:22.218328 - Using cached Google Font: Noto Sans Arabic (400, normal)
+2025-03-02T00:02:22.224190 - Successfully loaded font: Noto Sans Arabic (weight:400, style:normal)
+2025-03-02T00:02:22.225885 - Text too wide (3251px), reducing font size from 32 to 16
+2025-03-02T00:02:22.306540 - Custom text applied with background at (76,668) size 1017x92, bottom margin: 20px
+2025-03-02T00:02:22.306721 - Text dimensions: 929.0x52, wrapped into 2 lines
+2025-03-02T00:02:22.306808 - Successfully applied custom text with styling
+2025-03-02T00:02:22.353623 - Successfully processed custom image with text: توێژینەوەی قوڵی OpenAI: یاریدەدەرێکی شۆڕشگێڕی زیرەکی دەستکرد بۆ توێژینەوە. ئەمە نموونەیەکە لە دەقێکی درێژ کە چەندین دێڕی تێدایە و دەبێت بە شێوەیەکی ڕێکوپێک ڕیزبەندی بکرێت. Claude 3.5 Sonnet is the latest model in Anthropic AI research.
+2025-03-02T00:03:19.690588 - Processing custom image with: image_url=https://images.unsplash.com/photo-1506617420156-8e4536971650?q=80&w=1074&auto=format&fit=crop, text=بەرەو خۆر هەنگاو بنێ، سێبەرەکان دەکەونە پشتت, font=Tajawal:700, size=40
+2025-03-02T00:03:19.691250 - Target dimensions: 1200x630
+2025-03-02T00:03:20.205088 - apply_custom_text: container_margin=20, container_width_percent=90
+2025-03-02T00:03:20.205261 - Processing RTL text for language: ckb
+2025-03-02T00:03:20.205315 - Using original text for RTL rendering: بەرەو خۆر هەنگاو بنێ، سێبەرەکان دەکەونە پشتت
+2025-03-02T00:03:20.206121 - Using cached Google Font: Tajawal (700, normal)
+2025-03-02T00:03:20.211011 - Successfully loaded font: Tajawal (weight:700, style:normal)
+2025-03-02T00:03:20.264590 - Custom text applied with background at (71,448) size 930x87, bottom margin: 20px
+2025-03-02T00:03:20.264709 - Text dimensions: 671.0x47, wrapped into 1 lines
+2025-03-02T00:03:20.264818 - Successfully applied custom text with styling
+2025-03-02T00:03:20.310533 - Successfully processed custom image with text: بەرەو خۆر هەنگاو بنێ، سێبەرەکان دەکەونە پشتت
+2025-03-02T00:03:27.267081 - Processing custom image with: image_url=https://images.unsplash.com/photo-1506617420156-8e4536971650?q=80&w=1074&auto=format&fit=crop, text=بەرەو خۆر هەنگاو بنێ، سێبەرەکان دەکەونە پشتت, font=Noto Kufi Arabic:700, size=40
+2025-03-02T00:03:27.270364 - Target dimensions: 1200x630
+2025-03-02T00:03:27.753417 - apply_custom_text: container_margin=20, container_width_percent=90
+2025-03-02T00:03:27.753582 - Processing RTL text for language: ckb
+2025-03-02T00:03:27.753627 - Using original text for RTL rendering: بەرەو خۆر هەنگاو بنێ، سێبەرەکان دەکەونە پشتت
+2025-03-02T00:03:27.755163 - Using cached Google Font: Noto Kufi Arabic (700, normal)
+2025-03-02T00:03:27.760419 - Successfully loaded font: Noto Kufi Arabic (weight:700, style:normal)
+2025-03-02T00:03:27.761000 - Text too wide (973px), reducing font size from 40 to 31
+2025-03-02T00:03:27.806232 - Custom text applied with background at (71,451) size 930x84, bottom margin: 20px
+2025-03-02T00:03:27.806426 - Text dimensions: 754.0x44, wrapped into 1 lines
+2025-03-02T00:03:27.806573 - Successfully applied custom text with styling
+2025-03-02T00:03:27.851801 - Successfully processed custom image with text: بەرەو خۆر هەنگاو بنێ، سێبەرەکان دەکەونە پشتت
+2025-03-02T00:03:39.816656 - Processing custom image with: image_url=https://images.unsplash.com/photo-1506617420156-8e4536971650?q=80&w=1074&auto=format&fit=crop, text=بەرەو خۆر هەنگاو بنێ، سێبەرەکان دەکەونە پشتت, font=Noto Kufi Arabic:700, size=40
+2025-03-02T00:03:39.817188 - Target dimensions: 1200x630
+2025-03-02T00:03:40.390469 - apply_custom_text: container_margin=20, container_width_percent=90
+2025-03-02T00:03:40.390715 - Processing RTL text for language: ckb
+2025-03-02T00:03:40.390999 - Using original text for RTL rendering: بەرەو خۆر هەنگاو بنێ، سێبەرەکان دەکەونە پشتت
+2025-03-02T00:03:40.392590 - Using cached Google Font: Noto Kufi Arabic (700, normal)
+2025-03-02T00:03:40.399837 - Successfully loaded font: Noto Kufi Arabic (weight:700, style:normal)
+2025-03-02T00:03:40.400243 - Text too wide (973px), reducing font size from 40 to 31
+2025-03-02T00:03:40.445210 - Custom text applied with background at (71,451) size 930x84, bottom margin: 20px
+2025-03-02T00:03:40.445392 - Text dimensions: 754.0x44, wrapped into 1 lines
+2025-03-02T00:03:40.445474 - Successfully applied custom text with styling
+2025-03-02T00:03:40.489675 - Successfully processed custom image with text: بەرەو خۆر هەنگاو بنێ، سێبەرەکان دەکەونە پشتت
+2025-03-02T00:03:54.348309 - Processing custom image with: image_url=https://images.unsplash.com/photo-1506617420156-8e4536971650?q=80&w=1074&auto=format&fit=crop, text=بەرەو خۆر هەنگاو بنێ، سێبەرەکان دەکەونە پشتت, font=Noto Kufi Arabic:700, size=40
+2025-03-02T00:03:54.349336 - Target dimensions: 1200x630
+2025-03-02T00:03:54.852704 - apply_custom_text: container_margin=20, container_width_percent=90
+2025-03-02T00:03:54.852982 - Processing RTL text for language: ckb
+2025-03-02T00:03:54.853066 - Using original text for RTL rendering: بەرەو خۆر هەنگاو بنێ، سێبەرەکان دەکەونە پشتت
+2025-03-02T00:03:54.853866 - Using cached Google Font: Noto Kufi Arabic (700, normal)
+2025-03-02T00:03:54.859589 - Successfully loaded font: Noto Kufi Arabic (weight:700, style:normal)
+2025-03-02T00:03:54.860295 - Text too wide (973px), reducing font size from 40 to 31
+2025-03-02T00:03:54.921695 - Custom text applied with background at (71,451) size 930x84, bottom margin: 20px
+2025-03-02T00:03:54.921770 - Text dimensions: 754.0x44, wrapped into 1 lines
+2025-03-02T00:03:54.921840 - Successfully applied custom text with styling
+2025-03-02T00:03:54.966392 - Successfully processed custom image with text: بەرەو خۆر هەنگاو بنێ، سێبەرەکان دەکەونە پشتت
+2025-03-02T00:04:03.127161 - Processing custom image with: image_url=https://images.unsplash.com/photo-1506617420156-8e4536971650?q=80&w=1074&auto=format&fit=crop, text=بەرەو خۆر هەنگاو بنێ، سێبەرەکان دەکەونە پشتت, font=Noto Kufi Arabic:700, size=40
+2025-03-02T00:04:03.128837 - Target dimensions: 1200x630
+2025-03-02T00:04:03.651552 - apply_custom_text: container_margin=20, container_width_percent=90
+2025-03-02T00:04:03.651697 - Processing RTL text for language: ckb
+2025-03-02T00:04:03.651740 - Using original text for RTL rendering: بەرەو خۆر هەنگاو بنێ، سێبەرەکان دەکەونە پشتت
+2025-03-02T00:04:03.652726 - Using cached Google Font: Noto Kufi Arabic (700, normal)
+2025-03-02T00:04:03.661442 - Successfully loaded font: Noto Kufi Arabic (weight:700, style:normal)
+2025-03-02T00:04:03.668693 - Text too wide (973px), reducing font size from 40 to 31
+2025-03-02T00:04:03.726969 - Custom text applied with background at (71,451) size 930x84, bottom margin: 20px
+2025-03-02T00:04:03.727252 - Text dimensions: 754.0x44, wrapped into 1 lines
+2025-03-02T00:04:03.727355 - Successfully applied custom text with styling
+2025-03-02T00:04:03.773782 - Successfully processed custom image with text: بەرەو خۆر هەنگاو بنێ، سێبەرەکان دەکەونە پشتت
+2025-03-02T00:04:17.055961 - Processing custom image with: image_url=https://images.unsplash.com/photo-1506617420156-8e4536971650?q=80&w=1074&auto=format&fit=crop, text=بەرەو خۆر هەنگاو بنێ، سێبەرەکان دەکەونە پشتت, font=Noto Kufi Arabic:700, size=40
+2025-03-02T00:04:17.056854 - Target dimensions: 1200x630
+2025-03-02T00:04:17.579945 - apply_custom_text: container_margin=20, container_width_percent=90
+2025-03-02T00:04:17.580196 - Processing RTL text for language: ckb
+2025-03-02T00:04:17.580278 - Using original text for RTL rendering: بەرەو خۆر هەنگاو بنێ، سێبەرەکان دەکەونە پشتت
+2025-03-02T00:04:17.584911 - Using cached Google Font: Noto Kufi Arabic (700, normal)
+2025-03-02T00:04:17.593590 - Successfully loaded font: Noto Kufi Arabic (weight:700, style:normal)
+2025-03-02T00:04:17.597303 - Text too wide (973px), reducing font size from 40 to 31
+2025-03-02T00:04:17.661626 - Custom text applied with background at (71,451) size 930x84, bottom margin: 20px
+2025-03-02T00:04:17.661900 - Text dimensions: 754.0x44, wrapped into 1 lines
+2025-03-02T00:04:17.661996 - Successfully applied custom text with styling
+2025-03-02T00:04:17.707533 - Successfully processed custom image with text: بەرەو خۆر هەنگاو بنێ، سێبەرەکان دەکەونە پشتت
+2025-03-02T00:04:24.989777 - Processing custom image with: image_url=https://images.unsplash.com/photo-1506617420156-8e4536971650?q=80&w=1074&auto=format&fit=crop, text=بەرەو خۆر هەنگاو بنێ، سێبەرەکان دەکەونە پشتت, font=Noto Kufi Arabic:700, size=40
+2025-03-02T00:04:24.990588 - Target dimensions: 1200x630
+2025-03-02T00:04:25.505858 - apply_custom_text: container_margin=20, container_width_percent=90
+2025-03-02T00:04:25.506082 - Processing RTL text for language: ckb
+2025-03-02T00:04:25.506141 - Using original text for RTL rendering: بەرەو خۆر هەنگاو بنێ، سێبەرەکان دەکەونە پشتت
+2025-03-02T00:04:25.506909 - Using cached Google Font: Noto Kufi Arabic (700, normal)
+2025-03-02T00:04:25.510821 - Successfully loaded font: Noto Kufi Arabic (weight:700, style:normal)
+2025-03-02T00:04:25.511317 - Text too wide (973px), reducing font size from 40 to 31
+2025-03-02T00:04:25.563582 - Custom text applied with background at (71,451) size 930x84, bottom margin: 20px
+2025-03-02T00:04:25.563695 - Text dimensions: 754.0x44, wrapped into 1 lines
+2025-03-02T00:04:25.563743 - Successfully applied custom text with styling
+2025-03-02T00:04:25.607104 - Successfully processed custom image with text: بەرەو خۆر هەنگاو بنێ، سێبەرەکان دەکەونە پشتت
+2025-03-02T00:05:35.896867 - Processing custom image with: image_url=https://images.unsplash.com/photo-1506617564039-2f3b650b7010, text=بەرەو خۆر هەنگاو بنێ، سێبەرەکان دەکەونە پشتت, font=Noto Sans Arabic, size=40
+2025-03-02T00:05:35.897477 - Target dimensions: 1080x1920
+2025-03-02T00:05:38.600436 - apply_custom_text: container_margin=20, container_width_percent=90
+2025-03-02T00:05:38.600593 - Processing RTL text for language: ckb
+2025-03-02T00:05:38.600631 - Using original text for RTL rendering: بەرەو خۆر هەنگاو بنێ، سێبەرەکان دەکەونە پشتت
+2025-03-02T00:05:38.602530 - Using cached Google Font: Noto Sans Arabic (400, normal)
+2025-03-02T00:05:38.610723 - Successfully loaded font: Noto Sans Arabic (weight:400, style:normal)
+2025-03-02T00:05:38.656517 - Custom text applied with background at (72,1815) size 936x85, bottom margin: 20px
+2025-03-02T00:05:38.656661 - Text dimensions: 755.0x45, wrapped into 1 lines
+2025-03-02T00:05:38.656713 - Successfully applied custom text with styling
+2025-03-02T00:05:38.823689 - Successfully processed custom image with text: بەرەو خۆر هەنگاو بنێ، سێبەرەکان دەکەونە پشتت
+2025-03-02T00:05:53.291038 - Processing custom image with: image_url=https://cdn.pixabay.com/photo/2016/11/22/19/08/hangers-1850082_1280.jpg, text=بەرەو خۆر هەنگاو بنێ، سێبەرەکان دەکەونە پشتت, font=Noto Sans Arabic, size=40
+2025-03-02T00:05:53.291406 - Target dimensions: 1080x1920
+2025-03-02T00:05:53.649065 - apply_custom_text: container_margin=20, container_width_percent=100
+2025-03-02T00:05:53.649209 - Processing RTL text for language: ckb
+2025-03-02T00:05:53.649246 - Using original text for RTL rendering: بەرەو خۆر هەنگاو بنێ، سێبەرەکان دەکەونە پشتت
+2025-03-02T00:05:53.649857 - Using cached Google Font: Noto Sans Arabic (400, normal)
+2025-03-02T00:05:53.660029 - Successfully loaded font: Noto Sans Arabic (weight:400, style:normal)
+2025-03-02T00:05:53.716686 - Custom text applied with background at (20,1815) size 1040x85, bottom margin: 20px
+2025-03-02T00:05:53.716863 - Text dimensions: 755.0x45, wrapped into 1 lines
+2025-03-02T00:05:53.717281 - Successfully applied custom text with styling
+2025-03-02T00:05:53.917811 - Successfully processed custom image with text: بەرەو خۆر هەنگاو بنێ، سێبەرەکان دەکەونە پشتت
+2025-03-02T00:06:20.809566 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-03-02T00:06:47.123724 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-03-02T00:06:52.414913 - apply_custom_text: container_margin=20, container_width_percent=100
+2025-03-02T00:06:52.415430 - Processing RTL text for language: ckb
+2025-03-02T00:06:52.415478 - Using original text for RTL rendering: بەرەو خۆر هەنگاو بنێ، سێبەرەکان دەکەونە پشتت
+2025-03-02T00:06:52.416542 - Using cached Google Font: Noto Sans Arabic (400, normal)
+2025-03-02T00:06:52.429541 - Successfully loaded font: Noto Sans Arabic (weight:400, style:normal)
+2025-03-02T00:06:52.482712 - Custom text applied with background at (20,1815) size 1040x85, bottom margin: 20px
+2025-03-02T00:06:52.482814 - Text dimensions: 755.0x45, wrapped into 1 lines
+2025-03-02T00:06:52.499628 - crop_to_fit: Received target_width=1080 (type: <class 'int'>), target_height=1920 (type: <class 'int'>)
+2025-03-02T00:06:52.499705 - crop_to_fit: Source image dimensions: 1080x1920
+2025-03-02T00:06:52.499749 - crop_to_fit: Vertical crop chosen. new_height=1920, offset=0
+2025-03-02T00:06:52.500641 - crop_to_fit: Resizing cropped image to: 1080x1920
+2025-03-02T00:07:12.637034 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-03-02T00:07:18.437511 - Processing custom image with: image_url=https://cdn.pixabay.com/photo/2016/11/22/19/08/hangers-1850082_1280.jpg, text=بەرەو خۆر هەنگاو بنێ، سێبەرەکان دەکەونە پشتت, font=Noto Sans Arabic, size=40
+2025-03-02T00:07:18.439206 - Target dimensions: 1080x1920
+2025-03-02T00:07:18.601171 - apply_custom_text: container_margin=20, container_width_percent=100
+2025-03-02T00:07:18.601306 - Processing RTL text for language: ckb
+2025-03-02T00:07:18.601366 - Using original text for RTL rendering: بەرەو خۆر هەنگاو بنێ، سێبەرەکان دەکەونە پشتت
+2025-03-02T00:07:18.602446 - Using cached Google Font: Noto Sans Arabic (400, normal)
+2025-03-02T00:07:18.618982 - Successfully loaded font: Noto Sans Arabic (weight:400, style:normal)
+2025-03-02T00:07:18.717990 - Custom text applied with background at (20,1815) size 1040x85, bottom margin: 20px
+2025-03-02T00:07:18.718115 - Text dimensions: 755.0x45, wrapped into 1 lines
+2025-03-02T00:07:18.718291 - Successfully applied custom text with styling
+2025-03-02T00:07:18.938085 - Successfully processed custom image with text: بەرەو خۆر هەنگاو بنێ، سێبەرەکان دەکەونە پشتت
+2025-03-02T00:07:57.046022 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-03-02T00:08:05.074743 - Processing custom image with: image_url=https://cdn.pixabay.com/photo/2016/11/22/19/08/hangers-1850082_1280.jpg, text=بەرەو خۆر هەنگاو بنێ، سێبەرەکان دەکەونە پشتت, font=Noto Sans Arabic, size=40
+2025-03-02T00:08:05.075785 - Target dimensions: 1080x1920
+2025-03-02T00:08:05.221446 - apply_custom_text: container_margin=20, container_width_percent=100
+2025-03-02T00:08:05.221544 - Processing RTL text for language: ckb
+2025-03-02T00:08:05.221585 - Using original text for RTL rendering: بەرەو خۆر هەنگاو بنێ، سێبەرەکان دەکەونە پشتت
+2025-03-02T00:08:05.222147 - Using cached Google Font: Noto Sans Arabic (400, normal)
+2025-03-02T00:08:05.230051 - Successfully loaded font: Noto Sans Arabic (weight:400, style:normal)
+2025-03-02T00:08:05.284924 - Custom text applied with background at (20,1815) size 1040x85, bottom margin: 20px
+2025-03-02T00:08:05.285118 - Text dimensions: 755.0x45, wrapped into 1 lines
+2025-03-02T00:08:05.285178 - Successfully applied custom text with styling
+2025-03-02T00:08:05.486005 - Successfully processed custom image with text: بەرەو خۆر هەنگاو بنێ، سێبەرەکان دەکەونە پشتت
+2025-03-02T00:08:49.946776 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-03-02T00:09:10.887454 - Processing custom image with: image_url=file:////Users/hooshyar/Desktop/development/dilaHeadlessImageEditor/portrait_pattern.png, text=بەرەو خۆر هەنگاو بنێ، سێبەرەکان دەکەونە پشتت, font=Noto Sans Arabic, size=40
+2025-03-02T00:09:10.887790 - Target dimensions: 1080x1920
+2025-03-02T00:09:10.890201 - Error downloading or cropping image: No connection adapters were found for 'file:////Users/hooshyar/Desktop/development/dilaHeadlessImageEditor/portrait_pattern.png'
+2025-03-02T00:09:43.638569 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-03-02T00:09:47.684395 - apply_custom_text: container_margin=20, container_width_percent=100
+2025-03-02T00:09:47.684504 - Processing RTL text for language: ckb
+2025-03-02T00:09:47.684560 - Using original text for RTL rendering: بەرەو خۆر هەنگاو بنێ، سێبەرەکان دەکەونە پشتت
+2025-03-02T00:09:47.684943 - Using cached Google Font: Noto Sans Arabic (400, normal)
+2025-03-02T00:09:47.694048 - Successfully loaded font: Noto Sans Arabic (weight:400, style:normal)
+2025-03-02T00:09:47.745885 - Custom text applied with background at (20,1815) size 1040x85, bottom margin: 20px
+2025-03-02T00:09:47.746004 - Text dimensions: 755.0x45, wrapped into 1 lines
+2025-03-02T00:10:21.404232 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-03-02T00:10:29.135151 - crop_to_fit: Received target_width=1080 (type: <class 'int'>), target_height=1920 (type: <class 'int'>)
+2025-03-02T00:10:29.135329 - crop_to_fit: Source image dimensions: 1074x806
+2025-03-02T00:10:29.135377 - crop_to_fit: Horizontal crop chosen. new_width=453, offset=310
+2025-03-02T00:10:29.135776 - crop_to_fit: Resizing cropped image to: 1080x1920
+2025-03-02T00:10:29.166410 - apply_custom_text: container_margin=20, container_width_percent=100
+2025-03-02T00:10:29.166976 - Processing RTL text for language: ckb
+2025-03-02T00:10:29.167165 - Using original text for RTL rendering: بەرەو خۆر هەنگاو بنێ، سێبەرەکان دەکەونە پشتت
+2025-03-02T00:10:29.168096 - Using cached Google Font: Noto Sans Arabic (400, normal)
+2025-03-02T00:10:29.199650 - Successfully loaded font: Noto Sans Arabic (weight:400, style:normal)
+2025-03-02T00:10:29.283924 - Custom text applied with background at (20,1815) size 1040x85, bottom margin: 20px
+2025-03-02T00:10:29.284225 - Text dimensions: 755.0x45, wrapped into 1 lines
+2025-03-02T01:08:23.881031 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-03-02T01:08:36.660491 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-03-02T01:08:52.508971 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-03-02T01:09:01.137183 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-03-02T01:09:26.576281 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-03-02T01:09:42.439650 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-03-02T01:09:51.153304 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-03-02T01:10:02.161160 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-03-02T01:10:10.876485 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-03-02T01:10:20.275302 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-03-02T01:10:32.813959 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-03-02T01:11:12.224574 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-03-02T01:11:31.746667 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-03-02T01:11:41.998239 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-03-02T01:43:48.346973 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-03-02T01:45:23.471031 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-03-02T01:58:04.989637 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-03-02T01:59:30.979636 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-03-02T02:00:29.004602 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-03-02T02:01:30.874943 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-03-02T10:13:08.022289 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-03-02T10:13:33.103476 - Starting Flask server on port 5001 in development mode with auto-reload enabled
+2025-03-02T10:13:46.236248 - Starting Flask server on port 5001 in development mode with auto-reload enabled

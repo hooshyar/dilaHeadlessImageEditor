@@ -1,0 +1,108 @@
+# Important Things to Remember
+
+## Project Structure
+- The main application code is in the `app/` directory
+- Tools and scripts are in the `tools/` directory
+- Font utilities are in `app/core/font_utils.py`
+- Image processing core is in `image_processing.py`
+
+## Backward Compatibility
+- Symbolic links are used to maintain backward compatibility
+- The `process_local.py` script in the root directory is a symlink to `tools/scripts/process_local.py`
+- Always maintain these links when reorganizing the project
+
+## Font Management
+- Google Fonts are downloaded to `fonts/google_fonts/`
+- Font mappings are stored in `fonts/font_mappings.json`
+- Use the `font_manager.py` script to manage fonts
+
+## API Endpoints
+- Main processing endpoint: `/api/process_custom`
+- Playground UI: `/playground`
+- API expects JSON payloads with specific parameters
+
+## Dependencies
+- All dependencies are listed in `requirements.txt`
+- APScheduler is used for cleanup tasks
+- Pillow is used for image processing
+- arabic-reshaper and python-bidi are used for RTL text support
+
+## Testing
+- Use the `tools/diagnostics/` scripts for testing
+- The playground UI is useful for interactive testing
+- Always test with both LTR and RTL languages
+
+## Documentation
+- Keep `README.md` updated with the latest instructions
+- Update `docs/files_structure.md` when changing the project structure
+- Log all changes in `changes.log`
+- Update `docs/tasks.md` when completing tasks
+
+## Development Workflow
+- Follow modular design principles
+- Extract reusable functionality into dedicated modules
+- Maintain backward compatibility
+- Document all changes
+- Test thoroughly before committing
+
+## Portrait Dimensions (1080x1920)
+
+1. The API correctly processes images at 1080x1920 dimensions, but some image viewers may display them incorrectly.
+2. Always set DPI metadata (300 DPI recommended) when saving images to ensure proper display.
+3. Use verification overlays during testing to confirm dimensions visually.
+4. Test processed images in multiple viewers to ensure consistent display.
+
+## RTL Language Support
+
+1. Kurdish (Sorani) text uses the "ckb" language code.
+2. For Kurdish text, "Noto Sans Arabic" is the recommended font family.
+3. RTL text may require additional padding on the right side for proper display.
+4. Long words in RTL languages need special handling for proper wrapping.
+
+## API Parameters
+
+1. The padding parameter can be either an integer (applied to all sides) or a dictionary (different values for each side).
+2. When container_width_percent is set to 100, the text container spans the full width of the image.
+3. For bottom-aligned text, a minimum margin of 20px is enforced to prevent text from touching the bottom edge.
+4. Font size may be automatically adjusted for very long text to prevent overflow.
+
+## Font Utilities
+
+1. Font utilities have been extracted to app/core/font_utils.py for better code organization.
+2. The module handles font mapping, Google Fonts download and caching, and font object creation.
+3. When using fonts in the core module, import from app.core.font_utils instead of the root font_utils.py.
+4. Font paths are resolved in the following order:
+   - Check the font mapping (fonts/google_fonts_mapping.json)
+   - Look for a local font file with the exact name
+   - Try to download from Google Fonts
+   - Fall back to the default font if all else fails
+5. Font errors are logged but will not crash the application - it falls back to default fonts.
+
+## Testing and Debugging
+
+1. Use create_pattern.py to generate test patterns with clear dimension indicators.
+2. Use process_local.py for direct image processing without API dependency.
+3. Always check the dimensions of processed images using PIL:
+   ```python
+   from PIL import Image
+   img = Image.open('output.png')
+   print(f'Image dimensions: {img.width}x{img.height}')
+   ```
+4. Add verification overlays to confirm dimensions visually.
+
+## Common Issues
+
+1. Image appears in landscape orientation despite setting portrait dimensions:
+   - Verify dimensions using PIL
+   - Add dimension verification overlay
+   - Set DPI metadata explicitly
+
+2. Text overflow in RTL languages:
+   - Increase container width
+   - Reduce font size
+   - Add more padding
+   - Use the improved text wrapping algorithm
+
+3. Missing or incorrect DPI metadata:
+   - Set DPI explicitly when saving: img.save('output.png', dpi=(300, 300))
+   - Verify DPI using exiftool or PIL metadata 

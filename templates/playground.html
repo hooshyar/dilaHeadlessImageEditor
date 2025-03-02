@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dila Image Editor Playground</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dark-theme.css') }}">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding-top: 20px;
+            padding-bottom: 40px;
+        }
+        .card {
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .preview-container {
+            background-color: #e9ecef;
+            min-height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .preview-image {
+            max-width: 100%;
+            max-height: 500px;
+        }
+        .code-block {
+            background-color: #212529;
+            color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-family: monospace;
+            white-space: pre;
+        }
+        .color-input-group {
+            display: flex;
+            align-items: center;
+        }
+        .color-preview {
+            width: 30px;
+            height: 30px;
+            border-radius: 4px;
+            margin-left: 10px;
+            border: 1px solid #ced4da;
+        }
+        .loading-spinner {
+            width: 3rem;
+            height: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mb-4 text-center">Dila Image Editor Playground</h1>
+        
+        <!-- Examples section will be inserted here via JavaScript -->
+        
+        <div class="row">
+            <!-- Left column: Configuration panel -->
+            <div class="col-md-5">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="mb-0">Image & Text Configuration</h5>
+                    </div>
+                    <div class="card-body">
+                        <form id="configForm">
+                            <!-- Image URL -->
+                            <div class="mb-3">
+                                <label for="imageUrl" class="form-label">Image URL:</label>
+                                <input type="text" class="form-control" id="imageUrl" placeholder="https://example.com/image.jpg">
+                            </div>
+                            
+                            <!-- Text -->
+                            <div class="mb-3">
+                                <label for="overlayText" class="form-label">Text Overlay:</label>
+                                <textarea class="form-control" id="overlayText" rows="2" placeholder="Your text here"></textarea>
+                            </div>
+                            
+                            <!-- Language -->
+                            <div class="mb-3">
+                                <label for="language" class="form-label">Language:</label>
+                                <select class="form-select" id="language">
+                                    <option value="en">English</option>
+                                    <option value="ar">Arabic</option>
+                                    <option value="ckb">Kurdish (Sorani)</option>
+                                    <option value="ku">Kurdish</option>
+                                </select>
+                            </div>
+                            
+                            <!-- Tabs for categories -->
+                            <ul class="nav nav-tabs" id="configTabs" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="text-tab" data-bs-toggle="tab" data-bs-target="#text-options" type="button" role="tab">Text</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="background-tab" data-bs-toggle="tab" data-bs-target="#background-options" type="button" role="tab">Background</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="position-tab" data-bs-toggle="tab" data-bs-target="#position-options" type="button" role="tab">Position</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="gradient-tab" data-bs-toggle="tab" data-bs-target="#gradient-options" type="button" role="tab">Gradient</button>
+                                </li>
+                            </ul>
+                            
+                            <div class="tab-content p-3 border border-top-0 rounded-bottom mb-3">
+                                <!-- Text Options Tab -->
+                                <div class="tab-pane fade show active" id="text-options" role="tabpanel">
+                                    <!-- Font Family -->
+                                    <div class="mb-3">
+                                        <label for="fontFamily" class="form-label">Font Family:</label>
+                                        <select class="form-select" id="fontFamily">
+                                            <option value="Roboto">Roboto</option>
+                                            <option value="Open Sans">Open Sans</option>
+                                            <option value="Cairo">Cairo</option>
+                                            <option value="Montserrat">Montserrat</option>
+                                            <option value="Tajawal">Tajawal</option>
+                                            <option value="Almarai">Almarai</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <!-- Font Weight -->
+                                    <div class="mb-3">
+                                        <label for="fontWeight" class="form-label">Font Weight:</label>
+                                        <select class="form-select" id="fontWeight">
+                                            <option value="400">Regular (400)</option>
+                                            <option value="700">Bold (700)</option>
+                                            <option value="300">Light (300)</option>
+                                            <option value="900">Black (900)</option>
+                                            <option value="italic">Italic</option>
+                                            <option value="700italic">Bold Italic</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <!-- Font Size -->
+                                    <div class="mb-3">
+                                        <label for="fontSize" class="form-label">Font Size:</label>
+                                        <input type="range" class="form-range" id="fontSize" min="12" max="72" value="36">
+                                        <div class="text-end" id="fontSizeValue">36px</div>
+                                    </div>
+                                    
+                                    <!-- Text Color -->
+                                    <div class="mb-3">
+                                        <label for="textColor" class="form-label">Text Color:</label>
+                                        <div class="color-input-group">
+                                            <input type="text" class="form-control" id="textColor" value="#FFFFFF">
+                                            <input type="color" class="form-control form-control-color" id="textColorPicker" value="#FFFFFF">
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Text Opacity -->
+                                    <div class="mb-3">
+                                        <label for="textOpacity" class="form-label">Text Opacity:</label>
+                                        <input type="range" class="form-range" id="textOpacity" min="0" max="1" step="0.1" value="1">
+                                        <div class="text-end" id="textOpacityValue">100%</div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Background Options Tab -->
+                                <div class="tab-pane fade" id="background-options" role="tabpanel">
+                                    <!-- Background Color -->
+                                    <div class="mb-3">
+                                        <label for="backgroundColor" class="form-label">Background Color:</label>
+                                        <div class="color-input-group">
+                                            <input type="text" class="form-control" id="backgroundColor" value="#222222">
+                                            <input type="color" class="form-control form-control-color" id="backgroundColorPicker" value="#222222">
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Background Opacity -->
+                                    <div class="mb-3">
+                                        <label for="bgOpacity" class="form-label">Background Opacity:</label>
+                                        <input type="range" class="form-range" id="bgOpacity" min="0" max="1" step="0.1" value="0.85">
+                                        <div class="text-end" id="bgOpacityValue">85%</div>
+                                    </div>
+                                    
+                                    <!-- Background Curve -->
+                                    <div class="mb-3">
+                                        <label for="bgCurve" class="form-label">Corner Radius:</label>
+                                        <input type="range" class="form-range" id="bgCurve" min="0" max="30" value="10">
+                                        <div class="text-end" id="bgCurveValue">10px</div>
+                                    </div>
+                                    
+                                    <!-- Padding -->
+                                    <div class="mb-3">
+                                        <label class="form-label">Padding:</label>
+                                        <div class="row g-2">
+                                            <div class="col-6">
+                                                <div class="input-group input-group-sm">
+                                                    <span class="input-group-text">Top</span>
+                                                    <input type="number" class="form-control" id="paddingTop" value="20">
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="input-group input-group-sm">
+                                                    <span class="input-group-text">Right</span>
+                                                    <input type="number" class="form-control" id="paddingRight" value="20">
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="input-group input-group-sm">
+                                                    <span class="input-group-text">Bottom</span>
+                                                    <input type="number" class="form-control" id="paddingBottom" value="20">
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="input-group input-group-sm">
+                                                    <span class="input-group-text">Left</span>
+                                                    <input type="number" class="form-control" id="paddingLeft" value="20">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Container Width -->
+                                    <div class="mb-3">
+                                        <label for="containerWidth" class="form-label">Container Width (% of image):</label>
+                                        <input type="range" class="form-range" id="containerWidth" min="30" max="100" value="90">
+                                        <div class="text-end" id="containerWidthValue">90%</div>
+                                    </div>
+                                    
+                                    <!-- Container Margin -->
+                                    <div class="mb-3">
+                                        <label for="containerMargin" class="form-label">Container Margin:</label>
+                                        <input type="range" class="form-range" id="containerMargin" min="0" max="50" value="20">
+                                        <div class="text-end" id="containerMarginValue">20px</div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Position Options Tab -->
+                                <div class="tab-pane fade" id="position-options" role="tabpanel">
+                                    <!-- Alignment -->
+                                    <div class="mb-3">
+                                        <label for="alignment" class="form-label">Text Alignment:</label>
+                                        <select class="form-select" id="alignment">
+                                            <option value="bottom-center">Bottom Center</option>
+                                            <option value="bottom-left">Bottom Left</option>
+                                            <option value="bottom-right">Bottom Right</option>
+                                            <option value="top-center">Top Center</option>
+                                            <option value="top-left">Top Left</option>
+                                            <option value="top-right">Top Right</option>
+                                            <option value="center-center">Center</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <!-- Output Dimensions -->
+                                    <div class="mb-3">
+                                        <label class="form-label">Output Dimensions:</label>
+                                        <div class="row g-2">
+                                            <div class="col-6">
+                                                <div class="input-group input-group-sm">
+                                                    <span class="input-group-text">Width</span>
+                                                    <input type="number" class="form-control" id="outputWidth" value="1080">
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="input-group input-group-sm">
+                                                    <span class="input-group-text">Height</span>
+                                                    <input type="number" class="form-control" id="outputHeight" value="1080">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Preset -->
+                                    <div class="mb-3">
+                                        <label for="preset" class="form-label">Dimension Presets:</label>
+                                        <select class="form-select" id="preset">
+                                            <option value="">Custom</option>
+                                            <option value="instagram-stories">Instagram Stories (1080x1920)</option>
+                                            <option value="instagram-feed">Instagram Feed (1080x1350)</option>
+                                            <option value="instagram-grid">Instagram Grid (1080x1080)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <!-- Gradient Options Tab -->
+                                <div class="tab-pane fade" id="gradient-options" role="tabpanel">
+                                    <!-- Gradient Start Color -->
+                                    <div class="mb-3">
+                                        <label for="gradientStartColor" class="form-label">Gradient Start Color:</label>
+                                        <div class="color-input-group">
+                                            <input type="text" class="form-control" id="gradientStartColor" value="#FF3CAC">
+                                            <input type="color" class="form-control form-control-color" id="gradientStartColorPicker" value="#FF3CAC">
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Gradient End Color -->
+                                    <div class="mb-3">
+                                        <label for="gradientEndColor" class="form-label">Gradient End Color:</label>
+                                        <div class="color-input-group">
+                                            <input type="text" class="form-control" id="gradientEndColor" value="#784BA0">
+                                            <input type="color" class="form-control form-control-color" id="gradientEndColorPicker" value="#784BA0">
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Gradient Direction -->
+                                    <div class="mb-3">
+                                        <label for="gradientDirection" class="form-label">Gradient Direction:</label>
+                                        <select class="form-select" id="gradientDirection">
+                                            <option value="horizontal">Horizontal</option>
+                                            <option value="vertical">Vertical</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <!-- Gradient Presets -->
+                                    <div class="mb-3">
+                                        <label for="gradientPresets" class="form-label">Gradient Presets:</label>
+                                        <div class="row g-2">
+                                            <div class="col-4">
+                                                <button type="button" class="btn btn-sm w-100 gradient-preset" style="background: linear-gradient(to right, #FF3CAC, #784BA0);" 
+                                                        data-start="#FF3CAC" data-end="#784BA0">Purple Pink</button>
+                                            </div>
+                                            <div class="col-4">
+                                                <button type="button" class="btn btn-sm w-100 gradient-preset" style="background: linear-gradient(to right, #4776E6, #8E54E9);" 
+                                                        data-start="#4776E6" data-end="#8E54E9">Blue Purple</button>
+                                            </div>
+                                            <div class="col-4">
+                                                <button type="button" class="btn btn-sm w-100 gradient-preset" style="background: linear-gradient(to right, #11998e, #38ef7d);" 
+                                                        data-start="#11998e" data-end="#38ef7d">Green</button>
+                                            </div>
+                                            <div class="col-4">
+                                                <button type="button" class="btn btn-sm w-100 gradient-preset" style="background: linear-gradient(to right, #FF416C, #FF4B2B);" 
+                                                        data-start="#FF416C" data-end="#FF4B2B">Red</button>
+                                            </div>
+                                            <div class="col-4">
+                                                <button type="button" class="btn btn-sm w-100 gradient-preset" style="background: linear-gradient(to right, #2193b0, #6dd5ed);" 
+                                                        data-start="#2193b0" data-end="#6dd5ed">Blue</button>
+                                            </div>
+                                            <div class="col-4">
+                                                <button type="button" class="btn btn-sm w-100 gradient-preset" style="background: linear-gradient(to right, #f953c6, #b91d73);" 
+                                                        data-start="#f953c6" data-end="#b91d73">Pink</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="d-grid">
+                                <button type="button" class="btn btn-primary" id="generatePreview">Generate Preview</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right column: Preview and code -->
+            <div class="col-md-7">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="mb-0">Preview</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="preview-container" id="previewContainer">
+                            <div class="text-center text-muted" id="initialMessage">
+                                <p>Configure your image and press "Generate Preview" to see the result</p>
+                            </div>
+                            <div class="text-center d-none" id="loadingSpinner">
+                                <div class="spinner-border loading-spinner" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                            </div>
+                            <img class="preview-image d-none" id="previewImage" alt="Preview">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h5 class="mb-0">API Code</h5>
+                        <button class="btn btn-sm btn-outline-secondary" id="copyCodeBtn">
+                            <i class="bi bi-clipboard"></i> Copy
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <div class="code-block" id="codeBlock">
+# Configure your image and press "Generate Preview" to see the API code
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="{{ url_for('static', filename='js/playground.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/examples.js') }}"></script>
+</body>
+</html> 

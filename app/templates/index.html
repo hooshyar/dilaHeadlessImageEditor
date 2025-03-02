@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dila Headless Image Editor</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 30px;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        h2 {
+            color: #444;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+        .button {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        pre {
+            background-color: #f4f4f4;
+            border-left: 4px solid #4CAF50;
+            padding: 15px;
+            border-radius: 0 4px 4px 0;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dila Headless Image Editor</h1>
+    </header>
+    
+    <div class="container">
+        <div class="card">
+            <h2>Welcome to Dila Headless Image Editor</h2>
+            <p>
+                A specialized image processing service designed to overlay text on images 
+                with advanced typography features. Built as a headless service with an API-first approach.
+            </p>
+            <a href="/playground" class="button">Try the Playground</a>
+        </div>
+        
+        <div class="card">
+            <h2>API Examples</h2>
+            <h3>Health Check</h3>
+            <pre>GET /api/health</pre>
+            
+            <h3>Process Custom Image</h3>
+            <pre>POST /api/process_custom
+{
+    "image_url": "https://example.com/image.jpg",
+    "text": "Your text here",
+    "language": "en",
+    "font_family": "Roboto",
+    "font_size": 36
+}</pre>
+            
+            <h3>Available Fonts</h3>
+            <pre>GET /api/fonts</pre>
+        </div>
+        
+        <div class="card">
+            <h2>Command Line Tools</h2>
+            <p>
+                Process images locally using the command line tools:
+            </p>
+            <pre>python process_local.py --image my_image.jpg --text "Hello World" --language en --output result.jpg</pre>
+        </div>
+    </div>
+</body>
+</html> 

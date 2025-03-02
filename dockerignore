@@ -34,14 +34,15 @@ ENV/
 *.log
 logs/
 
-# Output directory
-output/
+# Git
+.git
+.gitignore
 
 # Local configuration
 .env
 
-# Downloaded fonts
-app/static/fonts/google_fonts/
+# Output directory (will be created inside container)
+output/
 
 # OS specific
 .DS_Store
@@ -50,24 +51,4 @@ app/static/fonts/google_fonts/
 .Spotlight-V100
 .Trashes
 ehthumbs.db
-Thumbs.db
-
-# Project specific
-processed_*.png
-images/*
-!images/.gitkeep
-
-# Test coverage
-.coverage
-htmlcov/
-.tox/
-.nox/
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.py,cover
-.hypothesis/
-.pytest_cache/
-cover/ 
+Thumbs.db 

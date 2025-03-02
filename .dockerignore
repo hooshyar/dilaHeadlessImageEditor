@@ -23,25 +23,46 @@ var/
 # Virtual Environment
 venv/
 ENV/
+.venv/
 
 # IDE files
 .idea/
 .vscode/
 *.swp
 *.swo
+*.sublime-workspace
+*.sublime-project
 
 # Logs
 *.log
 logs/
+log/
 
-# Output directory
-output/
+# Git
+.git
+.gitignore
+.github/
 
 # Local configuration
 .env
+.env.*
+!.env.example
 
-# Downloaded fonts
-app/static/fonts/google_fonts/
+# Output directories (will be created inside container)
+output/
+temp/
+
+# Test files and directories
+test/
+tests/
+__tests__/
+*.test.py
+*.spec.py
+
+# Documentation
+docs/
+*.md
+!README.md
 
 # OS specific
 .DS_Store
@@ -50,24 +71,4 @@ app/static/fonts/google_fonts/
 .Spotlight-V100
 .Trashes
 ehthumbs.db
-Thumbs.db
-
-# Project specific
-processed_*.png
-images/*
-!images/.gitkeep
-
-# Test coverage
-.coverage
-htmlcov/
-.tox/
-.nox/
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.py,cover
-.hypothesis/
-.pytest_cache/
-cover/ 
+Thumbs.db 
