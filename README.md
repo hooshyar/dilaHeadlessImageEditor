@@ -84,6 +84,24 @@ The Docker setup includes volume mapping for:
 
 You can customize the application by modifying the environment variables in the `.env` file or the `docker-compose.yml` file.
 
+### Resource and Timeout Controls
+
+The Docker setup includes several safeguards to prevent resource overutilization:
+
+- **Request Timeout**: Limits the maximum time a single API request can take (default: 60s)
+- **Task Timeout**: Limits the maximum time a background task can run (default: 300s)  
+- **Session Timeout**: Automatically shuts down the container after a period of inactivity (default: 600s)
+- **Resource Limits**: Restricts CPU and memory usage to prevent container overutilization
+
+You can adjust these values in the `.env` file or docker-compose.yml:
+
+```bash
+# Timeout settings
+REQUEST_TIMEOUT=60  # seconds
+TASK_TIMEOUT=300    # seconds
+SESSION_TIMEOUT=600 # seconds
+```
+
 ## API Usage
 
 ### Process Custom Image

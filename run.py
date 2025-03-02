@@ -7,6 +7,7 @@ import os
 import sys
 import logging
 import argparse
+import signal
 from app import create_app
 
 # Configure logging
@@ -27,7 +28,27 @@ def parse_args():
     parser.add_argument('--host', default=None, help='Host to bind to')
     parser.add_argument('--port', type=int, default=None, help='Port to bind to')
     parser.add_argument('--debug', action='store_true', help='Enable debug mode')
+    parser.add_argument('--request-timeout', type=int, default=60, 
+                      help='Maximum request processing time in seconds')
+    parser.add_argument('--task-timeout', type=int, default=300, 
+                      help='Maximum background task time in seconds')
     return parser.parse_args()
+
+def setup_timeouts(request_timeout, task_timeout):
+    """Configure timeouts for the application"""
+    logger.info(f"Setting request timeout to {request_timeout}s and task timeout to {task_timeout}s")
+    
+    # Store timeouts in environment for app-wide access
+    os.environ['REQUEST_TIMEOUT'] = str(request_timeout)
+    os.environ['TASK_TIMEOUT'] = str(task_timeout)
+    
+    # Set up process-level timeout (for development server)
+    def timeout_handler(signum, frame):
+        logger.error("Process timed out - operation took too long")
+        raise TimeoutError("Operation timed out")
+    
+    # Register signal handler for SIGALRM
+    signal.signal(signal.SIGALRM, timeout_handler)
 
 def main():
     """Run the application"""
@@ -40,6 +61,9 @@ def main():
         os.environ['PORT'] = str(args.port)
     if args.debug:
         os.environ['DEBUG'] = 'true'
+    
+    # Setup timeouts
+    setup_timeouts(args.request_timeout, args.task_timeout)
     
     # Create and run the app
     app = create_app()

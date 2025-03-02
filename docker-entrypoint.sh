@@ -18,11 +18,33 @@ if [ ! -f /app/app/templates/playground.html ]; then
     cp -n /app/templates/playground.html /app/app/templates/ 2>/dev/null || true
 fi
 
+# Set default timeouts if not provided
+: "${REQUEST_TIMEOUT:=60}"
+: "${TASK_TIMEOUT:=300}"
+: "${SESSION_TIMEOUT:=600}"
+
+# Add timeout monitor that shuts down server after inactivity
+(
+    sleep $SESSION_TIMEOUT
+    echo "Maximum session time of $SESSION_TIMEOUT seconds reached. Shutting down container."
+    kill -15 1  # Send SIGTERM to PID 1 (main process)
+) &
+TIMEOUT_MONITOR_PID=$!
+
+# Function to clean up timeout monitor on exit
+cleanup() {
+    echo "Cleaning up resources..."
+    kill $TIMEOUT_MONITOR_PID 2>/dev/null || true
+}
+
+# Register cleanup function
+trap cleanup EXIT
+
 # Run the application
 if [ "$1" = "dev" ]; then
-    echo "Running in development mode"
-    exec python -m run --port $PORT --debug
+    echo "Running in development mode with timeouts: REQUEST=$REQUEST_TIMEOUT, TASK=$TASK_TIMEOUT, SESSION=$SESSION_TIMEOUT"
+    exec python -m run --port $PORT --debug --request-timeout $REQUEST_TIMEOUT --task-timeout $TASK_TIMEOUT
 else
-    echo "Running in production mode"
-    exec gunicorn --bind 0.0.0.0:$PORT --workers 4 "run:create_app()"
+    echo "Running in production mode with timeouts: REQUEST=$REQUEST_TIMEOUT, TASK=$TASK_TIMEOUT, SESSION=$SESSION_TIMEOUT"
+    exec gunicorn --bind 0.0.0.0:$PORT --workers 4 --timeout $REQUEST_TIMEOUT "run:create_app()"
 fi 

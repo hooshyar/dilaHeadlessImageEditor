@@ -21,6 +21,8 @@ services:
       - DEFAULT_FONT_SIZE=36
       - CLEANUP_ENABLED=True
       - CLEANUP_INTERVAL=3600
+      - REQUEST_TIMEOUT=60
+      - TASK_TIMEOUT=300
     restart: unless-stopped
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:5000/api/health"]
@@ -28,6 +30,15 @@ services:
       timeout: 10s
       retries: 3
       start_period: 10s
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 512M
+        reservations:
+          cpus: '0.25'
+          memory: 128M
+    stop_grace_period: 30s
     
   # Development mode
   dev:
@@ -45,5 +56,16 @@ services:
       - DEBUG=True
       - LOG_LEVEL=DEBUG
       - PORT=5000
+      - REQUEST_TIMEOUT=60
+      - TASK_TIMEOUT=300
     command: dev
-    restart: unless-stopped 
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 512M
+        reservations:
+          cpus: '0.25'
+          memory: 128M
+    stop_grace_period: 30s 
